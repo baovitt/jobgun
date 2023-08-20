@@ -1,16 +1,5 @@
 package com.jobgun.routes
 
-import zio.*
-import sttp.apispec.openapi.circe.yaml.*
-import sttp.model.StatusCode
-import sttp.tapir.PublicEndpoint
-import sttp.tapir.docs.openapi.OpenAPIDocsInterpreter
-import sttp.tapir.json.zio.*
-// import sttp.tapir.server.ziohttp.ZioHttpInterpreter
-import sttp.tapir.swagger.SwaggerUI
-import sttp.tapir.ztapir.*
-import zhttp.http.{Http, HttpApp, Request, Response}
-
 object EmbeddingRoutes:
 
   // STTP Imports:
