@@ -7,8 +7,8 @@ object EmbeddingRoutes:
   import sttp.tapir.ztapir.*
 
   // Jobgun Imports:
-  import com.jobgun.domain.requests.EmbedUserRequest
-  import com.jobgun.domain.responses.EmbedUserResponse
+  import com.jobgun.shared.domain.requests.EmbedUserRequest
+  import com.jobgun.shared.domain.responses.EmbedUserResponse
 
   private val baseEndpoint =
     endpoint.in("api").in("v1").in("embedding")

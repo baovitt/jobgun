@@ -1,4 +1,4 @@
-package com.jobgun.domain
+package com.jobgun.shared.domain
 
 import zio.json.jsonField
 

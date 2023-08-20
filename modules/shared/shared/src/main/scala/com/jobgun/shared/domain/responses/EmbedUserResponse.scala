@@ -1,4 +1,4 @@
-package com.jobgun.domain.responses
+package com.jobgun.shared.domain.responses
 
 final case class EmbedUserResponse private (embedding: List[Double])
 

@@ -12,7 +12,8 @@ import io.weaviate.client.v1.graphql.query.fields.Field
 import io.weaviate.client.v1.graphql.model.GraphQLResponse
 
 // Jobgun Imports:
-import com.jobgun.domain.{WeaviateSearchResponse, JobListing}
+import com.jobgun.domain.WeaviateSearchResponse
+import com.jobgun.shared.domain.JobListing
 import com.jobgun.config.WeaviateConfig
 
 trait WeaviateSearchModel:

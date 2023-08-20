@@ -12,8 +12,7 @@ lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared
     libraryDependencies ++= Seq(
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion
-    ),
-    fork := true
+    )
   )
 
 lazy val backend = (project in file("modules/backend"))

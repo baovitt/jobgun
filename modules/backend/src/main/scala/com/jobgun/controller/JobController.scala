@@ -4,8 +4,8 @@ package com.jobgun.controller
 import zio.*
 
 // Jobgun Imports:
-import com.jobgun.domain.requests.JobSearchRequest
-import com.jobgun.domain.responses.JobSearchResponse
+import com.jobgun.shared.domain.requests.JobSearchRequest
+import com.jobgun.shared.domain.responses.JobSearchResponse
 import com.jobgun.routes.JobRoutes.jobSearchRoute
 import com.jobgun.model.WeaviateSearchModel
 import com.jobgun.utils.LRUCache

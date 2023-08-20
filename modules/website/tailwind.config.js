@@ -8,7 +8,7 @@ const scalajsMode = process.env.NODE_ENV === 'production' === 'production' ? 'op
 module.exports = {
     mode: 'jit',
     purge: [
-      path.resolve(__dirname, `./target/scala-${scalaVersion}/website-${scalajsMode}/*.js`),
+      path.resolve(__dirname, `./target/scala-${scalaVersion}/jobgun-${scalajsMode}/*.js`),
       path.resolve(__dirname, './*.html'),
     ],
     theme: {

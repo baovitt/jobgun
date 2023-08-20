@@ -1,4 +1,4 @@
-package com.jobgun.domain.requests
+package com.jobgun.shared.domain.requests
 
 final case class EmbedUserRequest private (resume: String)
 
