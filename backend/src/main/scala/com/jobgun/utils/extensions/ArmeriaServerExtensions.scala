@@ -1,4 +1,4 @@
-package com.jobgun.extensions
+package com.jobgun.utils.extensions
 
 // Armeria Imports:
 import com.linecorp.armeria.server.ServerBuilder

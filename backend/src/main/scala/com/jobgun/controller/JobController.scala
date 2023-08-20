@@ -22,8 +22,7 @@ final class JobController(weaviateSearchModel: WeaviateSearchModel):
   val jobSearchHandler =
     jobSearchRoute
       .zServerLogic[Any] { (req: JobSearchRequest) =>
-        (weaviateSearchModel.searchJobs(req.embedding)
-          <* ZIO.logInfo(s"Finished Job Search Route"))
+        weaviateSearchModel.searchJobs(req.embedding)
           .map(jobs => JobSearchResponse.fromJobs(jobs))
           .mapError(_ => StatusCode.InternalServerError)
       }
