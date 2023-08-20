@@ -8,6 +8,7 @@ import com.jobgun.domain.requests.JobSearchRequest
 import com.jobgun.domain.responses.JobSearchResponse
 import com.jobgun.routes.JobRoutes.jobSearchRoute
 import com.jobgun.model.WeaviateSearchModel
+import com.jobgun.utils.LRUCache
 
 // STTP Imports:
 import sttp.model.StatusCode
@@ -15,16 +16,23 @@ import sttp.tapir.swagger.SwaggerUI
 import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
 
-final class JobController(weaviateSearchModel: WeaviateSearchModel):
+final class JobController(
+  weaviateSearchModel: WeaviateSearchModel,
+  cache: LRUCache[JobSearchRequest, JobSearchResponse]
+):
 
   given zio.Runtime[Any] = zio.Runtime.default
 
   val jobSearchHandler =
     jobSearchRoute
       .zServerLogic[Any] { (req: JobSearchRequest) =>
-        weaviateSearchModel.searchJobs(req.embedding)
-          .map(jobs => JobSearchResponse.fromJobs(jobs))
-          .mapError(_ => StatusCode.InternalServerError)
+        cache.get(req).catchAll(_ =>
+          for
+            jobs <- weaviateSearchModel.searchJobs(req.embedding)
+            response = JobSearchResponse.fromJobs(jobs)
+            _ <- cache.put(req, response)
+          yield response
+        ).mapError(_ => StatusCode.InternalServerError)
       }
 
   val services = List(
@@ -33,8 +41,11 @@ final class JobController(weaviateSearchModel: WeaviateSearchModel):
 end JobController
 
 object JobController:
-  val default = WeaviateSearchModel.default >>> ZLayer {
-    for searchModel <- ZIO.service[WeaviateSearchModel]
-    yield new JobController(searchModel)
+  val default = (WeaviateSearchModel.default ++ LRUCache
+      .layer[JobSearchRequest, JobSearchResponse](1000)) >>> ZLayer {
+    for 
+      searchModel <- ZIO.service[WeaviateSearchModel]
+      cache <- ZIO.service[LRUCache[JobSearchRequest, JobSearchResponse]]
+    yield new JobController(searchModel, cache)
   }
 end JobController
