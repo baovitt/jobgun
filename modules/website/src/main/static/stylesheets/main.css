@@ -1,0 +1,22 @@
+/*noinspection CssUnknownTarget*/
+
+@import 'tailwindcss/base.css';
+
+/*noinspection CssUnknownTarget*/
+
+@import 'tailwindcss/components.css';
+
+/*noinspection CssUnknownTarget*/
+
+@import 'tailwindcss/utilities.css';
+
+
+::-moz-selection {
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
