@@ -28,7 +28,7 @@ final class JobController(
       .zServerLogic[Any] { (req: JobSearchRequest) =>
         cache.get(req).catchAll(_ =>
           for
-            jobs <- weaviateSearchModel.searchJobs(req.embedding)
+            jobs <- weaviateSearchModel.searchJobs(req.page, req.pageSize, req.embedding)
             response = JobSearchResponse.fromJobs(jobs)
             _ <- cache.put(req, response)
           yield response

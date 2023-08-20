@@ -17,6 +17,8 @@ import com.jobgun.config.WeaviateConfig
 
 trait WeaviateSearchModel:
   def searchJobs(
+      page: Int,
+      pageSize: Int,
       userEmbedding: Iterable[Double]
   ): IO[WeaviateSearchModel.WeaviateClientException, Chunk[JobListing]]
 end WeaviateSearchModel
@@ -35,6 +37,8 @@ object WeaviateSearchModel:
     for client <- ZIO.service[WeaviateClient]
     yield new WeaviateSearchModel:
       def searchJobs(
+          page: Int,
+          pageSize: Int,
           userEmbedding: Iterable[Double]
       ): IO[WeaviateClientException, Chunk[JobListing]] =
         val request =
@@ -51,6 +55,7 @@ object WeaviateSearchModel:
               Field.builder.name("company_url").build,
               Field.builder.name("country").build
             )
+            .withOffset(page * pageSize)
             .withNearVector(
               NearVectorArgument.builder
                 .vector(
@@ -61,7 +66,7 @@ object WeaviateSearchModel:
                 )
                 .build
             )
-            .withLimit(50)
+            .withLimit(pageSize)
 
         ZIO.logInfo(s"Running Weaviate search model") *> ZIO
           .succeed(request.run)
@@ -77,9 +82,13 @@ object WeaviateSearchModel:
           .map(_.jobListings)
   }
 
-  def searchJobs(userEmbedding: Iterable[Double]) =
+  def searchJobs(
+    page: Int,
+    pageSize: Int,
+    userEmbedding: Iterable[Double]
+  ) =
     ZIO.serviceWithZIO[WeaviateSearchModel](
-      _.searchJobs(userEmbedding)
+      _.searchJobs(page, pageSize, userEmbedding)
     )
 
 end WeaviateSearchModel
