@@ -8,7 +8,7 @@ import zio.openai.{Embeddings, Completions}
 import com.linecorp.armeria.server.Server
 
 // Jobgun Imports:
-import com.jobgun.config.{HttpServerSettings, HttpConfig}
+import com.jobgun.config.HttpConfig
 import com.jobgun.controller.{EmbeddingController, JobController}
 
 import sttp.tapir.ztapir.*
@@ -18,8 +18,6 @@ object Main extends ZIOAppDefault with Application:
   def run = logic.provide(
     EmbeddingController.default,
     JobController.default,
-    HttpConfig.live,
-    HttpServerSettings.default,
     Embeddings.default,
     Completions.default,
     ZLayer.Debug.tree
