@@ -1,15 +1,61 @@
+import Dependencies._
+import org.scalajs.linker.interface.ModuleSplitStyle
+
 ThisBuild / scalaVersion     := "3.3.0"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.jobgun"
 ThisBuild / organizationName := "jobgun"
 
-lazy val backend = (project in file("backend"))
+lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared"))
   .settings(
     name := "jobgun",
     libraryDependencies ++= Seq(
-      Dependencies.zioDeps,
-      Dependencies.tapirDeps,
-      Dependencies.weaviateDeps
+      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion
+    ),
+    fork := true
+  )
+
+lazy val backend = (project in file("modules/backend"))
+  .settings(
+    name := "jobgun",
+    libraryDependencies ++= Seq(
+      Dependencies.backend.zioDeps ++
+      Dependencies.backend.tapirDeps ++ 
+      Dependencies.backend.weaviateDeps
     ).flatten,
     fork := true
   )
+  .dependsOn(shared.jvm)
+
+lazy val frontend = project
+  .in(file("modules/frontend"))
+  .enablePlugins(ScalaJSPlugin)
+  .settings(
+    name := "jobgun",
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.raquo" %%% "laminar" % "16.0.0",
+      "io.frontroute" %%% "frontroute" % "0.18.0",
+    )
+  )
+  .dependsOn(shared.js)
+
+lazy val website = project
+  .in(file("modules/website"))
+  .enablePlugins(ScalaJSPlugin)
+  .settings(
+    name := "jobgun",
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.raquo" %%% "laminar" % "16.0.0",
+      "io.frontroute" %%% "frontroute" % "0.18.0",
+    )
+  )
+  .settings(
+    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
+    scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
+    scalaJSLinkerConfig ~= { _.withSourceMap(false) },
+    scalaJSUseMainModuleInitializer := true
+  )
+  .dependsOn(frontend)
