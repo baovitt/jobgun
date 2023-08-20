@@ -10,5 +10,6 @@ lazy val backend = (project in file("backend"))
       Dependencies.zioDeps,
       Dependencies.tapirDeps,
       Dependencies.weaviateDeps
-    ).flatten
+    ).flatten,
+    fork := true
   )
