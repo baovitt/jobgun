@@ -5,8 +5,8 @@ import zio.*
 import zio.json.*
 
 // Jobgun Imports:
-import com.jobgun.domain.requests.EmbedUserRequest
-import com.jobgun.domain.responses.EmbedUserResponse
+import com.jobgun.shared.domain.requests.EmbedUserRequest
+import com.jobgun.shared.domain.responses.EmbedUserResponse
 import com.jobgun.routes.EmbeddingRoutes.embedUserRoute
 import com.jobgun.model.{EmbeddingModel, CompletionModel}
 import com.jobgun.utils.LRUCache

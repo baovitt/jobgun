@@ -7,8 +7,8 @@ object JobRoutes:
   import sttp.tapir.ztapir.*
 
   // Jobgun Imports:
-  import com.jobgun.domain.requests.JobSearchRequest
-  import com.jobgun.domain.responses.JobSearchResponse
+  import com.jobgun.shared.domain.requests.JobSearchRequest
+  import com.jobgun.shared.domain.responses.JobSearchResponse
 
   private val baseEndpoint =
     endpoint.in("api").in("v1").in("jobs")

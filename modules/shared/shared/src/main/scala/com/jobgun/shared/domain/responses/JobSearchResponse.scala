@@ -1,6 +1,6 @@
-package com.jobgun.domain.responses
+package com.jobgun.shared.domain.responses
 
-import com.jobgun.domain.JobListing
+import com.jobgun.shared.domain.JobListing
 
 final case class JobSearchResponse private (listings: List[JobListing])
 

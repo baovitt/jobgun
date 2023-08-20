@@ -1,4 +1,4 @@
-package com.jobgun.domain.requests
+package com.jobgun.shared.domain.requests
 
 final case class JobSearchRequest(page: Int, pageSize: Int, embedding: List[Double])
 

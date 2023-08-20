@@ -1,7 +1,11 @@
 package com.jobgun.domain
 
+// ZIO Imports:
 import zio.json.{JsonDecoder, DeriveJsonDecoder, jsonField}
 import zio.Chunk
+
+// Jobgun Imports:
+import com.jobgun.shared.domain.JobListing
 
 final case class JobListings private (
     @jsonField("JobListing") jobListings: Chunk[JobListing]
