@@ -14,7 +14,7 @@ import com.linecorp.armeria.server.Server
 import zio.ZIO
 
 trait Application:
-  val server =
+  val server = (port: Short) =>
     for
       embeddingController <- ZIO.service[EmbeddingController]
       jobController <- ZIO.service[JobController]
@@ -22,7 +22,7 @@ trait Application:
         embeddingController.services ++ jobController.services
     yield Server
       .builder()
-      .http(8080)
+      .http(port)
       .services(services)
       .service(OpenApiDocsController.docService)
       .build()

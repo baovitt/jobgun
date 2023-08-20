@@ -20,12 +20,14 @@ object Main extends ZIOAppDefault with Application:
     JobController.default,
     Embeddings.default,
     Completions.default,
+    HttpConfig.live,
     ZLayer.Debug.tree
   )
 
   val logic = ZIO.scoped {
     for
-      server <- server.map(server =>
+      config <- ZIO.service[HttpConfig]
+      server <- server(config.port.toShort).map(server =>
         ZIO.fromCompletableFuture(server.start().thenApply[Server](_ => server))
       )
       _ <- ZIO.scoped {
