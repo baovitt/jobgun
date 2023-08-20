@@ -16,8 +16,8 @@ import com.jobgun.domain.{WeaviateSearchResponse, JobListing}
 import com.jobgun.config.WeaviateConfig
 
 trait WeaviateSearchModel:
-  def searchJobs[CC <: Iterable[Double]](
-      userEmbedding: CC
+  def searchJobs(
+      userEmbedding: Iterable[Double]
   ): IO[WeaviateSearchModel.WeaviateClientException, Chunk[JobListing]]
 end WeaviateSearchModel
 
@@ -34,8 +34,8 @@ object WeaviateSearchModel:
   val default = defaultClient >>> ZLayer {
     for client <- ZIO.service[WeaviateClient]
     yield new WeaviateSearchModel:
-      def searchJobs[CC <: Iterable[Double]](
-          userEmbedding: CC
+      def searchJobs(
+          userEmbedding: Iterable[Double]
       ): IO[WeaviateClientException, Chunk[JobListing]] =
         val request =
           client.graphQL.get
@@ -77,7 +77,7 @@ object WeaviateSearchModel:
           .map(_.jobListings)
   }
 
-  def searchJobs[CC <: Iterable[Double]](userEmbedding: CC) =
+  def searchJobs(userEmbedding: Iterable[Double]) =
     ZIO.serviceWithZIO[WeaviateSearchModel](
       _.searchJobs(userEmbedding)
     )

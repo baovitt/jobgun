@@ -6,7 +6,7 @@ import com.jobgun.controller.{
   EmbeddingController,
   OpenApiDocsController
 }
-import com.jobgun.extensions.ArmeriaServerExtensions.services
+import com.jobgun.utils.extensions.ArmeriaServerExtensions.services
 
 // Armeria Imports:
 import com.linecorp.armeria.server.Server
