@@ -1,7 +1,7 @@
 package com.jobgun.controller
 
 // Jobgun Imports:
-import com.jobgun.routes.{JobRoutes, EmbeddingRoutes}
+import com.jobgun.shared.domain.routes.{JobRoutes, EmbeddingRoutes}
 
 // STTP Imports:
 import sttp.tapir.docs.openapi.OpenAPIDocsInterpreter

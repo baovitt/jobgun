@@ -2,7 +2,7 @@ import sbt._
 import org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._
 
 object Dependencies {
-  lazy val tapirVersion = "1.0.2"
+  lazy val tapirVersion = "1.7.2"
   lazy val ZIOConfigVersion = "3.0.1"
 
   object backend {

@@ -7,7 +7,7 @@ import zio.json.*
 // Jobgun Imports:
 import com.jobgun.shared.domain.requests.EmbedUserRequest
 import com.jobgun.shared.domain.responses.EmbedUserResponse
-import com.jobgun.routes.EmbeddingRoutes.embedUserRoute
+import com.jobgun.shared.domain.routes.EmbeddingRoutes.embedUserRoute
 import com.jobgun.model.{EmbeddingModel, CompletionModel}
 import com.jobgun.utils.LRUCache
 
@@ -28,15 +28,18 @@ final class EmbeddingController(
     embedUserRoute
       .zServerLogic[Any] { (req: EmbedUserRequest) =>
         (
-          cache.get(req).catchAll(_ =>
-            for
-              parsedUser <- completionModel.parseUser(req.resume)
-              embeddedUser <- embeddingModel.embedUser(parsedUser.toJson)
-              response = EmbedUserResponse.fromEmbedding(embeddedUser)
-              _ <- cache.put(req, response)
-            yield response
+          cache
+            .get(req)
+            .catchAll(_ =>
+              for
+                parsedUser <- completionModel.parseUser(req.resume)
+                embeddedUser <- embeddingModel.embedUser(parsedUser.toJson)
+                response = EmbedUserResponse.fromEmbedding(embeddedUser)
+                _ <- cache.put(req, response)
+              yield response
+            )
           )
-        ).mapError(_ => StatusCode.InternalServerError)
+          .mapError(_ => StatusCode.InternalServerError)
       }
 
   val services = List(

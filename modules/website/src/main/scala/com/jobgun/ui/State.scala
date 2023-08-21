@@ -10,7 +10,7 @@ import org.scalajs.dom.File
 import frontroute.*
 
 object State:
-  val root = 
+  val root =
     div(
       initRouting,
       pathEnd {
@@ -26,11 +26,14 @@ object State:
         NewsletterPage()
       },
       noneMatched {
-        ErrorPage(404, "Please check the URL in the address bar and try again. We can't find the page you requested.")
+        ErrorPage(
+          404,
+          "Please check the URL in the address bar and try again. We can't find the page you requested."
+        )
       }
     )
 
-  lazy val appEventBus: EventBus[Event.RoutingEvent] = 
+  lazy val appEventBus: EventBus[Event.RoutingEvent] =
     new EventBus[Event.RoutingEvent]
 
   lazy val resumeSignal: Var[Option[File]] = Var(None)

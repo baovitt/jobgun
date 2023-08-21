@@ -1,4 +1,4 @@
-package com.jobgun.routes
+package com.jobgun.shared.domain.routes
 
 object EmbeddingRoutes:
 

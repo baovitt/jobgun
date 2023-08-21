@@ -6,7 +6,7 @@ import zio.*
 // Jobgun Imports:
 import com.jobgun.shared.domain.requests.JobSearchRequest
 import com.jobgun.shared.domain.responses.JobSearchResponse
-import com.jobgun.routes.JobRoutes.jobSearchRoute
+import com.jobgun.shared.domain.routes.JobRoutes.jobSearchRoute
 import com.jobgun.model.WeaviateSearchModel
 import com.jobgun.utils.LRUCache
 
@@ -17,8 +17,8 @@ import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
 
 final class JobController(
-  weaviateSearchModel: WeaviateSearchModel,
-  cache: LRUCache[JobSearchRequest, JobSearchResponse]
+    weaviateSearchModel: WeaviateSearchModel,
+    cache: LRUCache[JobSearchRequest, JobSearchResponse]
 ):
 
   given zio.Runtime[Any] = zio.Runtime.default
@@ -26,13 +26,17 @@ final class JobController(
   val jobSearchHandler =
     jobSearchRoute
       .zServerLogic[Any] { (req: JobSearchRequest) =>
-        cache.get(req).catchAll(_ =>
-          for
-            jobs <- weaviateSearchModel.searchJobs(req.page, req.pageSize, req.embedding)
-            response = JobSearchResponse.fromJobs(jobs)
-            _ <- cache.put(req, response)
-          yield response
-        ).mapError(_ => StatusCode.InternalServerError)
+        cache
+          .get(req)
+          .catchAll(_ =>
+            for
+              jobs <- weaviateSearchModel
+                .searchJobs(req.page, req.pageSize, req.embedding)
+              response = JobSearchResponse.fromJobs(jobs)
+              _ <- cache.put(req, response)
+            yield response
+          )
+          .mapError(_ => StatusCode.InternalServerError)
       }
 
   val services = List(
@@ -42,8 +46,8 @@ end JobController
 
 object JobController:
   val default = (WeaviateSearchModel.default ++ LRUCache
-      .layer[JobSearchRequest, JobSearchResponse](1000)) >>> ZLayer {
-    for 
+    .layer[JobSearchRequest, JobSearchResponse](1000)) >>> ZLayer {
+    for
       searchModel <- ZIO.service[WeaviateSearchModel]
       cache <- ZIO.service[LRUCache[JobSearchRequest, JobSearchResponse]]
     yield new JobController(searchModel, cache)

@@ -84,9 +84,9 @@ object WeaviateSearchModel:
   }
 
   def searchJobs(
-    page: Int,
-    pageSize: Int,
-    userEmbedding: Iterable[Double]
+      page: Int,
+      pageSize: Int,
+      userEmbedding: Iterable[Double]
   ) =
     ZIO.serviceWithZIO[WeaviateSearchModel](
       _.searchJobs(page, pageSize, userEmbedding)
