@@ -11,7 +11,16 @@ lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared
     name := "jobgun",
     libraryDependencies ++= Seq(
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
-      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion
+      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion,
+      "com.softwaremill.sttp.tapir" %%% "tapir-zio" % tapirVersion,
+      "com.softwaremill.sttp.tapir" %% "tapir-zio" % tapirVersion
+    )
+  )
+  .jsSettings(
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp.client3" %%% "zio" % "3.9.0",
+      "com.softwaremill.sttp.tapir" %%% "tapir-sttp-client" % tapirVersion,
+      "io.github.cquiroz" %%% "scala-java-time" % "2.5.0-M2"
     )
   )
 
@@ -36,6 +45,7 @@ lazy val frontend = project
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.raquo" %%% "laminar" % "16.0.0",
       "io.frontroute" %%% "frontroute" % "0.18.0",
+      "com.softwaremill.sttp.client4" %%% "zio" % "4.0.0-M4"
     )
   )
   .dependsOn(shared.js)
@@ -49,9 +59,8 @@ lazy val website = project
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.raquo" %%% "laminar" % "16.0.0",
       "io.frontroute" %%% "frontroute" % "0.18.0",
-    )
-  )
-  .settings(
+      "com.softwaremill.sttp.client4" %%% "zio" % "4.0.0-M4"
+    ),
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
     scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
     scalaJSLinkerConfig ~= { _.withSourceMap(false) },

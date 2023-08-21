@@ -1,6 +1,10 @@
 package com.jobgun.shared.domain.requests
 
-final case class JobSearchRequest(page: Int, pageSize: Int, embedding: List[Double])
+final case class JobSearchRequest(
+    page: Int,
+    pageSize: Int,
+    embedding: List[Double]
+)
 
 object JobSearchRequest:
   import sttp.tapir.Schema

@@ -75,7 +75,9 @@ object FrontNavbar:
                   cls := "px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600",
                   "GET STARTED"
                 ).amend(
-                  cls.toggle("line-through") <-- path.map(_.mkString("") == "get-started")
+                  cls.toggle("line-through") <-- path.map(
+                    _.mkString("") == "get-started"
+                  )
                 )
               }
             ),
@@ -86,7 +88,9 @@ object FrontNavbar:
                   cls := "px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600",
                   "ABOUT"
                 ).amend(
-                  cls.toggle("line-through") <-- path.map(_.mkString("") == "about")
+                  cls.toggle("line-through") <-- path.map(
+                    _.mkString("") == "about"
+                  )
                 )
               }
             ),
@@ -97,7 +101,9 @@ object FrontNavbar:
                   cls := "px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600",
                   "NEWSLETTER"
                 ).amend(
-                  cls.toggle("line-through") <-- path.map(_.mkString("") == "newsletter")
+                  cls.toggle("line-through") <-- path.map(
+                    _.mkString("") == "newsletter"
+                  )
                 )
               }
             )
