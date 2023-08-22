@@ -25,6 +25,9 @@ object State:
       path("newsletter") {
         NewsletterPage()
       },
+      path("jobs") {
+        JobsPage()
+      },
       noneMatched {
         ErrorPage(
           404,

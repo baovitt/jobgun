@@ -30,7 +30,10 @@ lazy val backend = (project in file("modules/backend"))
     libraryDependencies ++= Seq(
       Dependencies.backend.zioDeps ++
       Dependencies.backend.tapirDeps ++ 
-      Dependencies.backend.weaviateDeps
+      Dependencies.backend.weaviateDeps ++
+      List(
+        "org.apache.pdfbox" % "preflight" % "3.0.0"
+      )
     ).flatten,
     fork := true
   )
