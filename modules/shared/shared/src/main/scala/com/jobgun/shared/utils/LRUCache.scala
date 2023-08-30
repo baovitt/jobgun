@@ -1,4 +1,4 @@
-package com.jobgun.utils
+package com.jobgun.shared.utils
 
 import zio.{IO, ZIO, UIO, ZLayer, ULayer, Tag}
 import zio.stm.{STM, USTM, TMap, TRef}
@@ -140,4 +140,16 @@ object LRUCache:
           new IllegalArgumentException("Capacity must be a positive number!")
         )
     }
+
+  def apply[K: Tag, V: Tag](capacity: Int): IO[Nothing, LRUCache[K, V]] =
+    if (capacity > 0)
+      (for
+        itemsRef <- TMap.empty[K, CacheItem[K, V]]
+        startRef <- TRef.make(Option.empty[K])
+        endRef <- TRef.make(Option.empty[K])
+      yield new LRUCache[K, V](capacity, itemsRef, startRef, endRef)).commit
+    else
+      ZIO.die(
+        new IllegalArgumentException("Capacity must be a positive number!")
+      )
 end LRUCache

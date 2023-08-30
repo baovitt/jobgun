@@ -32,7 +32,8 @@ lazy val backend = (project in file("modules/backend"))
       Dependencies.backend.tapirDeps ++ 
       Dependencies.backend.weaviateDeps ++
       List(
-        "org.apache.pdfbox" % "preflight" % "3.0.0"
+        "org.apache.pdfbox" % "preflight" % "3.0.0",
+        "org.apache.poi" % "poi-ooxml" % "5.2.3"
       )
     ).flatten,
     fork := true

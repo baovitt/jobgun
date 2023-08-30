@@ -1,29 +1,28 @@
 package com.jobgun
 
 // Jobgun Imports:
-import com.jobgun.controller.{
-  JobController,
-  EmbeddingController,
-  OpenApiDocsController
-}
+import com.jobgun.controller.{JobController, OpenApiDocsController}
 import com.jobgun.utils.extensions.ArmeriaServerExtensions.services
 
 // Armeria Imports:
 import com.linecorp.armeria.server.Server
 
+// Java Imports:
+import java.time.Duration
+
+// ZIO Imports
 import zio.ZIO
 
 trait Application:
   val server =
     for
-      embeddingController <- ZIO.service[EmbeddingController]
       jobController <- ZIO.service[JobController]
-      services =
-        embeddingController.services ++ jobController.services
+      services = jobController.services
     yield Server
       .builder()
       .http(8080)
       .services(services)
       .service(OpenApiDocsController.docService)
+      .requestTimeout(Duration.ofSeconds(30))
       .build()
 end Application
