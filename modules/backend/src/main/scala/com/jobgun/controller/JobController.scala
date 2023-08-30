@@ -2,54 +2,122 @@ package com.jobgun.controller
 
 // ZIO Imports:
 import zio.*
+import zio.json.*
 
 // Jobgun Imports:
-import com.jobgun.shared.domain.requests.JobSearchRequest
-import com.jobgun.shared.domain.responses.JobSearchResponse
-import com.jobgun.shared.domain.routes.JobRoutes.jobSearchRoute
-import com.jobgun.model.WeaviateSearchModel
-import com.jobgun.utils.LRUCache
+
+import com.jobgun.shared.model.api.JobsApi
+import com.jobgun.shared.domain.requests.JobRequest
+import com.jobgun.shared.domain.responses.JobResponse
+import com.jobgun.shared.utils.LRUCache
+import com.jobgun.shared.domain.routes.JobRoutes.{
+  jobSearchWithEmbeddingRoute,
+  jobSearchWithResumeRoute
+}
+
+import com.jobgun.model.{
+  WeaviateSearchModel,
+  ResumeParserModel,
+  EmbeddingModel,
+  CompletionModel
+}
 
 // STTP Imports:
+
 import sttp.model.StatusCode
+
 import sttp.tapir.swagger.SwaggerUI
 import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
 
 final class JobController(
     weaviateSearchModel: WeaviateSearchModel,
-    cache: LRUCache[JobSearchRequest, JobSearchResponse]
-):
+    embeddingModel: EmbeddingModel,
+    completionModel: CompletionModel,
+    embeddingRequestCache: LRUCache[
+      JobRequest.JobSearchWithEmbeddingRequest,
+      JobResponse.JobSearchFromEmbeddingResponse
+    ]
+) extends JobsApi:
 
   given zio.Runtime[Any] = zio.Runtime.default
 
-  val jobSearchHandler =
-    jobSearchRoute
-      .zServerLogic[Any] { (req: JobSearchRequest) =>
-        cache
-          .get(req)
-          .catchAll(_ =>
-            for
-              jobs <- weaviateSearchModel
-                .searchJobs(req.page, req.pageSize, req.embedding)
-              response = JobSearchResponse.fromJobs(jobs)
-              _ <- cache.put(req, response)
-            yield response
-          )
-          .mapError(_ => StatusCode.InternalServerError)
-      }
+  override def searchJobsWithEmbedding(
+      request: JobRequest.JobSearchWithEmbeddingRequest
+  ): IO[StatusCode, JobResponse.JobSearchFromEmbeddingResponse] =
+    embeddingRequestCache
+      .get(request)
+      .catchAll(_ =>
+        for
+          jobs <- weaviateSearchModel
+            .searchJobs(request.page, request.pageSize, request.embedding)
+          response = JobResponse.JobSearchFromEmbeddingResponse(jobs)
+          _ <- embeddingRequestCache.put(request, response)
+        yield response
+      )
+      .mapError(_ => StatusCode.InternalServerError)
+
+  override def searchJobsWithResume(
+      request: JobRequest.JobSearchWithResumeRequest
+  ): IO[StatusCode, JobResponse.JobSearchFromResumeResponse] = {
+    val resumeFileType: Option["pdf" | "docx"] =
+      request.file.fileName.flatMap(
+        _.split('.').last match
+          case "pdf"  => Some("pdf")
+          case "docx" => Some("docx")
+          case _      => None
+      )
+
+    for
+      parsedFile <- resumeFileType match
+        case Some("pdf")  => ResumeParserModel.parsePDF(request.file.body)
+        case Some("docx") => ResumeParserModel.parseWord(request.file.body)
+        case _            => ZIO.fail(Throwable("Invalid file type"))
+      parsedUser <- completionModel.parseUser(parsedFile)
+      embeddedUser <- embeddingModel.embedUser(parsedUser.toJson)
+      jobs <- weaviateSearchModel
+        .searchJobs(0, 25, embeddedUser)
+      response = JobResponse.JobSearchFromResumeResponse(jobs, embeddedUser)
+    yield response
+  }.mapError(_ => StatusCode.InternalServerError)
+
+  val jobSearchWithEmbeddingHandler =
+    jobSearchWithEmbeddingRoute
+      .zServerLogic[Any] { searchJobsWithEmbedding }
+
+  val jobSearchWithResumeHandler =
+    jobSearchWithResumeRoute
+      .zServerLogic[Any] { searchJobsWithResume }
 
   val services = List(
-    jobSearchHandler
+    jobSearchWithEmbeddingHandler,
+    jobSearchWithResumeHandler
   ).map(ArmeriaZioServerInterpreter().toService)
 end JobController
 
 object JobController:
-  val default = (WeaviateSearchModel.default ++ LRUCache
-    .layer[JobSearchRequest, JobSearchResponse](1000)) >>> ZLayer {
+  val default = (
+    WeaviateSearchModel.default ++
+      EmbeddingModel.default ++
+      CompletionModel.default ++
+      LRUCache.layer[
+        JobRequest.JobSearchWithEmbeddingRequest,
+        JobResponse.JobSearchFromEmbeddingResponse
+      ](1000)
+  ) >>> ZLayer {
     for
       searchModel <- ZIO.service[WeaviateSearchModel]
-      cache <- ZIO.service[LRUCache[JobSearchRequest, JobSearchResponse]]
-    yield new JobController(searchModel, cache)
+      embeddingModel <- ZIO.service[EmbeddingModel]
+      completionModel <- ZIO.service[CompletionModel]
+      embeddingRequestCache <- ZIO.service[LRUCache[
+        JobRequest.JobSearchWithEmbeddingRequest,
+        JobResponse.JobSearchFromEmbeddingResponse
+      ]]
+    yield new JobController(
+      searchModel,
+      embeddingModel,
+      completionModel,
+      embeddingRequestCache,
+    )
   }
 end JobController

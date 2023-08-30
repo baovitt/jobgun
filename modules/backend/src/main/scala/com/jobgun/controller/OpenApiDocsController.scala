@@ -1,7 +1,7 @@
 package com.jobgun.controller
 
 // Jobgun Imports:
-import com.jobgun.shared.domain.routes.{JobRoutes, EmbeddingRoutes}
+import com.jobgun.shared.domain.routes.{JobRoutes}
 
 // STTP Imports:
 import sttp.tapir.docs.openapi.OpenAPIDocsInterpreter
@@ -12,7 +12,7 @@ import sttp.apispec.openapi.circe.yaml.*
 object OpenApiDocsController:
   given zio.Runtime[Any] = zio.Runtime.default
 
-  private val endpoints = JobRoutes.endpoints ++ EmbeddingRoutes.endpoints
+  private val endpoints = JobRoutes.endpoints
 
   val docs =
     OpenAPIDocsInterpreter().toOpenAPI(endpoints, "Jobgun", "0.1.0")
