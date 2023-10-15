@@ -6,7 +6,6 @@ import zio.json.*
 
 // Jobgun Imports:
 
-import com.jobgun.shared.model.api.JobsApi
 import com.jobgun.shared.domain.requests.JobRequest
 import com.jobgun.shared.domain.responses.JobResponse
 import com.jobgun.shared.utils.LRUCache
@@ -38,7 +37,7 @@ final class JobController(
       JobRequest.JobSearchWithEmbeddingRequest,
       JobResponse.JobSearchFromEmbeddingResponse
     ]
-) extends JobsApi:
+):
 
   given zio.Runtime[Any] = zio.Runtime.default
 
@@ -61,7 +60,7 @@ final class JobController(
       request: JobRequest.JobSearchWithResumeRequest
   ): IO[StatusCode, JobResponse.JobSearchFromResumeResponse] = {
     val resumeFileType: Option["pdf" | "docx"] =
-      request.file.fileName.flatMap(
+      request.file.file.fileName.flatMap(
         _.split('.').last match
           case "pdf"  => Some("pdf")
           case "docx" => Some("docx")

@@ -3,11 +3,15 @@ package com.jobgun.ui.pages
 import com.raquo.laminar.api.L.*
 import com.jobgun.ui.components.{FileUploader, FrontNavbar}
 import com.jobgun.ui.components.tryfree.ResumeForm
-import org.scalajs.dom.File
+import com.jobgun.shared.domain.JobListing
+import sttp.tapir.TapirFile
 import frontroute.*
 
+import com.jobgun.ui.Event
+import com.jobgun.ui.domain.GlobalState
+
 object GetStartedFormPage:
-  def apply(resumeFile: Var[Option[File]]) =
+  def apply()(using eventBus: EventBus[Event], globalState: Signal[GlobalState]) =
     div(
       FrontNavbar(),
       div(
@@ -19,7 +23,7 @@ object GetStartedFormPage:
               cls := "mt-6 text-3xl font-medium text-black select-none",
               "Let's Find Your Next Opportunity"
             ),
-            ResumeForm(resumeFile)
+            ResumeForm()
           ),
           div(
             cls := "h-full mt-12 lg:mt-0 border-mercury-400 lg:pl-24 md:border-l md:pl-12",

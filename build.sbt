@@ -6,6 +6,8 @@ ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.jobgun"
 ThisBuild / organizationName := "jobgun"
 
+val commonSttpZioVersion = "3.9.0"
+
 lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared"))
   .settings(
     name := "jobgun",
@@ -20,14 +22,15 @@ lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared
     libraryDependencies ++= Seq(
       "com.softwaremill.sttp.client3" %%% "zio" % "3.9.0",
       "com.softwaremill.sttp.tapir" %%% "tapir-sttp-client" % tapirVersion,
-      "io.github.cquiroz" %%% "scala-java-time" % "2.5.0-M2"
+      "io.github.cquiroz" %%% "scala-java-time" % "2.5.0-M2",
+      "dev.zio" %%% "zio-json" % "0.6.2"
     )
   )
 
 lazy val backend = (project in file("modules/backend"))
   .settings(
     name := "jobgun",
-    libraryDependencies ++= Seq(
+    libraryDependencies ++= (
       Dependencies.backend.zioDeps ++
       Dependencies.backend.tapirDeps ++ 
       Dependencies.backend.weaviateDeps ++
@@ -35,7 +38,7 @@ lazy val backend = (project in file("modules/backend"))
         "org.apache.pdfbox" % "preflight" % "3.0.0",
         "org.apache.poi" % "poi-ooxml" % "5.2.3"
       )
-    ).flatten,
+    ),
     fork := true
   )
   .dependsOn(shared.jvm)
@@ -46,10 +49,12 @@ lazy val frontend = project
   .settings(
     name := "jobgun",
     libraryDependencies ++= Seq(
-      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.softwaremill.sttp.client3" %%% "zio" % commonSttpZioVersion,
       "com.raquo" %%% "laminar" % "16.0.0",
       "io.frontroute" %%% "frontroute" % "0.18.0",
-      "com.softwaremill.sttp.client4" %%% "zio" % "4.0.0-M4"
+      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.softwaremill.sttp.tapir" %%% "tapir-zio" % tapirVersion,
+      "dev.zio" %%% "zio-json" % "0.6.2"
     )
   )
   .dependsOn(shared.js)
@@ -60,10 +65,13 @@ lazy val website = project
   .settings(
     name := "jobgun",
     libraryDependencies ++= Seq(
-      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.raquo" %%% "laminar" % "16.0.0",
       "io.frontroute" %%% "frontroute" % "0.18.0",
-      "com.softwaremill.sttp.client4" %%% "zio" % "4.0.0-M4"
+      "com.softwaremill.sttp.client3" %%% "zio" % commonSttpZioVersion,
+      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
+      "com.softwaremill.sttp.tapir" %%% "tapir-zio" % tapirVersion,
+      "dev.zio" %%% "zio-interop-cats" % "23.0.03",
+      "dev.zio" %%% "zio-json" % "0.6.2"
     ),
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
     scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },

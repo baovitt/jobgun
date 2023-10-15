@@ -1,8 +1,8 @@
 package com.jobgun.shared.domain.requests
 
 import sttp.tapir.generic.auto.{*, given}
-import sttp.model.Part
-import java.io.File
+import sttp.tapir.TapirFile
+// import java.io.File
 
 sealed trait JobRequest
 
@@ -31,7 +31,7 @@ object JobRequest:
     end JobSearchWithEmbeddingRequest
 
     final case class JobSearchWithResumeRequest(
-        file: Part[File]
+        file: TapirFile
     ) extends JobRequest
 
     object JobSearchWithResumeRequest:

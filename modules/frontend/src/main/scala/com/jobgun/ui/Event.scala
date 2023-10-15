@@ -1,5 +1,9 @@
 package com.jobgun.ui
 
+import sttp.tapir.TapirFile
+
+import com.jobgun.shared.domain.responses.JobResponse
+
 sealed trait Event
 
 object Event:
@@ -41,9 +45,9 @@ object Event:
         extends FrontNavbarEvent
         with RoutingEvent(location = "/")
         with ClickEvent
-    case RouteTryFree
+    case RouteGetStarted
         extends FrontNavbarEvent
-        with RoutingEvent(location = "/try-free")
+        with RoutingEvent(location = "/get-started")
         with ClickEvent
     case RouteAbout
         extends FrontNavbarEvent
@@ -58,11 +62,30 @@ object Event:
   enum LandingPageEvent:
     case RouteGetStarted
         extends LandingPageEvent
-        with RoutingEvent(location = "/try-free")
+        with RoutingEvent(location = "/get-started")
         with ClickEvent
     case RouteLearnMore
         extends LandingPageEvent
         with RoutingEvent(location = "/about")
         with ClickEvent
   end LandingPageEvent
+
+  enum ResumeEvent extends Event:
+    // Resume is uploaded through the uploader
+    case AddResume(resume: TapirFile)
+        extends ResumeEvent
+        with InputEvent
+    // signal to start the loading animation and make the web request to the backend
+    case StartResumeRequest(resume: TapirFile)
+        extends ResumeEvent
+        with InputEvent
+    // signal to stop the loading animation and display the results
+    case UpdateEmbeddingFromResume(response: Either[String, JobResponse.JobSearchFromResumeResponse])
+        extends ResumeEvent
+        with RoutingEvent(location = "/jobs")
+    case RemoveResume
+        extends ResumeEvent
+        with RoutingEvent(location = "/get-started")
+        with ClickEvent
+  end ResumeEvent
 end Event

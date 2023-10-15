@@ -5,6 +5,9 @@ import org.scalajs.dom.{File, HTMLInputElement, DataTransferDropEffectKind}
 
 import frontroute.*
 
+import com.jobgun.ui.Event
+import com.jobgun.ui.domain.GlobalState
+
 object FileUploader:
 
   def noFileMessage(maxFileSize: Int, fileExtensions: String*) =
@@ -96,7 +99,7 @@ object FileUploader:
       )
     )
 
-  def fileUploadedMessage(resumeFile: Var[Option[File]]) =
+  def fileUploadedMessage =
     div(
       cls := "flex flex-col items-center justify-center pt-5 pb-6",
       svg.svg(
@@ -127,31 +130,30 @@ object FileUploader:
 
   def justifyMessage(
       maxFileSize: Int,
-      resumeFile: Var[Option[File]],
+      globalState: Signal[GlobalState],
       fileExtensions: String*
   ) =
-    resumeFile.signal.map {
-      case Some(file) =>
+    globalState.map {
+      case GlobalState(Some(file), _, _, _) =>
         if (file.size > maxFileSize * 1024 * 1024) fileSizeTooBigMessage
         else if (
           fileExtensions
             .map(e => s".${e.toLowerCase}")
             .forall(e => !file.name.endsWith(e))
         ) wrongFileTypeMessage("PDF", "WORD")
-        else fileUploadedMessage(resumeFile)
-      case None => noFileMessage(25, "PDF", "WORD")
+        else fileUploadedMessage
+      case GlobalState(None, _, _, _) => noFileMessage(25, "PDF", "WORD")
     }
 
   def apply(
-      resumeFile: Var[Option[File]],
       maxFileSize: Int,
       fileExtensions: String*
-  ) =
+  )(using eventBus: EventBus[Event], globalState: Signal[GlobalState]) =
     div(
       cls := "flex items-center justify-center w-full pr-5",
       label(
         cls := "flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600",
-        child <-- justifyMessage(maxFileSize, resumeFile, fileExtensions*),
+        child <-- justifyMessage(maxFileSize, globalState, fileExtensions*),
         input(
           `type` := "file",
           cls := "hidden",
@@ -162,7 +164,12 @@ object FileUploader:
             _.target match
               case fileInputElement: HTMLInputElement =>
                 if (fileInputElement.files.length == 0) ()
-                else resumeFile.set(Some(fileInputElement.files(0)))
+                else 
+                  eventBus.emit(
+                    Event.ResumeEvent.AddResume(
+                      fileInputElement.files(0)
+                    )
+                  )
               case e => println(s"Unexpected event target: ${e}")
           )
         )
