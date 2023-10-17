@@ -72,7 +72,6 @@ object FileUploader:
   def fileSizeTooBigMessage =
     div(
       cls := "flex flex-col items-center justify-center pt-5 pb-6",
-      // svg of a complex bloated cartoonish file
       svg.svg(
         svg.cls := "w-10 h-10 mb-3 text-red-400",
         svg.fill := "none",

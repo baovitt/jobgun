@@ -1,4 +1,4 @@
-package com.jobgun.shared.domain.routes
+package com.jobgun.domain
 
 object JobRoutes:
 
@@ -8,15 +8,19 @@ object JobRoutes:
 
   // Jobgun Imports:
   import com.jobgun.shared.domain.requests.JobRequest
-  import com.jobgun.shared.domain.responses.JobResponse
+  import com.jobgun.shared.domain.responses.JobResponse.*
+  import com.jobgun.domain.requests.JobSearchWithResumeRequest
+
+  // Java Imports:
+  import java.io.File
 
   private val baseEndpoint =
     endpoint.in("api").in("v1").in("jobs")
 
   val jobSearchWithResumeRoute =
     baseEndpoint.post.in("resume")
-      .in(multipartBody[JobRequest.JobSearchWithResumeRequest])
-      .out(jsonBody[JobResponse.JobSearchFromResumeResponse])
+      .in(multipartBody[JobSearchWithResumeRequest])
+      .out(jsonBody[JobSearchFromResumeResponse])
       .errorOut(statusCode)
       .description("Searches jobs given a user's resume.")
       .name("searchJobs")
@@ -24,7 +28,7 @@ object JobRoutes:
   val jobSearchWithEmbeddingRoute =
     baseEndpoint.post.in("embedding")
       .in(jsonBody[JobRequest.JobSearchWithEmbeddingRequest])
-      .out(jsonBody[JobResponse.JobSearchFromEmbeddingResponse])
+      .out(jsonBody[JobSearchFromEmbeddingResponse])
       .errorOut(statusCode)
       .description("Searches jobs given a user's resume embedding.")
       .name("searchJobs")

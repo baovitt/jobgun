@@ -24,7 +24,7 @@ object LandingPage:
             ),
             p(
               cls := "max-w-xl mx-auto mt-4 text-lg tracking-tight text-gray-600",
-              "Search jobs with your resume"
+              "Search jobs faster with your resume"
             )
           ),
           div(

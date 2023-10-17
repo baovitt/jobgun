@@ -1,10 +1,9 @@
 package com.jobgun.shared.domain.requests
 
 import sttp.tapir.generic.auto.{*, given}
-import sttp.tapir.TapirFile
-// import java.io.File
+import sttp.model.Part
 
-sealed trait JobRequest
+trait JobRequest
 
 object JobRequest: 
 
@@ -29,15 +28,5 @@ object JobRequest:
         given JsonEncoder[JobSearchWithEmbeddingRequest] = DeriveJsonEncoder.gen
 
     end JobSearchWithEmbeddingRequest
-
-    final case class JobSearchWithResumeRequest(
-        file: TapirFile
-    ) extends JobRequest
-
-    object JobSearchWithResumeRequest:
-        import sttp.tapir.Schema
-
-        given Schema[JobSearchWithResumeRequest] = Schema.derived
-    end JobSearchWithResumeRequest
 
 end JobRequest

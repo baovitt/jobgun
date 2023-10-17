@@ -6,10 +6,11 @@ import zio.json.*
 
 // Jobgun Imports:
 
+import com.jobgun.domain.requests.JobSearchWithResumeRequest
 import com.jobgun.shared.domain.requests.JobRequest
 import com.jobgun.shared.domain.responses.JobResponse
 import com.jobgun.shared.utils.LRUCache
-import com.jobgun.shared.domain.routes.JobRoutes.{
+import com.jobgun.domain.JobRoutes.{
   jobSearchWithEmbeddingRoute,
   jobSearchWithResumeRoute
 }
@@ -29,6 +30,8 @@ import sttp.tapir.swagger.SwaggerUI
 import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
 
+import java.io.File
+
 final class JobController(
     weaviateSearchModel: WeaviateSearchModel,
     embeddingModel: EmbeddingModel,
@@ -41,7 +44,7 @@ final class JobController(
 
   given zio.Runtime[Any] = zio.Runtime.default
 
-  override def searchJobsWithEmbedding(
+  def searchJobsWithEmbedding(
       request: JobRequest.JobSearchWithEmbeddingRequest
   ): IO[StatusCode, JobResponse.JobSearchFromEmbeddingResponse] =
     embeddingRequestCache
@@ -56,11 +59,11 @@ final class JobController(
       )
       .mapError(_ => StatusCode.InternalServerError)
 
-  override def searchJobsWithResume(
-      request: JobRequest.JobSearchWithResumeRequest
+  def searchJobsWithResume(
+      request: JobSearchWithResumeRequest
   ): IO[StatusCode, JobResponse.JobSearchFromResumeResponse] = {
     val resumeFileType: Option["pdf" | "docx"] =
-      request.file.file.fileName.flatMap(
+      request.file.fileName.flatMap(
         _.split('.').last match
           case "pdf"  => Some("pdf")
           case "docx" => Some("docx")
@@ -71,7 +74,7 @@ final class JobController(
       parsedFile <- resumeFileType match
         case Some("pdf")  => ResumeParserModel.parsePDF(request.file.body)
         case Some("docx") => ResumeParserModel.parseWord(request.file.body)
-        case _            => ZIO.fail(Throwable("Invalid file type"))
+        case _            => ZIO.fail(StatusCode.InternalServerError)
       parsedUser <- completionModel.parseUser(parsedFile)
       embeddedUser <- embeddingModel.embedUser(parsedUser.toJson)
       jobs <- weaviateSearchModel

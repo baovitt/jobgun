@@ -1,6 +1,6 @@
 package com.jobgun.ui
 
-import sttp.tapir.TapirFile
+import org.scalajs.dom.File
 
 import com.jobgun.shared.domain.responses.JobResponse
 
@@ -72,11 +72,11 @@ object Event:
 
   enum ResumeEvent extends Event:
     // Resume is uploaded through the uploader
-    case AddResume(resume: TapirFile)
+    case AddResume(resume: File)
         extends ResumeEvent
         with InputEvent
     // signal to start the loading animation and make the web request to the backend
-    case StartResumeRequest(resume: TapirFile)
+    case StartResumeRequest()
         extends ResumeEvent
         with InputEvent
     // signal to stop the loading animation and display the results

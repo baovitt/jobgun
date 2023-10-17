@@ -3,7 +3,7 @@ package com.jobgun.ui
 import com.raquo.laminar.api.L._
 import frontroute.*
 import com.jobgun.ui.pages.*
-import State.given
+import State.{given, *}
 
 object Routes:
   val root =

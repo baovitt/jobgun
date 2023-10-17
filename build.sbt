@@ -54,7 +54,8 @@ lazy val frontend = project
       "io.frontroute" %%% "frontroute" % "0.18.0",
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.softwaremill.sttp.tapir" %%% "tapir-zio" % tapirVersion,
-      "dev.zio" %%% "zio-json" % "0.6.2"
+      "dev.zio" %%% "zio-json" % "0.6.2",
+      "io.laminext" %%% "fetch" % "0.15.0"
     )
   )
   .dependsOn(shared.js)
@@ -71,7 +72,8 @@ lazy val website = project
       "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
       "com.softwaremill.sttp.tapir" %%% "tapir-zio" % tapirVersion,
       "dev.zio" %%% "zio-interop-cats" % "23.0.03",
-      "dev.zio" %%% "zio-json" % "0.6.2"
+      "dev.zio" %%% "zio-json" % "0.6.2",
+      "io.laminext" %%% "fetch" % "0.15.0"
     ),
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
     scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
