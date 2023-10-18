@@ -72,17 +72,13 @@ object Event:
 
   enum ResumeEvent extends Event:
     // Resume is uploaded through the uploader
-    case AddResume(resume: File)
-        extends ResumeEvent
-        with InputEvent
+    case AddResume(resume: File) extends ResumeEvent with InputEvent
     // signal to start the loading animation and make the web request to the backend
-    case StartResumeRequest()
-        extends ResumeEvent
-        with InputEvent
+    case StartResumeRequest() extends ResumeEvent with InputEvent
     // signal to stop the loading animation and display the results
-    case UpdateEmbeddingFromResume(response: Either[String, JobResponse.JobSearchFromResumeResponse])
-        extends ResumeEvent
-        with RoutingEvent(location = "/jobs")
+    case UpdateEmbeddingFromResume(
+        response: Either[String, JobResponse.JobSearchFromResumeResponse]
+    ) extends ResumeEvent with RoutingEvent(location = "/jobs")
     case RemoveResume
         extends ResumeEvent
         with RoutingEvent(location = "/get-started")

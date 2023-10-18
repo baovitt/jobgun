@@ -10,13 +10,11 @@ Within the modules folder, the application is divided into four components:
 
 The `shared` subproject is responsible for all the abstractions shared between the `backend` and `frontend`. As code that is shared between the `frontend` and `backend`, the `shared` subproject is representative of DRY (Don't Repeat Yourself) principles.
 
-This subproject contains primarily domain logic such as endpoint specifications and request/response classes.
-
-The `shared` subproject also contains common utilities for the `backend` and `frontend` subprojects, such as a custom high-performance implementation of a concurrent non-blocking LRU cache.
+The `shared` subproject contains common utilities for the `backend` and `frontend` subprojects, such as a high-performance implementation of a concurrent non-blocking LRU cache.
 
 ### Backend:
 
-The `backend` subproject contains the monolithic backend implementation of jobgun. The `backend` is divided into distinct controllers, which will make it easier to divide the backend into microservices down the road.
+The `backend` subproject contains the monolithic backend implementation of jobgun. The `backend` is divided into distinct controllers, which will make it easier to divide into microservices down the road.
 
 Additionally, the `backend` subproject exposes a Swagger UI (automatically generated from the typed endpoint specifications) so developers can quickly test new or updated endpoints.
 
@@ -30,4 +28,4 @@ The `frontend` subproject contains all frontend code at the page level or finer.
 
 The `website` subproject contains the server configuration, the frontend main function, and the routing and global state logic.
 
-In this folder is the frontend server started.
+In this folder is the frontend server started by running `yarn dev`.

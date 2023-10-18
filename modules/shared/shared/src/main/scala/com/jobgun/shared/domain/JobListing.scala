@@ -9,7 +9,7 @@ final case class JobListing private (
     @jsonField("employment_type") employmentType: String,
     location: String,
     url: String,
-    @jsonField("company_name") companyName: String,
+    @jsonField("company_name") companyName: String
 )
 
 object JobListing:

@@ -11,7 +11,7 @@ final case class JobSearchWithResumeRequest(
 ) extends JobRequest
 
 object JobSearchWithResumeRequest:
-    import sttp.tapir.Schema
+  import sttp.tapir.Schema
 
-    given Schema[JobSearchWithResumeRequest] = Schema.derived
+  given Schema[JobSearchWithResumeRequest] = Schema.derived
 end JobSearchWithResumeRequest

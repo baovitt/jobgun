@@ -6,7 +6,7 @@ import com.jobgun.ui.Event.{RoutingEvent, LandingPageEvent}
 import com.raquo.laminar.modifiers.RenderableNode
 
 import com.jobgun.ui.components.FrontNavbar
-import frontroute.*
+// import frontroute.*
 
 import com.raquo.laminar.nodes.TextNode
 

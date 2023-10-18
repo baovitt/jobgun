@@ -14,7 +14,6 @@ import com.jobgun.domain.JobRoutes.{
   jobSearchWithEmbeddingRoute,
   jobSearchWithResumeRoute
 }
-
 import com.jobgun.model.{
   WeaviateSearchModel,
   ResumeParserModel,
@@ -25,12 +24,9 @@ import com.jobgun.model.{
 // STTP Imports:
 
 import sttp.model.StatusCode
-
 import sttp.tapir.swagger.SwaggerUI
 import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
-
-import java.io.File
 
 final class JobController(
     weaviateSearchModel: WeaviateSearchModel,
@@ -77,8 +73,7 @@ final class JobController(
         case _            => ZIO.fail(StatusCode.InternalServerError)
       parsedUser <- completionModel.parseUser(parsedFile)
       embeddedUser <- embeddingModel.embedUser(parsedUser.toJson)
-      jobs <- weaviateSearchModel
-        .searchJobs(0, 25, embeddedUser)
+      jobs <- weaviateSearchModel.searchJobs(0, 25, embeddedUser)
       response = JobResponse.JobSearchFromResumeResponse(jobs, embeddedUser)
     yield response
   }.mapError(_ => StatusCode.InternalServerError)
@@ -119,7 +114,7 @@ object JobController:
       searchModel,
       embeddingModel,
       completionModel,
-      embeddingRequestCache,
+      embeddingRequestCache
     )
   }
 end JobController

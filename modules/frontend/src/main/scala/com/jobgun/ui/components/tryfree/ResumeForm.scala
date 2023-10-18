@@ -9,21 +9,26 @@ import com.jobgun.ui.Event
 import com.jobgun.ui.domain.GlobalState
 import org.scalajs.dom.File
 import zio.json.DecoderOps
-import frontroute.*
-import io.laminext.fetch.*
 import scala.concurrent.ExecutionContext.Implicits.global
 
 object ResumeForm:
 
-  private def fetchJobsFromResume(resume: File)(using eventBus: EventBus[Event]): EventStream[Event.ResumeEvent] = {
+  private def fetchJobsFromResume(
+      resume: File
+  )(using eventBus: EventBus[Event]): EventStream[Event.ResumeEvent] = {
     val encodeRequest = (r: JobSearchWithResumeRequest) => {
       val formData = new org.scalajs.dom.FormData()
-      formData.append("file", resume, "experienced-network-engineer-resume-example.pdf")
+      formData.append(
+        "file",
+        resume
+      )
       formData
     }
 
     val decodeResponse = (r: org.scalajs.dom.Response) =>
-      EventStream.fromJsPromise(r.text()).map(_.fromJson[JobSearchFromResumeResponse])
+      EventStream
+        .fromJsPromise(r.text())
+        .map(_.fromJson[JobSearchFromResumeResponse])
 
     FetchStream
       .withCodec(encodeRequest, decodeResponse)
@@ -31,15 +36,19 @@ object ResumeForm:
         "http://localhost:5000/api/v1/jobs/resume",
         _.headers("accept" -> "application/json"),
         _.body(JobSearchWithResumeRequest(resume))
-      ).map { response =>
-        println("response" + Event.ResumeEvent.UpdateEmbeddingFromResume(response).toString)
-        Event.ResumeEvent.UpdateEmbeddingFromResume(response)
-      }
+      )
+      .map(Event.ResumeEvent.UpdateEmbeddingFromResume.apply)
   }
 
-  def apply()(using eventBus: EventBus[Event], globalState: Signal[GlobalState]): HtmlElement =
+  def apply(hitNext: Var[Boolean])(using
+      eventBus: EventBus[Event],
+      globalState: Signal[GlobalState]
+  ): HtmlElement =
     div(
-      p(cls := "mt-5 text-base text-gray-500", "Upload your resume and we'll extract the information we need."),
+      p(
+        cls := "mt-5 text-base text-gray-500",
+        "Upload your resume and we'll extract the information we need."
+      ),
       br(),
       FileUploader(25, "PDF", "WORD"),
       div(
@@ -50,13 +59,16 @@ object ResumeForm:
             case _ =>
               "items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black"
           },
-          onClick
-            .preventDefault
-            .compose(_.withCurrentValueOf(globalState).collect {
-               case (ev, GlobalState(Some(resume), _, _, false)) => 
-                eventBus.emit(Event.ResumeEvent.StartResumeRequest())
-                fetchJobsFromResume(resume)
-            }.flatten) --> eventBus.writer,
+          onClick.preventDefault
+            .compose(
+              _.withCurrentValueOf(globalState)
+                .collect { case (ev, GlobalState(Some(resume), _, _, false)) =>
+                  hitNext.set(true)
+                  eventBus.emit(Event.ResumeEvent.StartResumeRequest())
+                  fetchJobsFromResume(resume)
+                }
+                .flatten
+            ) --> eventBus.writer,
           "Next"
         )
       )

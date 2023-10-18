@@ -5,7 +5,7 @@ import com.raquo.laminar.api.L.*
 import com.jobgun.ui.Event.{RoutingEvent, ErrorPageEvent}
 import com.raquo.laminar.modifiers.RenderableNode
 
-import frontroute.*
+// import frsontroute.*
 
 object ErrorPage:
 

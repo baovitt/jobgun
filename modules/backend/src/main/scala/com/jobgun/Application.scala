@@ -7,7 +7,6 @@ import com.jobgun.utils.extensions.ArmeriaServerExtensions.services
 // Armeria Imports:
 import com.linecorp.armeria.server.Server
 
-
 // Java Imports:
 import java.time.Duration
 
@@ -16,13 +15,11 @@ import zio.ZIO
 
 trait Application:
   val server =
-    for
-      jobController <- ZIO.service[JobController]
-      services = jobController.services
+    for jobController <- ZIO.service[JobController]
     yield Server
       .builder()
       .http(8080)
-      .services(services)
+      .services(jobController.services)
       .service(OpenApiDocsController.docService)
       .requestTimeout(Duration.ofSeconds(30))
       .build()

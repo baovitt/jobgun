@@ -7,6 +7,6 @@ final case class GlobalState(
     resume: Option[File],
     embedding: Option[List[Double]],
     jobListings: List[JobListing],
-    resumeRequestInFlight: Boolean = false,
+    resumeRequestInFlight: Boolean = false
     // seeJobs: Boolean = false
 )

@@ -75,7 +75,9 @@ object JobListing:
       div(
         cls := "lg:col-span-2",
         div(
-          cls <-- expanded.signal.map(e => if e then "" else "h-96 overflow-hidden"),
+          cls <-- expanded.signal.map(e =>
+            if e then "" else "h-96 overflow-hidden"
+          ),
           p(
             cls := "text-base text-gray-500",
             description.split("\n").flatMap(l => List(TextNode(l), br()))
@@ -85,8 +87,10 @@ object JobListing:
         div(
           cls := "underline",
           onClick --> (_ => expanded.update(!_)),
-          child.text <-- expanded.signal.map(e => if e then "See less" else "See more")
-        ),
+          child.text <-- expanded.signal.map(e =>
+            if e then "See less" else "See more"
+          )
+        )
       )
     )
 end JobListing

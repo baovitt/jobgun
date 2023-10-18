@@ -3,8 +3,6 @@ package com.jobgun.ui.components
 import com.raquo.laminar.api.L.*
 import org.scalajs.dom.{File, HTMLInputElement, DataTransferDropEffectKind}
 
-import frontroute.*
-
 import com.jobgun.ui.Event
 import com.jobgun.ui.domain.GlobalState
 
@@ -163,7 +161,7 @@ object FileUploader:
             _.target match
               case fileInputElement: HTMLInputElement =>
                 if (fileInputElement.files.length == 0) ()
-                else 
+                else
                   eventBus.emit(
                     Event.ResumeEvent.AddResume(
                       fileInputElement.files(0)

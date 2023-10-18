@@ -11,12 +11,9 @@ import com.linecorp.armeria.server.Server
 import com.jobgun.config.HttpConfig
 import com.jobgun.controller.{JobController}
 
-import sttp.tapir.ztapir.*
-
 object Main extends ZIOAppDefault with Application:
 
   def run = logic.provide(
-    // EmbeddingController.default,
     JobController.default,
     Embeddings.default,
     Completions.default,

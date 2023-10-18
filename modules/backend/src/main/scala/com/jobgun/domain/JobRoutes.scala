@@ -18,7 +18,8 @@ object JobRoutes:
     endpoint.in("api").in("v1").in("jobs")
 
   val jobSearchWithResumeRoute =
-    baseEndpoint.post.in("resume")
+    baseEndpoint.post
+      .in("resume")
       .in(multipartBody[JobSearchWithResumeRequest])
       .out(jsonBody[JobSearchFromResumeResponse])
       .errorOut(statusCode)
@@ -26,7 +27,8 @@ object JobRoutes:
       .name("searchJobs")
 
   val jobSearchWithEmbeddingRoute =
-    baseEndpoint.post.in("embedding")
+    baseEndpoint.post
+      .in("embedding")
       .in(jsonBody[JobRequest.JobSearchWithEmbeddingRequest])
       .out(jsonBody[JobSearchFromEmbeddingResponse])
       .errorOut(statusCode)

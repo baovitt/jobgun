@@ -22,22 +22,30 @@ object State:
 
   val changerBus: EventStream[GlobalState => GlobalState] =
     appEventBus.events.collect {
-      case Event.ResumeEvent.AddResume(resume) => (state: GlobalState) => 
-        println("AddResume")
-        state.copy(resume = Some(resume))
+      case Event.ResumeEvent.AddResume(resume) =>
+        (state: GlobalState) =>
+          println("AddResume")
+          state.copy(resume = Some(resume))
 
-      case Event.ResumeEvent.StartResumeRequest() => (state: GlobalState) => 
-        println("StartResumeRequest")
-        state.copy(resumeRequestInFlight = true)
+      case Event.ResumeEvent.StartResumeRequest() =>
+        (state: GlobalState) =>
+          println("StartResumeRequest")
+          state.copy(resumeRequestInFlight = true)
 
-      case Event.ResumeEvent.UpdateEmbeddingFromResume(Right(response)) => (state: GlobalState) =>
-        println("UpdateEmbeddingFromResume")
-        state.copy(embedding = Some(response.embedding), jobListings = response.listings, resumeRequestInFlight = false)
+      case Event.ResumeEvent.UpdateEmbeddingFromResume(Right(response)) =>
+        (state: GlobalState) =>
+          println("UpdateEmbeddingFromResume")
+          state.copy(
+            embedding = Some(response.embedding),
+            jobListings = response.listings,
+            resumeRequestInFlight = false
+          )
 
-      case e @ Event.ResumeEvent.UpdateEmbeddingFromResume(_) => (state: GlobalState) =>
-        println("failed to resolve event" + e.toString)
-        state
-        
+      case e @ Event.ResumeEvent.UpdateEmbeddingFromResume(_) =>
+        (state: GlobalState) =>
+          println("failed to resolve event" + e.toString)
+          state
+
       case Event.ResumeEvent.RemoveResume =>
         (state: GlobalState) => GlobalState(None, None, List.empty)
 

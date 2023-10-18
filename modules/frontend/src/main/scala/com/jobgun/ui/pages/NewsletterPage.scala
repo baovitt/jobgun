@@ -2,7 +2,7 @@ package com.jobgun.ui.pages
 
 import com.raquo.laminar.api.L.*
 import com.jobgun.ui.components.FrontNavbar
-import frontroute.*
+// import frontroute.*
 
 object NewsletterPage:
   def apply() =
