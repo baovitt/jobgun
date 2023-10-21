@@ -18,8 +18,17 @@ object GetStartedFormPage:
     val hitNext: Var[Boolean] = Var(false)
     div(
       FrontNavbar(),
+      child <-- globalState.combineWith(hitNext.signal).map {
+        case (GlobalState(_, _, jobListings, _), true) if jobListings.nonEmpty =>
+          JobsPage()
+        case _ => emptyNode
+      },
       div(
-        cls := "items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl",
+        cls <-- globalState.combineWith(hitNext.signal).map {
+          case (GlobalState(_, _, jobListings, _), true) if jobListings.nonEmpty => "hidden"
+          case _ =>
+            "items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl"
+        },
         div(
           cls := "grid items-start grid-cols-1 md:grid-cols-2",
           div(
@@ -27,13 +36,7 @@ object GetStartedFormPage:
               cls := "mt-6 text-3xl font-medium text-black select-none",
               "Let's Find Your Next Opportunity"
             ),
-            child <-- hitNext.signal.combineWith(globalState).map {
-              case (true, GlobalState(Some(_), _, jobListings, _)) if jobListings.nonEmpty =>
-                div(
-                  "Hit next"
-                )
-              case _ => ResumeForm(hitNext)
-            }
+            ResumeForm(hitNext)
             
           ),
           div(

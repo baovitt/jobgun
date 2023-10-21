@@ -14,7 +14,6 @@ object JobListing:
       description: String,
       percentMatch: Int,
       location: String,
-      compensation: String,
       employmentType: String,
       url: String
   ) =
@@ -49,15 +48,6 @@ object JobListing:
         br(),
         span(
           cls := "text-base text-gray-500",
-          "Compensation:"
-        ),
-        span(
-          cls := "text-base text-gray-500 font-bold",
-          compensation
-        ),
-        br(),
-        span(
-          cls := "text-base text-gray-500",
           "Employment Type:"
         ),
         span(
@@ -76,7 +66,7 @@ object JobListing:
         cls := "lg:col-span-2",
         div(
           cls <-- expanded.signal.map(e =>
-            if e then "" else "h-96 overflow-hidden"
+            if e then "" else "h-64 overflow-hidden"
           ),
           p(
             cls := "text-base text-gray-500",
