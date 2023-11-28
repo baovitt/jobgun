@@ -1,0 +1,39 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+klier-9a77711 (LinkedIn)
+www.google.com/intl/en/about/
+(Company)
+Top Skills
+Computer Science
+Big Data
+Distributed Systems
+Languages
+English (Full Professional)
+German (Native or Bilingual)
+Wolfgang Klier
+Senior Software Engineer at Google
+New York, New York, United States
+Experience
+Google
+16 years 9 months
+Senior Software Engineer
+January 2013 - Present (10 years 11 months)
+Working in Storage Infrastructure on Google wide storage systems, leading
+small team.
+Planet-scale distributed systems, high reliability, high resiliency.
+Senior Software Engineer
+May 2011 - December 2012 (1 year 8 months)
+Tech Lead on Google Finance: http://www.google.com/finance
+Large-scale distributed infrastructure development, web technologies, team
+lead.
+Software Engineer
+March 2007 - May 2011 (4 years 3 months)
+Working on Google Finance. Redesigned data ingestion pipeline from the
+ground up.
+Education
+Carnegie Mellon University
+MISM, Information Systems Management · (2005 - 2006)
+Technical University of Munich
+Dipl.-Inf., Computer Science · (2000 - 2005)
+  Page 1 of 1

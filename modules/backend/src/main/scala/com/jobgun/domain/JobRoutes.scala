@@ -7,9 +7,8 @@ object JobRoutes:
   import sttp.tapir.ztapir.*
 
   // Jobgun Imports:
-  import com.jobgun.shared.domain.requests.JobRequest
-  import com.jobgun.shared.domain.responses.JobResponse.*
-  import com.jobgun.domain.requests.JobSearchWithResumeRequest
+  import com.jobgun.domain.responses.*
+  import com.jobgun.domain.requests.*
 
   // Java Imports:
   import java.io.File
@@ -29,16 +28,26 @@ object JobRoutes:
   val jobSearchWithEmbeddingRoute =
     baseEndpoint.post
       .in("embedding")
-      .in(jsonBody[JobRequest.JobSearchWithEmbeddingRequest])
+      .in(jsonBody[JobSearchWithEmbeddingRequest])
       .out(jsonBody[JobSearchFromEmbeddingResponse])
       .errorOut(statusCode)
       .description("Searches jobs given a user's resume embedding.")
       .name("searchJobs")
 
+  val jobSearchWithDefaultRoute =
+    baseEndpoint.post
+      .in("default")
+      .in(jsonBody[JobSearchWithDefaultRequest])
+      .out(jsonBody[JobSearchFromResumeResponse])
+      .errorOut(statusCode)
+      .description("Searches jobs given a default resume.")
+      .name("searchJobs")
+
   val endpoints = {
     val endpoints = List(
       jobSearchWithResumeRoute,
-      jobSearchWithEmbeddingRoute
+      jobSearchWithEmbeddingRoute,
+      jobSearchWithDefaultRoute
     )
 
     endpoints.map(_.tags(List("Job Endpoints")))

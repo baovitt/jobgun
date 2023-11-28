@@ -5,10 +5,10 @@ import zio.json.{JsonDecoder, DeriveJsonDecoder, jsonField}
 import zio.Chunk
 
 // Jobgun Imports:
-import com.jobgun.shared.domain.JobListing
+import com.jobgun.shared.domain.ResponseJobListing
 
 final case class JobListings private (
-    @jsonField("JobListing") jobListings: Chunk[JobListing]
+    @jsonField("JobListing") jobListings: Chunk[ResponseJobListing]
 )
 
 object JobListings:
@@ -28,7 +28,7 @@ object DataResponse:
 end DataResponse
 
 final case class WeaviateSearchResponse private (result: DataResponse):
-  def jobListings: Chunk[JobListing] = result.data.get.jobListings
+  def jobListings: Chunk[ResponseJobListing] = result.data.get.jobListings
 end WeaviateSearchResponse
 
 object WeaviateSearchResponse:

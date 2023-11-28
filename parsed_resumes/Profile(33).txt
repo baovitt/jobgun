@@ -1,0 +1,186 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+langer-a5101212 (LinkedIn)
+www.softing.us (Company)
+Top Skills
+Automation
+Product Marketing
+Product Management
+Languages
+English (Native or Bilingual)
+German (Native or Bilingual)
+Wolfgang Langer
+Director of OEM Business Development at Softing Inc.
+Newburyport, Massachusetts, United States
+Summary
+My goal is to help my company to achieve their most ambitious
+goals and strategic communications objectives. In addition, I strive
+to the highest level of professionalism and experience when working
+as part of an international team by providing strategic counsel,
+creative solutions and timely, responsive services to the team and
+the company.
+• Project management, software architect, and communications
+professional with diversified and successful experience with
+industrial control technology, industrial software companies, and
+general software design.
+• Strong software development background based on a solid
+education as a Computer Scientist.
+• Expert in the IEC 61131-3 standard, the first vendor independent
+standard for Programmable Logic Controllers (PLCs). 
+• Proven ability to understand complex technical product features
+and to transform them into easy-to-understand information chunks
+reflecting the benefits of the product
+• Experienced project leader for international development projects
+• Extensive experience in managing international business
+relationships
+• Bilingual, Multi-Cultural – Fluent in English and German
+• Dual Citizenship (USA and Germany)
+Industrial Automation
+Factory Automation
+IEC 61131-3 PLC programming languages 
+Software architecture and design
+Software development
+Industrial fieldbus systems (PROFIBUS, CAN, Modbus,
+FOUNDATION fieldbus)
+Industrial Ethernet (PROFINET, Ethernet/IP, Modbus/TCP) 
+Industrial Networks and Communications Technologies: 
+  Page 1 of 5
+   
+PROFINET/Safe, PROFIBUS-DP/PA/Safe, FOUNDATION fieldbus,
+OPC Classic, OPC UA (Unified Architecture), Modbus/TCP, Ethernet
+TCP/IP, FDT/DTM, Ethernet/IP, DeviceNet, CAN, CANopen,
+Wireless Hart, AS-Interface.
+Technologies: 
+Industrial:   PLCs, PLC Programming Systems based on IEC
+61131-3, HMI's, DCS, IIoT 
+Software development: ANSI-C, C++, and .NET using MS Visual
+Studio, Java
+Web Design:  Adobe Dreamweaver
+Graphical design: Adobe Photoshop, InDesign
+Experience
+Softing Inc.
+Director of OEM Business Development
+April 2017 - Present (6 years 8 months)
+Newburyport, MA
+Responsible for 
+- OEM business development around industrial communication solutions
+including, but not limited to, 
+--- PROFINET, PROFIBUS DP/PA
+--- FOUNDATION fieldbus
+--- EtherNet/IP, EtherCAT, Modbus/TCP
+- OPC Classic product development
+- OPC UA product development
+- R&D projects
+- Key Account Management
+Softing
+17 years 2 months
+Director of OEM Business Development
+April 2017 - Present (6 years 8 months)
+Newburyport, MA
+Director of Marketing
+October 2006 - April 2018 (11 years 7 months)
+Newburyport, MA
+• Responsible for 
+  Page 2 of 5
+   
+- developing marketing plan
+- marketing budget
+- marketing communications/messaging 
+- generating per-qualified leads
+- working with trade organizations (e.g. PI North America, OPC Foundation,
+etc.)
+- paid content in various media outlets
+- trade show organization
+• Increased company's contact database from 1,000 to 13,000 contacts
+• Developed/improved marketing communication strategies (e.g. introduced
+newsletter format for US market - format and content was adopted by parent
+company in Germany)
+• Execute successful and ongoing actions to continually improve the
+-  quality of the web presence of my company
+-  name recognition of my company
+• Provide feedback to R&D department(s) 
+• Foster great working relationship with our German marketing team 
+Schneider Electric
+8 years
+Senior Product Marketing Manager - Software Products
+October 1999 - September 2006 (7 years)
+North Andover, MA
+• International Product Manager for Schneider Electric’s IEC61131-3
+programming software package "Concept". 
+• Evangelist for the international standard IEC 61131 within Schneider Electric
+and its customers and active participant in PLCopen initiatives around IEC
+61131-3 
+• Product Marketing Leader of a development effort by Schneider Electric to
+implement and market an Industrial Ethernet Diagnostic Software package.
+In this role I was responsible for the definition of all product requirements, for
+directing the R&D team in their effort to implement a user-friendly yet powerful
+tool. In addition, responsible for the development of the commercial message
+and the commercial material.
+  Page 3 of 5
+   
+• Leadership of an international project with the goal to implement 21 CFR part
+11 relevant features into Schneider’s IEC PLC programming tool as well as in
+Schneider’s high end Quantum PLC platform. This project was successfully
+executed and released on time and on budget.
+Principal Software Engineer
+October 1998 - September 1999 (1 year)
+North Andover, MA
+• Support and consulting services for multiple, international departments within
+Schneider as an expert on European fieldbus systems
+• Author of a Patent awarded to Schneider Electric on encapsulating CANbus
+data into TCP/IP frames
+• Participation in the architectural team of Schneider Electric's new PLC
+programming software package UNITY
+• Expert in IEC 61131-3, the international standard for Programmable Logic
+Controllers. Part 3 (of 10) defines the basic software architecture and the PLC
+programming languages: Ladder Diagram, Function Block Diagram, Structured
+Text, Instruction List, and Sequential Function Chart
+• Recipient of a special award from Schneider for acting independently on
+a critical PROFIBUS issue at a customer site securing a multi-million dollar
+investment in Schneider’s equipment 
+ICT GmbH
+Principal Engineer - Support and Marketing
+August 1996 - September 1998 (2 years 2 months)
+North Andover, MA
+• Architect and project manager of a joint venture between ICT, Softing, and
+Nematron with the goal to provide a state-of-the-art controls solutions for
+General Motors based on PROFIBUS and OpenControl. The successful bid
+resulted in General Motors standardizing on our solution.
+• Successfully designed and implemented software applications using
+industrial networks like PROFUBS, FOUNDATION Fieldbus, DeviceNet, and
+CANopen
+• FOUNDATION Fieldbus training and seminars provided locally and at
+customer sites.
+• Support Manger for all networking and fieldbus products provided by Softing
+GmbH/ICT, Inc. 
+• Coordination of the distributor relationship between Softing GmbH, Germany
+and ICT, Inc.
+  Page 4 of 5
+   
+Softing
+Software Engineer
+March 1991 - July 1996 (5 years 5 months)
+- Specification of customer specific solutions, utilizing fieldbus components
+- Design, implementation, and testing of industrial applications
+- Softing representative in international industrial communication projects (e.g.
+Interoperable Systems Project (ISP) - as a programmer; Fieldbus Foundation -
+as a program manager)
+- Hands-on technical support for national and international distributors and key
+account customers 
+- Product Management of industrial communications products 
+- Development of marketing material e.g. data sheets, technical brochures and
+documentation
+- Prepare and execute 2-day training classes on PROFIBUS 
+- Preparing and executing technical seminars and workshops at national and
+international events
+German Air Force
+Hauptgefreiter (Private First Class)
+July 1981 - December 1982 (1 year 6 months)
+Education
+Technical University of Munich
+Master’s Degree, Computer Science · (1985 - 1991)
+Berufsoberschule, München
+High School, Computer/Information Technology Administration and
+Management · (1983 - 1985)
+  Page 5 of 5

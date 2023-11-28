@@ -1,0 +1,73 @@
+   
+Contact
+www.linkedin.com/in/
+wolfgangwebdev (LinkedIn)
+wolfgangwarneke.github.io/
+homepage/build/ (Portfolio)
+Top Skills
+JavaScript
+Cascading Style Sheets (CSS)
+Google Analytics
+Wolfgang Warneke
+CRO Developer
+Portland, Oregon, United States
+Summary
+I enjoy patterns and value novelty—this makes me an excellent
+problem solver. With help from years spent as a multi-
+instrumentalist, I have developed a good ability to apply abstract
+models in new contexts—particularly transferrable to coding I’ve
+found! Every week I’m working on UX and conversion improvements
+for several e-commerce sites through testing and analysis and in my
+free time you’ll find me studying up on more coding and analytics or
+playing music (mandolin, bass, fiddle, piano and pennywhistle lately).
+I have developed over 250 A/B tests with more on the way.
+Skills: A/B testing, JavaScript, front end development, Google
+Analytics, UX
+Experience
+The Good
+2 years
+CRO Developer
+April 2018 - October 2019 (1 year 7 months)
+Portland, Oregon
+- develop and maintain internal codebase
+- develop over 250 A/B tests
+- use Google Tag Manger, Analytics and Optimize for testing and analysis
+Front End and A/B Test Developer (contract)
+November 2017 - March 2018 (5 months)
+Portland, Oregon
+- develop and QA front end A/B tests from provided specs and mockups
+LaunchCode
+Teaching Fellow
+May 2017 - October 2017 (6 months)
+Portland, Oregon Area
+- Help teach coding fundamentals to students, by leading smaller classroom
+sessions, conducting study sessions, and providing feedback on projects
+  Page 1 of 2
+   
+- Curriculum included: Python, Flask, Java, Spring, test-driven development,
+Git, HTML, CSS, and JavaScript
+Portland Immersive Media Group
+Intern
+2016 - 2016 (less than a year)
+- learn VR development with Unity
+- create sound interaction assets for VR environments
+- create custom C# scripts for object interactivity
+- produce 3-d models with Blender
+Brew Doctor Kombucha
+Bottling shift lead
+June 2013 - July 2015 (2 years 2 months)
+Portland, Oregon Area
+- lead crew of 3-4 bottlers
+- improve production line layout for efficiency and ergonomics
+Education
+Udacity
+Google Analytics Nanodegree  · (2019 - 2019)
+Udacity
+React Nanodegree  · (2017 - 2018)
+Epicodus
+ASP.Net · (2016 - 2016)
+Mt. Hood Community College
+Music · (2005 - 2008)
+Scappoose High School
+ · (2001 - 2005)
+  Page 2 of 2

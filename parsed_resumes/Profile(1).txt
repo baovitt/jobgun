@@ -1,0 +1,59 @@
+   
+Contact
+www.linkedin.com/in/nicolas-
+delamaide (LinkedIn)
+Top Skills
+DevOps
+Communication
+Software Development
+Languages
+Anglais (Full Professional)
+Portugais (Native or Bilingual)
+Français (Native or Bilingual)
+Nicolas Delamaide
+Developer at OWT | EPF Engineer
+Lausanne, Vaud, Switzerland
+Summary
+I am currently a developer at OWT and I graduated from EPFL with a
+BSc in Life Sciences Engineering as well as a MSc in Data Science.
+The most impacting skill that I developed at EPFL is learning how
+to learn, which might sound simple but it allowed me to become
+adaptable and succeed in a variety of unrelated environments. This
+is well reflected by my journey through life sciences, data science
+and machine learning, to now being a developer. I always try to learn
+and look forward to any new challenges.
+Experience
+Open Web Technology (OWT)
+Developer
+April 2023 - Present (8 months)
+Geneva, Switzerland
+At OWT I worked on:
+- Backend development using Java and Spring Boot
+- Infrastructure as code with Ansible
+- Cloud management using Kubernetes
+I also got the opportunity to join OWT's corporate communications team,
+where I help organize and moderate our company-wide online weekly calls, as
+well as in person quarterly meetings for our 120+ colleagues.
+CSEM
+Master Thesis Student
+August 2022 - February 2023 (7 months)
+Successfully developed a deep learning model for predicting the heart rate
+from PPG signals that challenges traditional signal-processing algorithms. 
+Obtained a grade of 6/6 after defending the project for my master thesis.
+Ecole polytechnique fédérale de Lausanne
+Undergraduate Teaching Assistant
+  Page 1 of 2
+   
+September 2018 - July 2019 (11 months)
+Teaching assistant for a two semester programming course in C++. Helped
+students with their weekly programming exercises and answered questions
+about the lecture's material. Also coached 6 groups of two people for a
+mandatory C++ semester project.
+Education
+Ecole polytechnique fédérale de Lausanne
+Master's degree, Data Science · (2020 - 2022)
+Politecnico di Torino
+Bachelor's degree, Biomedical/Medical Engineering · (2019 - 2020)
+Ecole polytechnique fédérale de Lausanne
+Bachelor's degree, Life sciences engineering · (2016 - 2020)
+  Page 2 of 2

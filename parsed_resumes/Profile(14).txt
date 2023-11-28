@@ -1,0 +1,173 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-m-
+pauli (LinkedIn)
+neurobabel.org (Personal)
+scholar.google.com/citations
+(Portfolio)
+learnanalytics.microsoft.com/
+(Company)
+Top Skills
+Experimental Design
+computational neuroscience
+statistics
+Languages
+Japanese
+English
+German
+Certifications
+June 2022 MLADS Conference
+Presenter
+Patents
+An end-to-end optimizable machine
+learning approach for tracking three-
+dimensional geometric shapes in
+space
+Adaptive Artificial Intelligence For
+Three-Dimensional Object Detection
+Using Synthetic Training Data
+Wolfgang Pauli
+ML Engineer
+United States
+Summary
+Experienced Applied Machine Learning and Artificial Intelligence
+Research Scientist, with a Doctor of Philosophy (Ph.D.) in
+Computational Neuroscience from University of Colorado at Boulder,
+publications in peer-reviewed scientific journals on Computational
+Neuroscience, Reinforcement Learning, and Neural Networks. In my
+current position, I work on co-innovation with customers, discovering
+and developing new applications for AI in diverse industries.
+Experience
+Apple
+Machine Learning Engineer
+July 2023 - Present (5 months)
+San Francisco Bay Area
+Microsoft
+5 years 3 months
+Principal AI Developer
+March 2021 - July 2023 (2 years 5 months)
+Redmond, Washington, United States
+Tech lead. Selected projects:
+- Semi-supervised 3D object detection for preventing illegal wildlife trafficking
+in CT scans of passengers’ luggage,  https://www.youtube.com/watch?
+v=U3ozr16BS5A
+- Mapping chimpanzee populations and social interactions of chimpanzees
+in the wild, with face recognition and tracking, using machine teaching and
+self-supervised learning. In collaboration with Oxford University and the Jane
+Goodall Institute (JGI).
+Senior AI Developer
+September 2019 - March 2021 (1 year 7 months)
+Redmond
+- Digital Guide Dog. A smart phone app that German Railway (aka. Deutsche
+Bahn) customers with impaired vision can use to find doors to train cars. Press
+  Page 1 of 5
+   
+Release: https://customers.microsoft.com/en-us/story/1387428924526820027-
+db-systel-azure-en
+- Using deep regression to estimate the biomass of salmon in underwater
+stereo camera video. Forbes Magazine: https://www.forbes.com/sites/
+abb/2020/01/29/deep-thinking-how-ocean-ready-tech-is-changing-the-way-
+norway-farms-fish/.
+- Fine-tuning machine translation models to enable Volkswagen Group
+in translating corporate language accurately among 40 languages. Press
+Release: https://customers.microsoft.com/en-us/story/779468-volkswagen-
+azure-automotive-en
+Artificial Intelligence Developer
+May 2018 - September 2019 (1 year 5 months)
+Redmond
+Developed and presented workshops on AI, data science, and machine
+learning for Microsoft employees and enterprise partners. Selection of
+scenarios we covered in these workshops: Unsupervised and supervised
+anomaly detection, online object tracking with Siamese neural networks, data
+distillation, real-time predictive maintenance.
+California Institute of Technology
+Postdoctoral Research Fellow
+December 2012 - May 2018 (5 years 6 months)
+Pasadena
+Trained deep reinforcement learning (RL) architecture (DQN) and human
+participants to play Atari games, used functional magnetic imaging (fMRI)
+of participants’ brain activity, to probe their brains for simulacra of DQN
+architecture.
+Developed and applied machine learning pipelines (including SVM, Elastic
+Net), to decoded mental states of human participants who were solving non-
+Markov decision tasks while we acquired fMRI data of their brain activity.
+Developed algorithmic models for a higher-order RL task and applied this
+model to functional magnetic imaging (fMRI) data to identify populations of
+dopamine neurons that signal prediction errors during appetitive and aversive
+learning.
+Designed and taught computational cognitive psychology course at the
+California Institute of Technology, incorporating traditional lectures and
+hands-on assignments with deep neural networks. Students appreciated this
+  Page 2 of 5
+   
+combination and gave the course an above average rating of 4.2 out of 5
+points.
+Designed and constructed precision eye tracking hardware and software
+(MrGaze) for use in fMRI experiments. Developed Python GUI (Qt, ctypes) for
+real-time recording of eye gaze and pupil size in response to sensory events.
+Developed software in Python OpenCV (computer vision) that monitors
+respiration, pulse, and swallowing in research volunteers. Software
+substantially improved functional MRI signal-to-noise ratio by removing
+physiological artifacts from functional brain images.
+Mentored 6 graduate and 3 undergraduate students in their research projects
+in computational cognitive neuroscience.
+University of Colorado at Boulder
+Postdoctoral Research Fellow
+September 2011 - December 2012 (1 year 4 months)
+Designed biologically-inspired neural network in C++, which simulated the
+trade-off between search cost and reward value in human decision-making.
+Developed mixture of Bayesian experts model in C++, which simulated
+how the brain hedges its bets by having two parallel and independent brain
+mechanisms that make different assumptions about the structure of the
+environment during reward prediction.
+Conducted meta-analysis of 5908 scientific studies in Python, each study
+reporting on the activity of approximately 223,000 brain locations. Through a
+combination of dimensionality reduction, Bayesian inference, topic modeling,
+assigned previously unrecognized psychological functions to separable
+networks of brain regions. The results were published in the Proceedings of
+the National Academy of Sciences and reached an Altmetric score higher than
+97% of its contemporaries.
+University of Colorado
+Graduate Research Assistant
+February 2006 - August 2011 (5 years 7 months)
+Boulder, CO
+  Page 3 of 5
+   
+Designed biologically-inspired neural network of human decision-making in C
+++, which simulated the interaction between working memory and associative
+learning in reward learning.
+Developed software in Python that allowed rodents to interact with each other
+through levers in their individual chambers.
+Designed, conducted and analyzed experiments to test predictions of
+computational models. Analyses were done in R.
+Mentored two undergraduate honor’s students, who graduated with top
+honors.
+Philipps-Universität Marburg
+Graduate Research Assistant
+September 2002 - February 2005 (2 years 6 months)
+Marburg, Germany
+Designed and conducted experiments using 128-electrode EEG. Conducted all
+data analysis
+in R.
+Bosch Magyarország
+Intern
+April 2004 - September 2004 (6 months)
+Budapest
+Developed a Perl-based help desk for the department of system administration
+and network
+security during my 6 week internship.
+Brain Science Research Center at the Tamagawa University
+Undergraduate Research Assistant
+February 2002 - September 2002 (8 months)
+We investigated the role of prefrontal cortical neurons in hierarchical decision
+making tasks.
+Education
+University of Colorado at Boulder
+Doctor of Philosophy (Ph.D.), Computational Neuroscience · (2006 - 2011)
+  Page 4 of 5
+   
+Philipps-Universität Marburg
+Master's Degree, Computer Science · (2004 - 2006)
+Philipps-Universität Marburg
+Master's degree, Psychology · (2002 - 2005)
+  Page 5 of 5

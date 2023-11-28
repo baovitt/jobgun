@@ -1,0 +1,96 @@
+   
+Contact
+www.linkedin.com/in/
+wolfganggerlach (LinkedIn)
+Top Skills
+Research
+Bioinformatics
+Science
+Languages
+English (Full Professional)
+German (Native or Bilingual)
+Wolfgang Gerlach, PhD
+Software Engineer at NetApp working on a Kubernetes management
+solution
+Naperville, Illinois, United States
+Summary
+Senior Software Engineer with a PhD in bioinformatics. Strong
+expertise in architecting and implementing complex Kubernetes-
+native backend solutions using Golang for industrial and
+scientific applications in areas such as data management, IoT
+and bioinformatics. Experience in design and management of
+Kubernetes-based production-level infrastructures, including
+architecting and implementing microservices and APIs, to developing
+and implementing novel algorithms and data structures to analyze
+biological sequence data. Microservice- and object-oriented,
+concurrent and distributed programming experience in Linux/Unix
+environments, strong focus on Golang.
+Experience
+NetApp
+Software Engineer
+January 2022 - Present (1 year 11 months)
+Naperville, Illinois, United States
+Implementing core-functionality features for NetApp Astra, a Kubernetes
+management solution
+Argonne National Laboratory
+9 years 10 months
+Programming, Sr. Analyst
+2019 - January 2022 (3 years)
+Lemont, Illinois, United States
+• Technical management of server-side infrastructure for SAGE, an NSF-
+funded national-scale cyberinfrastructure to enable AI at the edge. Designed
+overall software architecture, planned and implemented microservices and
+API’s to meet project requirements.
+• Deployed and managed bare-metal Kubernetes production cluster
+(Kubespray, Rook Ceph, MetalLB) to support diverse software infrastructure
+  Page 1 of 3
+   
+(MySQL, InfluxDB, Jenkins and other in-house developed software and web
+services)
+• Developed IoT service to manage edge devices deployed in the field all over
+the US  (Python, MySQL, SSH) (https://github.com/waggle-sensor/beekeeper)
+• Developed an “app-store” for containerized AI applications for the edge which
+uses Jenkins for automated testing (https://github.com/sagecontinuum/sage-
+ecr/, Python)
+• Developed a custom storage service on top of an S3 backend (https://
+github.com/sagecontinuum/sage-storage-api, Golang) and an OAuth2-
+compliant token introspection endpoint to enable token-based authentication
+and authorization for all user-facing web services.
+• Planned internships and onboarding for about 20 students.
+Bioinformatics Senior Software Engineer
+July 2016 - November 2019 (3 years 5 months)
+Greater Chicago Area
+• Implementation of a CWL-compliant workflow engine for scientific
+applications. (Golang)
+• Management of a 20+ machines CoreOS service cluster and a 500-nodes
+compute cluster for MG-RAST (http://metagenomics.anl.gov/)
+• Installed and configured various software components, including distributed
+databases such as Cassandra and Elasticsearch (10-20 nodes)
+Senior Software Engineer, Internet of Things
+October 2015 - July 2016 (10 months)
+Greater Chicago Area
+• Waggle research project (http://wa8.gl): Responsible for the software stack of
+Waggle (Python, RabbitMQ, Cassandra), an Internet of Things (IoT) platform
+that enables sensor-driven environmental science and smart city research.
+This platform was used by Chicago's Array Of Things project.
+Bioinformatics Senior Software Engineer
+April 2012 - September 2015 (3 years 6 months)
+• Designed and installed a distributed fault-tolerant production server
+infrastructure based on CoreOS/Docker technology (a PXE-boot bare-metal
+deployment with 15 servers) for a scientific web service (MG-RAST, http://
+metagenomics.anl.gov/) with over 45,000 users.
+• Supervised and organized transition of existing software stack (including Solr,
+MySQL, Apache, MongoDB, Memcached, Nginx and other) onto new CoreOS
+deployment.
+  Page 2 of 3
+   
+• Designed and implemented an extension to a distributed multi-cloud scientific
+workflow system that automatically orchestrates Docker containers for
+individual tasks in workflows. (Golang).
+Education
+Universität Bielefeld
+Doctor of Philosophy (Ph.D.), Bioinformatics and Genome
+Research · (2007 - 2012)
+Universität Bielefeld
+Diplom, Applied Computer Science in the Natural Sciences · (2001 - 2007)
+  Page 3 of 3

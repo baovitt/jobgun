@@ -1,0 +1,105 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+reißnegger-53a567 (LinkedIn)
+Top Skills
+Software Engineering
+C
+Embedded Systems
+Wolfgang Reißnegger
+Firmware Engineer at Facebook
+San Jose, California, United States
+Summary
+Experience:
+• Extensive experience in software design and development for low
+level systems as well as higher level user applications
+• Experience in team building and leadership
+• Worked in research as well as new product development
+environments in teams ranging from 2 to 15 members
+• Experience in Scrum / Agile development
+Specialties: 
+• Embedded Linux / RTOS development, cross-platform
+• Low level system software development
+• Linux Device Drivers
+• System & OS level Libraries
+• Bootloader, Bootstrapping
+• Working with HW engineers, new hardware bring-up
+• Familiar with x86, ARM, MIPS, PowerPC, Xilinx FPGA
+• WiFi, Ethernet, TCP/IP
+Experience
+Facebook
+Firmware Engineer
+September 2019 - Present (4 years 3 months)
+United States
+Pushing the boundaries of AR/VR.
+Everactive (formerly known as PsiKick)
+Principal Engineer
+June 2018 - December 2018 (7 months)
+United States
+Building batteryless super-low-power embedded systems.
+Self
+Software Contractor & Consultant
+  Page 1 of 3
+   
+August 2014 - May 2018 (3 years 10 months)
+San Jose, CA
+• Linux / RTOS embedded systems architecture
+• Board & System bring-up / bootloaders / device drivers
+• OS level software / libraries / daemons
+Recent:
+September 2014 - December 2014 - Highfive Technologies, Inc.
+(www.highfive.com):
+• System software development for Highfive set-top box.
+• Linux kernel drivers, u-boot and AVR firmware bring-up.
+Jawbone
+Senior Manager, System Software
+August 2010 - August 2012 (2 years 1 month)
+• Build and lead a team to develop OS level software components for next-
+generation Jawbone products.
+• Manage communication and collaboration between Hardware, Software and
+Product teams.
+• Work with product design team to assess product design and feature
+feasibility.
+• Directly communicate with executive level on project and team status and
+resource requirements.
+Hewlett-Packard
+Principal Software Engineer, Linux Kernel / webOS
+August 2010 - August 2010 (1 month)
+Palm, Inc.
+Principal Software Engineer, Linux Kernel / webOS
+November 2007 - August 2010 (2 years 10 months)
+• Responsible for system level power management on Palm core OS platform
+used for variety of Palm products.
+• New product development / bring-up.
+Xilinx, Inc.
+Staff Software Engineer
+April 2006 - November 2007 (1 year 8 months)
+• Initiate and drive Xilinx's Linux Open Source program.
+  Page 2 of 3
+   
+• Bring up and maintenance of PowerPC and Microblaze based embedded
+Linux systems.
+• Design, Implementation and support of Linux device drivers for FPGA soft/
+hard cores.
+• Integration of Linux drivers with Xilinx EDK.
+Palm, Inc.
+Sr. Software Engineer
+July 2004 - March 2006 (1 year 9 months)
+• Working as a member of a new-product development team (Palm Foleo)
+• Focus on Embedded Linux system software development.
+• Working with HW engineers in new board design and debugging.
+Apptran, Inc.
+Software Engineer
+January 2004 - June 2004 (6 months)
+• Development of software for a Linux based Exchange Server replacement.
+NEC America, Inc.
+Research Staff Member
+December 1997 - September 2003 (5 years 10 months)
+Worked in several research projects:
+• Helped develop a NEC internal embedded operating system (ROME/OS).
+• Member of a team to design and implement an 802.11 based corporate
+access infrastructure.
+Education
+Hochschule Mannheim
+Masters, Software Engineering · (1991 - 1996)
+  Page 3 of 3

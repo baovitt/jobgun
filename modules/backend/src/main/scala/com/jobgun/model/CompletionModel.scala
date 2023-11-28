@@ -31,7 +31,17 @@ You're given the task of parsing a users resume into an ideal job listing to fil
     "required/preferred misc requirements": [] // What misc qualifications does this user have? For example, patents, publications, achievements, skills, or training.
 }
 
-Please extract the necessary information thoroughly from the users resume and fill in the JSON structure accordingly. Provide pure json, no other content. The users resume is:
+In any mention of the word "present" as a indication of time, the present date is ${java.time.LocalDate
+        .now()
+        .format(
+          java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd")
+        )} and the word "present" should be replaced with the current date. For example, "2015 – Present" should become "2015 - ${java.time.LocalDate
+        .now()
+        .format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd"))}"
+
+Additionally, replace any of known company names with the role they worked in there, for example, spotify might become -> "music streaming" if their role was related to streaming technology. Finally, replace any mention of location with "Location".
+
+Please extract the necessary information thoroughly from the users resume and fill in the JSON structure accordingly. Provide pure json, no other content. You're doing a great job! The users resume is:
 
 $user
         """.stripMargin

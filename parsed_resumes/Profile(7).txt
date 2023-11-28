@@ -1,0 +1,120 @@
+   
+Contact
+www.linkedin.com/in/wkrause
+(LinkedIn)
+Top Skills
+XML
+Perl
+Databases
+Languages
+English (Native or Bilingual)
+German (Native or Bilingual)
+Certifications
+Splunk for Analytics and Data
+Science
+Wolfgang Krause
+VP of engineering at Salesforce
+Mountain View, California, United States
+Summary
+Experienced and motivated software engineering professional
+with extensive hands-on experience in all aspects of the software
+development cycle. Proven track record of recruiting, building,
+mentoring, and motivating agile software development teams.
+Experience
+Salesforce
+11 years 11 months
+VP of Software Engineering
+November 2021 - Present (2 years 1 month)
+Senior Director
+November 2018 - November 2021 (3 years 1 month)
+I currently manage various engineering teams as well as our business
+unit's quality and performance engineering organization. I lead multiple
+high performing distributed teams to achieve business objectives through a
+combination of individual development and providing business and technical
+leadership.
+Director of Software Engineering
+July 2017 - November 2018 (1 year 5 months)
+Senior Engineering Manager
+November 2015 - July 2017 (1 year 9 months)
+Focusing on Development, QE and Performance. 
+Building awesome teams that are working on the very core of the Salesforce
+platform. We focus on customer-facing features like Salesforce query
+language, multi-currency support or providing the plumbing that internal teams
+need to extend the Salesforce data model. 
+  Page 1 of 4
+   
+With my performance engineering team, we work on production degradations
+and pre-production performance analysis. In concert with various scrum
+teams, we're making things blazing fast for Salesforce customers of any size. 
+My newest team focuses on "everything around" routing of customer requests,
+CDN and other networking-related features.
+In addition to being scrum master for my teams, I work on side projects on
+production monitoring and feature adoption.
+Senior Performance Engineering Manager
+September 2015 - October 2015 (2 months)
+Manager Performance Engineering
+January 2014 - September 2015 (1 year 9 months)
+Building and growing my team of performance engineers. 
+My team supports 15+ scrum teams to build the fastest, coolest and most
+efficient features for our customers. Besides guaranteeing "just" fast
+response times for our users, we make sure our Cloud can handle the traffic
+when thousands of users share the same hardware. We focus on mobile
+performance work, front-end & a lot of backend performance work.
+Senior Performance Engineer
+March 2013 - January 2014 (11 months)
+Designed performance tests, worked with Scrum teams to deliver the fastest
+feature and estimated the production impact. Scrum master for our team. Built
+tools for Perfeng/Salesforce, e.g. to support production dashboards for various
+features.
+Performance Engineer
+January 2012 - March 2013 (1 year 3 months)
+San Francisco
+Performance testing for Flow, Workflow and a number of other features.
+MarkLogic
+Software Engineer
+August 2010 - December 2011 (1 year 5 months)
+San Carlos
+- Designed and implemented MarkLogic Plugin for Nagios & script to generate
+Nagios configuration script based on customer installation
+  Page 2 of 4
+   
+- Designed and checked the implementation of Smart Plugin for HP Operations
+Manager to monitor MarkLogic server 5
+- Designed and implemented Database Replication support for MarkLogic’s
+Admin Interface
+- Designed and implemented parts of the Monitoring API for MarkLogic server
+5
+IBM Canada Ltd.
+Internship - DB2 Performance - Toronto Lab
+2009 - September 2010 (1 year)
+- DB2 Performance work e.g. or Multi Tenancy Databases, Range Partitioning
+& Continuous Data Ingest
+- Creating of a SAP BW regression workload
+- Thesis: “Discovery of Top-K attributes in XML Documents to speed up BI
+applications”
+IBM
+Internship - DB2 pureXML Performance - Silicon Valley Lab
+October 2008 - October 2009 (1 year 1 month)
+- Department: DB2 pureXML (Performance group)
+-Creating test cases for different use cases of pureXML
+- Analyzing results of performance runs and work with software engineers to
+satisfy customers
+- Enabling of Rational Purify Plus tools for DB2
+- Quality assurance for XML Index Advisor
+IBM Germany
+Internship - Tivoli - Boeblingen
+March 2008 - September 2008 (7 months)
+- Department: Tivoli for SAP Solution Development
+- Improvement of &quot;Administration Assistant for Tivoli Data Protection for
+mySAP, e.g. 
+- Improving database access
+- Optimization of the database schema
+- Adding database support for DB2 
+- Creating database documentation with Rational Data Architect
+- Teaching One- Day- Tutorial about Rational Data Architect in the lab
+Education
+  Page 3 of 4
+   
+Universität Jena
+Bachelor & Master's degrees, Computer Science · (2001 - 2009)
+  Page 4 of 4

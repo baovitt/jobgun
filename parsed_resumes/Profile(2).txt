@@ -1,0 +1,67 @@
+   
+Coordonnées
+www.linkedin.com/in/alexandre-
+boccagny (LinkedIn)
+Principales compétences
+React.js
+Docker
+Netflix OSS
+Alexandre Boccagny
+Software Engineer at AKAtech SA
+Lausanne, Vaud, Suisse
+Expérience
+AKAtech SA
+3 ans 9 mois
+Software Application Engineer
+septembre 2020 - Present (3 ans 3 mois)
+Lausanne, Vaud, Switzerland
+Development of web-applications for machinery (Netflix OSS Architecture,
+Spring Boot, React, InfluxDB and Grafana)
+Devops engineering
+Vision solutions for quality control
+Software Engineer Intern
+mars 2020 - août 2020 (6 mois)
+Lausanne Area, Switzerland
+Development of web-applications for machinery (Netflix OSS Architecture,
+Spring Boot and React)
+Redis, TwinCat3 
+Devops Deployment Docker and Kubernetes
+Vision solutions for quality control
+Chalmers University of Technology
+Software Engineer Student
+août 2019 - mars 2020 (8 mois)
+Gothenburg, Sweden
+Cryptography, High-performance parallel programming (SIMD, SPMD ->
+OpenMP, OpenMPI, CUDA), programming language technology, Testing,
+debugging and verification, & mobile computing and design proces.
+CERN
+Software Engineer
+mars 2019 - septembre 2019 (7 mois)
+Région de Genève, Suisse
+HSE-CEN-CO Control and Environmental Protection Group
+Development of web-applications for REMUS (the overall CERN Radiation
+Protection supervisory system).
+  Page 1 of 2
+   
+Development of solutions Java (Spring Boot et React)
+AKAtech SA
+Junior Software Engineer, Industrial Vision solutions & Integration
+juin 2018 - septembre 2018 (4 mois)
+Région de Lausanne, Suisse
+Deep learning, vision solutions for quality control among variety of industries
+Development and integration of an HMI for Laminar flow cabinet
+AKAtech SA
+Junior Full Stack Software Engineer
+avril 2017 - juillet 2017 (4 mois)
+Région de Lausanne, Suisse
+JavaScript, TypeScript, JSON, Vue.js, Bootstrap, HTML & CSS, Highcharts,
+PHP, Laravel, Microsoft SQL Server, Large data exploitation, Industrial vision
+solutions, quality control.
+Formation
+Chalmers University of Technology
+Master's degree, Computer Software Engineering · (2019 - 2020)
+Polytech Annecy-Chambéry
+Engineer's degree, informatique, automatique, instrumentation · (2017 - 2020)
+IUT Annecy GEII
+Computer science and electrical engineering  · (2015 - 2017)
+  Page 2 of 2

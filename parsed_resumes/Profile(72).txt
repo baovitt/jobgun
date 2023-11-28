@@ -1,0 +1,341 @@
+   
+Contact
+www.linkedin.com/in/lindsay-
+semler-4327222 (LinkedIn)
+Top Skills
+Entity Framework
+Cloud Computing
+Xamarin
+Languages
+MaxScript/MelScript (Professional
+Working)
+Matlab (Full Professional)
+React Native (Professional Working)
+XML/JSON (Full Professional)
+OpenGL (Professional Working)
+Swift (Professional Working)
+SQL/MySQL/NOSQL (Full
+Professional)
+Flutter/DART (Professional Working)
+C (Professional Working)
+Perl (Limited Working)
+Certifications
+Certified ScrumMaster
+Xamarin Certified
+Honors-Awards
+Collaborative Research Environment
+Award for Undergraduates in
+Computer Science and Engineering
+Computer Research Association
+Women and National Science
+Foundation Award
+Father Ralph Pansza Renaissance
+Scholarship
+Accenture Fund for Academic
+Excellence Scholarship
+Publications
+Wavelet-Based Texture
+Classification of Tissues in
+Computed Tomography
+Lindsay Semler
+Senior Staff Engineer at The TJX Companies, Inc.
+Greater Chicago Area
+Summary
+I have a BS in Computer Graphics and Animation Development,
+Physics Engineering, Visual Computing & MS in Software
+Engineering. I have worked in a multitude of different disciplines
+such as: Gaming, Medical Imaging, Computer Graphics, Educational
+Apps, AI, and Mobile (iOS, Android & Xamarin), and R&D.
+I am a Full Stack Engineer, with experience in 3 years of Medical
+Research, 5 years of Graphics Research, 4 years of Embedded,
+4 years of Web, and 10+ years of Mobile engineering. At Wheels,
+I worked with Xamarin, Azure, Google Cloud, and SQL. There I
+engineered mobile development and R&D. At Everi, I was Lead
+engineer  and hiring manager for the Chicago office consisting of two
+teams for Engineers, Artists, Math Engineers, Producers and Game
+Designers. At AMI Entertainment, I jumped on several projects
+simultaneously, providing support for Game Development, Database
+rearchitecture, while completing my responsibilities as the sole iOS
+engineer. I have been a lead for a Unity iOS team of 5 engineers
+and 3 artists at TinyBop to create an educational app for children.
+At WMS, I engineered over 60 games from initial conception all the
+way through Product Assurance. I created new feature libraries,
+new functionality to the framework, and developed new tools for
+engineers, artists, designers, and product assurance. I initiated a
+new system for due diligence, agile development, and code and
+design reviews.
+I have a significant amount of experience with innovative cutting-
+edge research. I algorithmically classified organs from CT scans
+using image processing. I was the first engineer in the world to
+engineer Curvelets for texture analysis. I pioneered multi-texture
+analysis techniques, such as Wavelets, Ridgelets,
+And Curvelets in image processing. In my computer graphics
+research, I automated 3D animations algorithmically of the human
+body movement for animated American Sign Language translations.
+  Page 1 of 9
+   
+Curvelet-base Texture Classification
+of Tissues in Computed Tomography
+Ridgelet-based Texture
+Classification in Computed
+Tomography
+A Comparison of Wavelet, Ridgelet,
+and Curvelet-based Texture
+Classification Algorithms in
+Computed Tomography
+No One is Hopeless! One Alcoholic's
+Journey from Despair to Sobriety
+I am disciplined and imaginative, always striving to improve myself
+as an engineer. I am capable of analyzing complex problems,
+investigating alternatives and providing concrete, well-thought-out
+solutions. I have considerable and varied experiences, am self-
+motivated, and an expert with multi-tasking. I consider myself a life-
+long learner always looking for a new challenge.
+Specialties: Software Engineering, Mobile (iOS & Xamarin), Game
+Development, 3D Computer Graphics, Artificial Intelligence, Plug-
+ins, Image Processing, Texture Analysis, Data Analysis, Technical
+Documentation, Tool Engineering, Professional Ghost Writer &
+Editor, and Profesional Technical Writer
+Experience
+The TJX Companies, Inc.
+Senior Staff Engineer
+June 2022 - Present (1 year 6 months)
+Remote
+Manager of full stack mobile engineering of applications such as: TJ Maxx,
+Marshalls, HomeGoods, Sierra and Homesense.
+Technical lead of front and backend technology to use for future development
+such as the move from Xamarin to Flutter, SDK reviews, and Azure
+architecture modifications.
+Developed front end using Xamarin, Xamarin.iOS, Xamarin.Android, Entity
+Framework, C#, MVVM-Cross and backend using Azure, . Net framework,
+Google Cloud, and NoSQL databases
+Developed Associate web application using Blazor, Function apps, NoSQL,
+C#, .Net framework, and Azure
+Technical documentation and internal wiki for new engineers on setup
+instructions, general front-end architecture, general back-end architecture,
+references for new information and documentation for attachments from
+meetings of new architecture, Nuget Package references and version
+numbers, Admin App for web/Blazor design and functionality
+  Page 2 of 9
+   
+Echo Global Logistics
+Lead Mobile Engineer
+December 2021 - June 2022 (7 months)
+Remote
+Lead mobile full-stack engineer developing transportation management mobile
+application using Xamarin, Xamarin.iOS, Xamarin.Android, Entity framework,
+C#, AWS, Azure, .Net framework, and SQL
+Technical documentation and internal wiki for new engineers on setup
+instructions, general front-end architecture, general back-end architecture,
+references for new information and documentation for attachments from
+meetings of new architecture, Nuget Package references and version numbers
+Mobile app connects businesses that need to ship their products with carriers
+who transport goods quickly, securely and cost-effectively
+The app quickly adaptable, highly scalable, and uniquely easy to use for
+clients, partners, and vendors. This ensures better data collection and
+transmission, seamless communication, comprehensive reporting, and real-
+time visibility.
+Wheels Inc
+Lead Senior Software Engineer
+February 2018 - January 2022 (4 years)
+Des Plaines, Illinois
+Wheel's Mobile Assistance application is a fleet services mobile app for drivers
+so they are able to manage multiple vehicles, automatically detect trips for trip
+logs, comply with the IRS, recieve maintenance and service notifications, and
+obtain insurance policy information as well as many other features.
+Engineered mobile app using C#, Azure, .Net framework, SQL and Google
+Cloud on the Server and C#, Xamarin, Xamarin .iOS, Xamarin.Android, Entity
+framework as a Full Stack Engineer
+Designed new services such as Google Cloud, Enterprise, and Azure in C# on
+the server
+Developed new features and bug fixes using Xamarin, Xamarin.iOS, and
+Xamarin.Android for the client
+  Page 3 of 9
+   
+Managed existing and new SQL and provided database management for Web
+and Mobile Service calls
+Architected the Insurance module such as the development of printing or
+exporting Insurance PDF files
+Built an automatic license plate recognition & registration using camera phone
+Completed Natural Language Generations for Data Analysis of Driver
+Performance
+Worked on fuel management system, image processing of photo of dashboard
+to find Odometer and use that to provide driver for fuel pin code to use at gas
+station pumps in order to no have to manage company credit cards for fuel
+Technical documentation and internal wiki for new engineers on setup
+instructions, general front-end architecture, general back-end architecture,
+references for new information and documentation for attachments from
+meetings of new architecture, AI designs for image processing of VIN, License
+Plate, and Odometer, AI designs for Natural Language General of Driver
+Performance, Nuget Package references and version numbers
+Used SQL for creation of Database for both Mobile and Web, as well as,
+created overnight functional applications aka. “Jobs” to use web database and
+cross reference and use for Mobile engineering.
+InContext Solutions
+Senior Software Engineer
+September 2017 - February 2018 (6 months)
+Chicago, Illinois
+Engineered 3D simulations for retail stores such as Target,Jewel-Osco, 711,
+and Walgreens among other large box store chains
+Developed application for companies to build their store including product
+placement using Unity
+Product allows companies to try new ideas in a virtual store to seamlessly
+create and modify new in-store concepts
+Application grants research analysis to find the most profitable product
+placement for concepts 
+  Page 4 of 9
+   
+Architected new features such as shelf and product duplication across the
+application using C#
+Everi Holdings Inc.
+Senior Software Engineer III
+August 2015 - February 2017 (1 year 7 months)
+Chicago, IL
+Engineered games using JavaScript to create games for class II and III slot
+machines.
+Helped build the Chicago office by a part of the hiring process for the
+engineering teams.
+Lead engineer for two studio teams.
+Mentors new engineers while engineering my own project as well as Lead
+Engineer.
+Trained in being an extra slot machine mathmatics engineer to help with
+overload of work on our sole mathematician
+Presented a shader demo's for both artists and engineers.
+Technical documentation and internal wiki for new engineers on setup
+instructions, general front-end architecture, general back-end architecture,
+references for new information and documentation for attachments from
+meetings of new architecture, created pages devoted to artist demos amd
+internal classes as well as shaders, added Mathematician development
+explanations and documentation on how to create the math for slot machinrs
+AMI Entertainment Network, LLC
+Senior iOS Engineer
+October 2014 - August 2015 (11 months)
+Oakbrook Terrace, IL
+Senior Engineer of iOS applications for bar entertainment and jukeboxes for
+BarLink and Tap TV
+Engineered wallet, web services, and framework support for Game
+Development with Unity and C#
+  Page 5 of 9
+   
+Programmed iOS Bar Link app to play music on bar jukeboxes from your
+phone using Objective C
+Created Trivia Client library to retrieve database information for Trivia games
+using C# and SQL
+Engineered new Location Manager iOS application for bar management to
+program entertainment
+Added Geo-fencing and Apple Pay support and in app advertisements for iOS
+BarLink application
+Tiny Bop Inc.
+Lead iOS Engineer
+May 2014 - October 2014 (6 months)
+Brooklyn, NY
+Engineered educational iOS applications for children inspired by children’s
+books, toys, and films 
+Lead Engineer for Homes Game Development team consisting of 5 engineers
+and 3 artists 
+Architected iOS interactive educational game called Homes using Unity and
+C#
+Created a framework library for future games, moving libraries from to
+Cocos2D to Unity
+Implemented agile development practices for current and future games
+Babaroga
+Principle Software Engineer
+January 2014 - April 2014 (4 months)
+Chicago, IL
+Engineered games in C++, Objective C, and C#  for Windows, iOS, and
+Android devices
+Developed multiple mobile iOS applications such as Zombies and Golden Tee
+  Page 6 of 9
+   
+Programmed the front end User Interface system for 3D Golden Tee mobile
+app using Unity and C#
+Williams Interactive
+Principle Software Engineer
+July 2012 - November 2013 (1 year 5 months)
+Chicago
+Developed online games in a client-server architecture for internal and external
+customers 
+Programmed 30+ casino games using ActionScript on the Client; C++ on the
+Server 
+Actively refactored and contributed to framework development for future
+games 
+Engineered common functionality between games and compartmentalized into
+feature libraries
+Mentored new engineers and artists with both game and framework
+development in ActionScript
+Created weekly lessons and tutorials for the artists to learn ActionScript
+Lead efforts to document process and best practices on internal Wiki. Added
+Technical documentation and internal wiki for new engineers on setup
+instructions, general front-end architecture, general back-end architecture,
+references for new information and documentation for attachments from
+meetings of new architecture
+WMS Gaming
+6 years 4 months
+Senior Online Software Engineer
+January 2010 - July 2012 (2 years 7 months)
+Engineered 30+ online games for JackpotParty.com in the UK 
+Initiated due diligence, design reviews, and agile development to improve
+processes
+Generated Python scripts for the load testing games for the test department
+Produced SQL scripts to update databases to manage game information 
+  Page 7 of 9
+   
+Developed tools for artists, game designer, and engineers to improve
+productivity 
+Created an art tool exporting flash classes and elements to an excel document
+for engineers
+Principle Game Development Software Engineer
+April 2006 - January 2010 (3 years 10 months)
+Chicago
+Engineered software for video and mechanical slot machines for 30+ games in
+C++ and Linux
+Actively contribute to the ongoing software design and development process
+and contribute to development of interfaces, libraries and utilities
+Directed projects from design conception through Product Assurance testing
+Managed art, math, and design changes while meeting or exceeding
+deadlines 
+Engineered client and server software for Big Event Community Gaming
+machines
+Started as an Associate Software Engineer and was promoted to Core
+Software Engineer and subsequently Senior Software Engineer within 4 years
+DePaul University
+5 years 6 months
+American Sign Language Research Assistant
+August 2005 - June 2009 (3 years 11 months)
+Engineered software to automatically animate body movement based on hand
+motions 
+Completed a motion study of non-manual signals in American Sign Language
+sentences
+Aided in automatic generation of animated sentences using 3D Studio
+MaxScript
+Implemented new joint orientation for animations using motion study results
+Continuing research to engineer additional non-manual signals, such as
+body movement, eye gaze, and head tilts, to animated sentences in order to
+enhance context.
+Medical Imaging Research Assistant
+January 2004 - June 2006 (2 years 6 months)
+Developed software to classify organ tissue from CT Scans using Matlab,
+SPSS, and SAS
+  Page 8 of 9
+   
+Implemented an automated imaging system for classification of tissues using
+texture analysis with co-occurrence matrices, run-length statistics and multi-
+resolution techniques
+Explored muti-resolution texture classification such as Wavelets, Ridgelets,
+and Curvelets
+Created decision trees to classify organs based on classifiers from the above
+techniques
+Collaborated with DePaul’s Visual Computing Group and Northwestern
+radiologists
+Published a multitude of journal articles for visual computing and medical
+journals
+First Engineer in the world of Curvelets for Texture Analysis at the age of 19
+Made $2 million in government grants to continue medical imaging research
+each year since 2004, for a total of $36 million
+Research lead to REU summer internship program
+Education
+DePaul University
+MS, Software Engineering · (2006 - 2009)
+DePaul University
+B.S., Computer Graphics and Animation Developer · (2003 - 2006)
+  Page 9 of 9

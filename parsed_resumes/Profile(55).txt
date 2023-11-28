@@ -1,0 +1,109 @@
+   
+Contact
+www.linkedin.com/in/
+wolfgangsegmuller (LinkedIn)
+Top Skills
+DevOps
+Cloud Applications
+Docker
+Honors-Awards
+IBM Corporate Award for IBM
+Workload Deployer Technologies
+Outstanding Technical Achievement
+Award for Middleware Virtualization
+Technologies
+Publications
+CPU demand for web serving:
+Measurement analysis and dynamic
+estimation
+Sieve Email Filtering: Extension for
+Notifications
+Workload orchestration and
+optimization for software defined
+environments
+Sieve Email Filtering: Relational
+Extension
+Patents
+Integrated virtual infrastructure
+system
+Controlling workload of a computer
+system through only external
+monitoring
+Dynamically building a set of
+compute nodes to host the user's
+workload
+Methods and apparatus for
+discovering data providers satisfying
+provider queries
+Wolfgang Segmuller
+Senior Cloud Architect at State Street Technology Research
+New York City Metropolitan Area
+Summary
+I led the testing architecture of an OpenStack cloud.  Implemented
+chaos and performance testing and automation for repeatable
+testing.  
+I led DevOps education at Research, with 95% of participants would
+recommend to others.  I led security and DevOps development of a
+service, enabling code check-in to production within 2 hours.
+I performed security reviews that found numerous security issues
+which were then addressed by the development team.
+I led architecture, design, and implementation of hypervisor
+communications, in Java and Groovy in IBM Workload Deployer,
+released as a product.  I received an IBM Corporate Award for this
+work.
+I led the design and implementation of a work profiler, in Java.
+This helped schedule traffic to backend web servers to prevent
+overloading the servers.
+I created a Bridge scoring application using SPA and server written
+in Scala.  This was well received by my bridge group.  https://
+github.com/thebridsk/bridgescorer
+Skills:
+Process: Agile, DevOps
+Operating Systems: Windows, Linux
+Languages: Java, Scala, Python, C, C++, HTML, CSS, JavaScript
+Technologies: GraphQL, Facebook React, Swagger
+Automation: Jenkins, Travis CI, Terraform, Ansible
+Runtime: Docker, Kubernetes, VMWare, AWS, IBM Cloud,
+OpenStack
+Test: TDD, BDD, Behave, PyUnit, JUnit, ScalaTest
+Planning: GitHub, ZenHub
+  Page 1 of 3
+   
+Experience
+State Street Technology Research
+Senior Cloud Architect
+2018 - Present (5 years)
+Greater New York City Area
+IBM Research
+Senior Software Engineering, DevOps
+2014 - 2018 (4 years)
+Greater New York City Area
+• Architected, designed and implemented a service based on microservices
+using Agile and DevOps principles and practices written in Python.  
+• Led the DevOps and Security for the team.  
+• With the pipeline I developed we were able to deploy to production within 2
+hours of making a code change.
+• Led the technical team and taught DevOps to research teams.  
+• Created bootcamps, weekly seminars and provided consultation services.
+95% of the bootcamp participants would recommend the bootcamp to others.
+IBM Research
+Senior Software Engineering, Cloud Systems
+2010 - 2013 (3 years)
+Greater New York City Area
+• Architectured, designed, and implemented of the VMSupport layer for
+monitoring and manipulating hypervisors.  This was released in IBM Workload
+Deployer.  Received an IBM Corporate Award for this work. 
+IBM Research
+Senior Software Engineering, Application Server
+2004 - 2009 (5 years)
+Greater New York City Area
+• Designed and implemented a work profiler, in Java, for measuring resource
+usage per request, this was used to prevent overloading of backend
+application servers.  
+  Page 2 of 3
+   
+• Developed a log analysis tool verifying proper operation of work profiler.
+Education
+Rensselaer Polytechnic Institute
+Bachelor's degree, Computer Science, Chemistry
+  Page 3 of 3

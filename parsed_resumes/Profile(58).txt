@@ -1,0 +1,105 @@
+   
+Contact
+www.linkedin.com/in/
+wolfganggruen (LinkedIn)
+Top Skills
+XML
+JSON
+Kubernetes
+Languages
+English (Native or Bilingual)
+German (Native or Bilingual)
+Spanish (Elementary)
+Certifications
+AWS Integrated Services
+Software Processes and Agile
+Practices
+Deep Dive into Amazon Simple
+Storage Service (S3)
+Introduction to Amazon Elastic
+MapReduce (EMR)
+AWS Architecture
+Wolfgang Gruen
+Principal Systems Architect Cloud and Engineering Leader
+Ashburn, Virginia, United States
+Summary
+Accomplished systems architect, leader and software engineer with
+a broad experience in cloud architecture, software development,
+product definition and technical project leadership with global teams.
+Known for being the go-to person for complex analysis and person of
+last resort for the most challenging customer issues.
+My interest is in Cloud Architecture, Microservices, Machine and
+Deep Learning.
+Experience
+ST Engineering iDirect
+16 years 7 months
+Principal Systems Architect - Cloud
+November 2022 - Present (1 year 1 month)
+Herndon, Virginia, United States
+As a systems architect, I am responsible for the Next Generation Satellite Hub
+deployment, integration with the Next Gen Network Management System,
+integration of performance enhancing and 3rd party products.
+Principal and Architect and Release Lead
+July 2019 - October 2022 (3 years 4 months)
+Herndon, Virginia, United States
+As an engineering leader, I am responsible for product quality, release
+readiness, defining a minimal viable product, release planning, writing and
+negotiating of statements of work, and other aspects of projects with globally
+dispersed, highly skilled teams.
+As an architect, I am influencing concepts and architectures across
+engineering
+I engage with product owners, scrum masters, engineering leads, architects
+and senior management across organizations to ensure we cover all aspects
+needed for a high quality software release.
+  Page 1 of 3
+   
+Led a project about unification of tools across our global organizations.
+Supported the most urgent customer issues for the private cloud and
+infrastructure
+Improved scalable for infrastructure software to achieve the next level of
+scalability requirements
+Influenced architecture and concepts and diligently helped finding the best
+solution with stakeholders across many organizations
+Principal Software Engineer - Customer Success
+February 2018 - June 2019 (1 year 5 months)
+Herndon, VA
+Supported the most complex field issues for the Satellite Hub for the Velocity
+platform.
+Prototyped a Satellite Hub as micro services, using Docker and Kubernetes
+Negotiated incremental deliveries and deadlines directly with the customer and
+provided the software solutions for most urgent and complex scalability issues
+Senior Software Engineering Manager - QoS
+June 2013 - January 2018 (4 years 8 months)
+Managed a self-organizing, global Agile software development  team of cross-
+functional engineers for new feature development for the Satellite Hub for the
+Velocity platform.
+Software Engineering Manager - PRIVATE CLOUD
+June 2011 - May 2013 (2 years)
+Managed a team of software developers and contractors, including off-shore
+for the Infrastructure team for the Satellite Hub for the Velocity platform.
+Designed and architected high available scalable private cloud in an Agile
+fashion.
+Incubated new features, while co-authoring requirements with system
+architects and created high level design documents.
+Senior Software Engineer - Infrastructure
+May 2007 - May 2011 (4 years 1 month)
+Developed scalability enhancements for the Satellite Hub software for the
+Evolution platform.
+  Page 2 of 3
+   
+Led multiple projects to successful delivery as technical lead.
+CACI International Inc
+Senior Software Developer and Team Lead
+2003 - 2007 (4 years)
+Developed software for the DOD Standard Procurement System. 
+Supervised a team of seven developers.
+Patton Electronics Co.
+Senior Software Engineer
+2000 - 2003 (3 years)
+Develop software for a 96 port dial-up T1 internet access device. Gained
+expertise in UNIX V kernel, TCP/IP, OSPF, IP protocols and routing protocols.
+Education
+Hochschule Mannheim
+Master's degree, Computer and Software Engineering / Telecommunications
+ · (1995 - 1999)
+  Page 3 of 3

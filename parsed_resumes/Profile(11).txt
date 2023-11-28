@@ -1,0 +1,138 @@
+   
+Contact
+www.linkedin.com/in/wkandek
+(LinkedIn)
+www.kandek.com (Personal)
+www.advisorycloud.com/profile/
+Wolfgang-Kandek (Personal)
+Top Skills
+Information Security
+Technical Architecture
+Engineering Leadership
+Languages
+English (Native or Bilingual)
+German (Native or Bilingual)
+Portuguese (Native or Bilingual)
+Patents
+Systems and methods for assessing
+the compliance of a computer across
+a network
+System and Method for performing
+remote Security Assessments of
+firewalled Computer
+Wolfgang Kandek
+Head of Cloud Operations and Site Reliability Engineering
+San Jose, California, United States
+Summary
+I have 20+ years of experience in developing and managing
+information systems. My focus has been on Unix-based server
+architectures and application delivery through the Internet. At
+Marketo, I was responsible for the availability and performance of the
+main Marketo SaaS application and the migration of that application
+from on-prem to public cloud. Prior to Marketo, I was a Director
+of SRE at Google and the CTO at Qualys. Earlier in my career, I
+held a variety of technical positions at a number of startups and
+established companies, EDS, MCI, and IBM. I received my Master's
+and Bachelor's degrees in Computer Science from the Technical
+University of Darmstadt, Germany.
+In my CTO role, I had frequent speaking engagements at security
+events and forums including Black Hat, RSA Conference,
+InfoSecurity UK, and The Open Group. I used to blog at the Laws of
+Vulnerabilities site - http://laws.qualys.com
+Specialties: Internet service design, server architecture, high
+availability systems, performance, and security architecture and
+implementation
+https://www.advisorycloud.com/profile/Wolfgang-Kandek
+Experience
+Marigold
+SVP Site Reliability Engineering
+November 2021 - March 2023 (1 year 5 months)
+Responsible for the performance and availability of the Cheetah Digital
+SaaS applications, on-premises and AWS cloud, both .NET, Windows, SQL-
+Server and Rails, Linux, MySQL. Managed a team of 90+ platform engineers.
+Increased uptime and lowered incident occurrences. Revamped incident
+process and tools. Optimized AWS costs using Savings Plans and Reserved
+  Page 1 of 4
+   
+Instances. Implemented instance monitoring using AWS APIs. Migrated on-
+premises systems to AWS using AWS MAP programs.
+Wikimedia Foundation
+Site Reliability Engineering Manager
+April 2020 - November 2021 (1 year 8 months)
+Responsible for the performance and availability of the Wikipedia application. I
+managed the core application SRE team directly.
+Marketo
+VP Site Reliability Engineering
+September 2017 - December 2018 (1 year 4 months)
+San Mateo, CA
+Responsible for the performance and availability of the Marketo SaaS
+application in the legacy on premise global environment. Improved overall
+speed by 2x and uptime to 99.99%, reduced incidents. Implemented SSL
+certificate management system improving service time by 400%. In addition,
+in charge of its migration to the Google Cloud Platform a multi-month effort of
+transporting the application to GCP, porting where possible and using Google
+provided technology wherever of advantage. Implemented SRE teams and
+synchronized with the company DevOps movement. Evaluated CloudSQL as
+a replacement for hundreds of MySQL databases, Google Dataproc for on-
+premise Hadoop, Kubernetes as a virtualization replacement, MongoDB Atlas
+vs. local MongoDB and Kafka service options vs. local Kafka.
+Google
+Director Site Reliability Engineering
+July 2016 - September 2017 (1 year 3 months)
+Sunnyvale
+Responsible for the Corp Eng Site Reliability Engineering teams in Sunnyvale,
+New York and Sydney. Corp Eng SRE is in charge of internal Google
+infrastructure such as DHCP and DNS, plus a large set of internal business
+applications.
+Qualys
+14 years
+CTO
+July 2002 - June 2016 (14 years)
+Redwood City
+  Page 2 of 4
+   
+As the CTO for Qualys, I was responsible for the technological innovation of
+the Qualys platform and its acceptance by the security market. I represented
+the company at industry conferences and client meetings, formulating
+general technical tendencies in the security industry and requirements for our
+customers in general.
+VP of Engineering
+2007 - 2008 (1 year)
+As VP of Engineering developed 3 new product lines (PC, WAS, MDS) for the
+QualysGuard SaaS (Linux, Apache, Oracle, PHP) platform. Initiated refactoring
+of the appliance code base (C/C++) and migration to a new internal scripting
+language (Lua). Grew the engineering team by 50% from 40 to 60 engineers.
+Implemented the first offsite Qualys engineering center in Beijing, China. As
+Director and later VP of Operations maintained the Qualys SaaS platform
+through periods of substantial growth from an initial footprint of tens of servers
+to hundreds of servers and thousands of appliances. Grew the Operations
+team from 3 system administrators to 15 system and database administrators.
+Improved uptime from 99.5% to 99.95%. Implemented performance and
+availability monitoring. Conducted SAS70 audits on Qualys Operations.
+Negotiated national and international datacenter deals.
+VP of Operations
+2005 - 2008 (3 years)
+Redwood City
+Director of Operations
+July 2002 - 2005 (3 years)
+Myplay
+Director of Network Operations
+June 2001 - July 2002 (1 year 2 months)
+iSyndicate
+Director of Operations
+January 2000 - June 2001 (1 year 6 months)
+MCI Systemhouse
+Technical Architect
+October 1998 - January 2000 (1 year 4 months)
+Hypermedia
+  Page 3 of 4
+   
+Consultant
+1993 - October 1998 (5 years)
+IBM
+System Analyst
+1990 - 1993 (3 years)
+Education
+Technische Universität Darmstadt
+MS, Computer Science · (1983 - 1989)
+  Page 4 of 4

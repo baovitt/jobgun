@@ -8,21 +8,11 @@ ThisBuild / organizationName := "jobgun"
 
 val commonSttpZioVersion = "3.9.0"
 
-lazy val shared = (crossProject(JSPlatform, JVMPlatform) in file("modules/shared"))
+lazy val shared = (project in file("modules/shared"))
   .settings(
     name := "jobgun",
-    libraryDependencies ++= Seq(
-      "com.softwaremill.sttp.tapir" %%% "tapir-json-zio" % tapirVersion,
-      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion,
-    )
-  )
-  .jsSettings(
-    libraryDependencies ++= Seq(
-      "com.softwaremill.sttp.client3" %%% "zio" % "3.9.0",
-      "com.softwaremill.sttp.tapir" %%% "tapir-sttp-client" % tapirVersion,
-      "io.github.cquiroz" %%% "scala-java-time" % "2.5.0-M2",
-      "dev.zio" %%% "zio-json" % "0.6.2"
-    )
+    libraryDependencies ++= 
+      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion % Provided +: Dependencies.backend.zioDeps
   )
 
 lazy val backend = (project in file("modules/backend"))
@@ -34,39 +24,101 @@ lazy val backend = (project in file("modules/backend"))
       Dependencies.backend.weaviateDeps ++
       List(
         "org.apache.pdfbox" % "preflight" % "3.0.0",
-        "org.apache.poi" % "poi-ooxml" % "5.2.3"
+        "org.apache.poi" % "poi-ooxml" % "5.2.3",
+        "com.softwaremill.sttp.client3" %% "zio" % "3.9.1",
+        "com.softwaremill.sttp.client3" %% "circe" % "3.9.1",
+        "io.circe" %% "circe-generic" % "0.14.6"
       )
     ),
-    fork := true
-  )
-  .dependsOn(shared.jvm)
-
-lazy val frontend = project
-  .in(file("modules/frontend"))
-  .enablePlugins(ScalaJSPlugin)
-  .settings(
-    name := "jobgun",
-    libraryDependencies ++= Seq(
-      "com.raquo" %%% "laminar" % "16.0.0",
-      "io.frontroute" %%% "frontroute" % "0.18.0",
-      "dev.zio" %%% "zio-json" % "0.6.2",
-    )
-  )
-  .dependsOn(shared.js)
-
-lazy val website = project
-  .in(file("modules/website"))
-  .enablePlugins(ScalaJSPlugin)
-  .settings(
-    name := "jobgun",
-    libraryDependencies ++= Seq(
-      "com.raquo" %%% "laminar" % "16.0.0",
-      "io.frontroute" %%% "frontroute" % "0.18.0",
-      "dev.zio" %%% "zio-json" % "0.6.2",
+    fork := true,
+    scalacOptions ++= Seq(
+      "-Xmax-inlines", "64",
     ),
-    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
-    scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
-    scalaJSLinkerConfig ~= { _.withSourceMap(false) },
-    scalaJSUseMainModuleInitializer := true
+    assemblyMergeStrategy in assembly := {
+      case PathList("META-INF", "versions", "9", "module-info.class") => MergeStrategy.first
+      case PathList("META-INF", "io.netty.versions.properties") => MergeStrategy.concat
+      case PathList("META-INF", "native", "lib", xs @ _*) => MergeStrategy.first
+      case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+      case "application.conf" => MergeStrategy.concat
+      case PathList("deriving.conf") => MergeStrategy.concat
+      case "module-info.class" => MergeStrategy.first
+      
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    },
+    assembly / assemblyJarName := "jobgun.jar"
   )
-  .dependsOn(frontend)
+  .dependsOn(shared)
+
+lazy val pipeline = (project in file("modules/pipeline"))
+  .settings(
+    name := "jobgun",
+    libraryDependencies ++= (
+      Dependencies.backend.zioDeps ++
+      Dependencies.backend.tapirDeps ++ 
+      Dependencies.backend.weaviateDeps ++
+      List(
+        "org.apache.pdfbox" % "preflight" % "3.0.0",
+        "org.apache.poi" % "poi-ooxml" % "5.2.3",
+        "com.softwaremill.sttp.client3" %% "zio" % "3.9.1",
+        "com.softwaremill.sttp.client3" %% "circe" % "3.9.1",
+        "io.circe" %% "circe-generic" % "0.14.6"
+      )
+    ),
+    fork := true,
+    scalacOptions ++= Seq(
+      "-Xmax-inlines", "64",
+    ),
+    assemblyMergeStrategy in assembly := {
+      case PathList("META-INF", "versions", "9", "module-info.class") => MergeStrategy.first
+      case PathList("META-INF", "io.netty.versions.properties") => MergeStrategy.concat
+      case PathList("META-INF", "native", "lib", xs @ _*) => MergeStrategy.first
+      case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+      case "application.conf" => MergeStrategy.concat
+      case PathList("deriving.conf") => MergeStrategy.concat
+      case "module-info.class" => MergeStrategy.first
+      
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    },
+    assembly / assemblyJarName := "jobgun.jar"
+  )
+  .dependsOn(shared)
+
+// lazy val frontend = project
+//   .in(file("modules/frontend"))
+//   .enablePlugins(ScalaJSPlugin)
+//   .settings(
+//     name := "jobgun",
+//     libraryDependencies ++= Seq(
+//       "com.raquo" %%% "laminar" % "16.0.0",
+//       "io.frontroute" %%% "frontroute" % "0.18.0",
+//       "be.doeraene" %%% "web-components-ui5" % "1.17.1",
+//       "dev.zio" %%% "zio-json" % "0.6.2",
+//     )
+//   )
+//   .dependsOn(shared.js)
+
+// lazy val website = project
+//   .in(file("modules/website"))
+//   .enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
+//   .settings(
+//     name := "jobgun",
+//     libraryDependencies ++= Seq(
+//       "com.raquo" %%% "laminar" % "16.0.0",
+//       "io.frontroute" %%% "frontroute" % "0.18.0",
+//       "dev.zio" %%% "zio-json" % "0.6.2",
+//     ),
+//     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },
+//     // scalaJSLinkerConfig ~= { _.withModuleSplitStyle(ModuleSplitStyle.FewestModules) },
+//     scalaJSLinkerConfig ~= { _.withSourceMap(false) },
+//     scalaJSUseMainModuleInitializer := true,
+//     npmDependencies in Compile ++= Seq(
+//       "@ui5/webcomponents" -> "1.17.1",
+//       "@ui5/webcomponents-fiori" -> "1.17.1",
+//       "@ui5/webcomponents-icons" -> "1.17.1",
+//     )
+//   )
+//   .dependsOn(frontend)

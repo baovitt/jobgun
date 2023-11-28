@@ -1,0 +1,184 @@
+   
+Contact
+www.linkedin.com/in/
+wolfgangcstrack (LinkedIn)
+github.com/wolfgangcstrack
+(Other)
+wolfgangcstrack.github.io/
+(Personal)
+Top Skills
+Software Architectural Design
+Data Engineering
+Software Engineering
+Languages
+Tagalog (Professional Working)
+Japanese (Professional Working)
+English (Native or Bilingual)
+Wolfgang C. Strack
+Software Engineer at Resilience
+San Francisco Bay Area
+Summary
+Hello.
+I'm a software engineer. LinkedIn is not really my thing but I respect
+the grind.
+Have a wonderful day.
+Experience
+Resilience
+Software Engineer
+October 2021 - Present (2 years 2 months)
+San Francisco Bay Area
+Riffyn
+4 years 4 months
+Software Engineer
+March 2018 - October 2021 (3 years 8 months)
+I grew rapidly in this role after taking charge of a long-term project to re-
+architect large parts of the back-end code across the organization. In essence,
+the project involves facilitating and implementing a distributed, event-driven,
+stream-processing architecture that is highly concurrent and horizontally
+scalable.
+This architecture is driven by Apache Kafka and Kafka Streams and I've led
+efforts in implementing everything related to these technologies. These efforts
+include but are not limited to:
+- Expressing our data changes in the concise, intuitive language of "events",
+both figuratively and in code.
+- Converting parts of our app monoliths (Meteor.js web app, Python/Celery
+data-processing app) to micro-services in various languages (Python 3, Java
+8+, Scala), improving speed, state consistency, data integrity, and horizontal
+scalability.
+  Page 1 of 5
+   
+- Building out Kubernetes infrastructure for running Apache Kafka, Apache
+Zookeeper, and our in-house micro-services—helping lay the foundation our
+Helm charts in general.
+- Teaching and assisting other developers in creating new features as part
+of this architecture, and allowing them to reap all aforementioned benefits
+(Python 3, Java 8+, Golang).
+Aside from these responsibilities, I wear many other hats. These include but
+are not limited to:
+- DevOps engineer; helped all other developers run our architecture locally via
+minikube, a python CLI, and parameterized helm charts. And also, again, build
+out anything related to Kafka :)
+- Engineering Standards pioneer; help improve coding practices and
+engineering culture by writing/improving documentation, solving workflow
+issues, and implementing automation in local/CI environments (e.g. testing,
+style linting, auto-formatting, etc.)
+- Culture and Leadership Team member; help to identify and keep or improve
+general culture of the company by conducting 1:1 interviews and gathering
+information on observed themes, individual relationships, and team dynamics.
+Junior Software Engineer
+September 2017 - March 2018 (7 months)
+This role consisted mainly of data engineering and full-stack engineering using
+Python 2/3 and Meteor.js (full-stack NodeJS framework) respectively.
+On the data engineering side of things, I worked on improving the performance
+of our data engineering processes (e.g. export and/or cleaning of experiment
+data), working heavily in Python 2 and 3. During this time, I identified serious
+issues with the existing architecture—particularly race conditions, non-
+performant code that could (should) be parallelized, poor data integrity, and
+poor state handling. After writing detailed, formal improvement proposals, I
+implemented these proposals myself as solutions to the serious issues I found,
+improving overall performance and consistency.
+On the full-stack engineering side of things, I helped build and improve both
+front-end and back-end components that would act as interfaces to the
+aforementioned data engineering processes, facilitating things like user export
+and/or cleaning of experiment data. I consistently contributed to almost all
+parts of these interfaces, becoming fluent in NodeJS back-end code and
+Blaze/React front-end code.
+  Page 2 of 5
+   
+Software Engineering Intern
+July 2017 - September 2017 (3 months)
+This internship involved developing a full-stack progress-tracking feature
+of Riffyn's experiment-data-export mechanism, to provide users feedback
+on long-running processes. The project required a thorough survey of the
+existing back-end codebase, which was written in Python, in order to predict
+the amount of work needed to be done as well as ensuring that progress was
+actually being tracked—this was achieved by updating an entity in MongoDB
+that could be returned to the user client.
+While the main part of the back-end was written in Python, this project also
+involved developing a front-end circular progress bar that reflects the progress
+being tracked. This circular progress bar was implemented through the Meteor
+framework, with use of Blaze templates, Less, and JavaScript.
+The length of the internship as well as the time to completion of a working
+product for the project was actually about 1.5 months (end of July to beginning
+of September). Upon finishing, I was promoted to a full-time software engineer
+without needing to finish the full length of the internship (3 months).
+UC Berkeley, Haas School of Business
+Web Programmer, Office Assistant
+August 2016 - May 2017 (10 months)
+Under the CFRM department of UC Berkeley's Haas School of Business,
+this position involved management of front-end updates to the website http://
+accounting.haas.berkeley.edu/ with HTML/CSS and JavaScript. I also set up a
+lightweight promotional website for Accounting at Berkeley and regularly gave
+consultation on which web technologies would best serve the department and
+these websites' purposes.
+In order to keep my work correct, elegant, and efficient, I introduced a number
+of arbitrary technologies to my workspace that were not previously there. This
+includes version control with Git, private online git repositories, and a Unix CLI.
+I also made use of Node.js and Python to develop my own automated scripts
+for web scraping, code generation, and other repetitive tasks.
+Amazon
+Fulfillment Associate
+June 2016 - August 2016 (3 months)
+  Page 3 of 5
+   
+This position put heavy emphasis on customer-centricity, teamwork, and
+leadership with responsibilities we needed to fulfill as the last connecting
+line before a customer receives their Amazon purchase(s). With all of the
+aspects of working in a sort center, we, as Amazon's fulfillment associates,
+distinguished ourselves from other fulfillment centers by ensuring greater
+quality of work and care when handling customer purchases.
+On a less serious note, it was a pleasant side-job where you could say I
+basically got paid to exercise :)
+Advanced Studies Laboratory at NASA Ames Research Center
+Web Development Intern and IT Team Co-Leader
+July 2015 - June 2016 (1 year)
+Under the NuLEAF Technologies Project at ASL at NASA Ames, this
+position involved full stack web development while working with technologies
+such as PHP, Symfony and Laravel (which are two different types of PHP
+frameworks), MySQL databases, HTML/CSS, Javascript, and remote server
+shell. Responsibilities included programming implementation and, later,
+making higher-level decisions on implementation design for NuLEAF's
+websites.
+Foothill-De Anza Community College District
+1 year
+Computer Science Tutor
+January 2015 - December 2015 (1 year)
+Cupertino, California
+Under the De Anza College CIS Department, this position involved working
+with students in person in the computer lab on a walk-in/signup basis. The
+courses I tutored for at De Anza College are:
+- CIS18 Course Series: Unix/Linux and Shell Programming
+- CIS22 Course Series: C++ Programming, Data Abstractions and Structures
+- CIS29: Advanced C++ Programming
+- CIS35 Course Series: Java Programming
+- CIS64B: Introduction to SQL
+In order to ensure that students were indeed learning, I took it upon myself to
+place greater emphasis on having the student ultimately reach solutions on
+their own. Doing this meant giving useful hints without revealing any answers,
+showing where students typically make errors and how to fix those errors, as
+  Page 4 of 5
+   
+well as sharing my own methods of learning along with extra references for
+further reading.
+Computer Science Teaching Assistant
+January 2015 - June 2015 (6 months)
+Cupertino, California
+I TA'd for everything a CS transfer student would need, but primarily:
+- C++
+- Java
+- Data Structures and Algorithms
+Responsibilities included:
+- Holding in-person "office hours" for tutoring
+- Answering students' questions via online forum
+- Assist the professors in their respective courses with tutoring material
+Education
+University of California, Berkeley
+Bachelor’s Degree, Electrical Engineering and Computer
+Science · (2016 - 2017)
+Ohlone College
+Transfer, Computer Science · (2014 - 2016)
+De Anza College
+Transfer, Computer Science · (2014 - 2015)
+American High School
+High School, General Edumacation · (2010 - 2014)
+  Page 5 of 5

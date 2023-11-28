@@ -1,0 +1,109 @@
+   
+Contact
+www.linkedin.com/in/okwolf
+(LinkedIn)
+www.okwolf.com (Personal)
+Top Skills
+JavaScript
+React.js
+Front-End Development
+Certifications
+Security+
+Agile Coaching
+Publications
+Hyperapp for Redux refugees
+Ban software defects
+Winning at failing
+Wolfgang Wedemeyer
+senior software hacker and tool builder
+San Diego, California, United States
+Summary
+Full-stack software engineer with a front-end focus. Functional
+programming fanatic. Built with open-source software. I have led
+multiple teams of 4-8 developers, presented for groups of 100+, and
+mentored more people than I can count. Software is an integral part
+of my daily life, both professionally and personally. I'm constantly
+learning what's new in my field, building solutions to all the problems
+I encounter, and enabling those around me to do the same.
+Experience
+ServiceNow
+Senior Staff Software Engineer
+October 2022 - Present (1 year 2 months)
+San Diego, California
+Building the JavaScript framework powering our next-generation UIs and the
+tools that make it awesome to use. Traveling the world teaching and coaching
+devs about our software and how best to use it. Presenting at conferences
+and on podcasts to promote awareness and adoption of our tech. Fine-tuning
+performance of the full stack and building tools to better measure our progress.
+4Thought Technologies, Inc.
+Lead Technical Developer
+May 2021 - Present (2 years 7 months)
+New York City Metropolitan Area
+Building containerized React/Node/Python application to make flowchart
+representations of trading algorithms for backtesting, optimization, and
+analysis without writing a line of code. Providing technical, architectural, and
+product leadership including deployment strategy, testing infrastructure, and
+microservices architecture.
+Hyperapp
+Core Contributor
+August 2017 - Present (6 years 4 months)
+International
+  Page 1 of 3
+   
+Contributions include developer tools and core architectural product
+development. I keep the core library fast and started a pattern for effects that
+later became part of the core. I publish a library of effects that make it do
+useful stuff. Perform developer outreach via authoring articles and presenting
+at developer meetings. Provide customer support for bug reports.
+Stripe
+Frontend Engineer
+May 2022 - October 2022 (6 months)
+Application development for the Financial Connections software used by
+external and internal customers for linking bank accounts. Contributing
+developer tooling enhancements to improve test feedback loop and coverage.
+Auditing and fixing accessibility issues to improve the user experience for
+all. Data science research to identify, develop, and roll out experimental
+improvements to key conversion metrics. Finding, debugging, and quickly
+deploying fixes to production issues encountered by our large user base.
+ServiceNow
+Staff Software Engineer
+October 2018 - May 2022 (3 years 8 months)
+San Diego, California
+Building the JavaScript framework powering our next-generation UIs and the
+tools that make it awesome to use. Traveling the world teaching and coaching
+devs about our software and how best to use it. Presenting at conferences
+and on podcasts to promote awareness and adoption of our tech. Fine-tuning
+performance of the full stack and building tools to better measure our progress.
+Crypteron
+Chief Technology Officer
+January 2014 - October 2020 (6 years 10 months)
+San Diego, California, United States
+Project management and engineering leadership for SaaS turnkey application
+encryption solution targeting C# and Java developers utilizing an Azure
+backend and AngularJS frontend. Developed innovative new patent pending
+crypto puzzle denial of service protection and fivefactor authentication
+technologies.
+Booz Allen Hamilton
+Associate
+February 2008 - October 2018 (10 years 9 months)
+Greater San Diego Area
+  Page 2 of 3
+   
+Joined one month after graduating with the skills and experience needed.
+Learned the processes and practices of enterprise software development, the
+importance of version control, configuration management, agile development,
+and continuous improvement. Rose to technical leadership role managing
+multiple teams and providing mentorship. Spearheaded using modern
+React, Redux, and other tools to build a new single page application using a
+functional paradigm.
+Neqtr
+Chief Technical Officer
+March 2014 - March 2018 (4 years 1 month)
+San Diego, California, United States
+Provided strategic and overall product development leadership. Led iOS and
+Parse cloud stack development. Assisted with business development and
+video marketing production.
+Education
+Virginia Commonwealth University
+B.S. Cum Laude, Computer Science · (2005 - 2007)
+  Page 3 of 3

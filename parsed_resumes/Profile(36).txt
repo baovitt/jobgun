@@ -1,0 +1,162 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+franzen-44718 (LinkedIn)
+Top Skills
+Channel Management
+Supplier Relationship Management
+Enterprise Software
+Publications
+Structure and Motion from Uniform
+3D Acceleration
+Representing Motion Using
+Chronogeneous Transformations
+Structure from Chronogeneous
+Motion
+Structure from Chronogeneous
+Motion: A Summary
+Natural Representation of Motion in
+Space-Time
+Wolfgang Franzen
+Mathematical Technical Software Generalist | Principal Software
+Engineer | Applied Research
+Round Rock, Texas, United States
+Experience
+E2open
+Principal Software Engineer
+March 2018 - February 2022 (4 years)
+Austin, Texas, United States
+E2open acquired Entomo at the end of December 2017. Duties included
+knowledge transfer of Entomo's technology, enhancement and bug fixes
+to Entomo products and system infrastructure, implementation of a new
+customer, and rotating system support duties.
+Entomo, Inc.
+Senior Member of Technical Staff
+December 2000 - February 2018 (17 years 3 months)
+Bellevue, Washington, United States
+Major contributor to an integrated channel management system, and to a
+supplier relationship management system. Large corporations use our channel
+management system. Users access the system as a cloud-based (SaaS)
+service. Customers’ and their partners systems integrate to ours through FTP,
+email, and EDI.
+One of the architects of the channel management platform. Made major
+contributions to the persistence layer, the query layer, and meta-modeling of
+customer data types. Also implemented the system component to integrate
+with customers’ systems, and do data cleansing and format conversion.
+Also, developed system applications. Designed and implemented our Channel
+Incentive Management (CIM) application. It determines incentives for which
+a company’s partners are eligible. The set of supported incentive programs
+includes Rebates, SPIFFs, co-op/MDF programs, Ship & Debit programs, and
+price protection. Some additional applications or system components for which
+I was the main, major, or early developer:
+• Perform sales credit assignment.
+• Calculate commission splits.
+  Page 1 of 4
+   
+• Calculate design win commissions.
+• Schedule system jobs.
+• Used fuzzy matching to dedupe master data and do record linkage.
+• Track file arrivals, and check they match the expected frequency of
+submission.
+Developed the “Query Wizard” for our early SRM offering. Users could select
+the subset of documents to display or export, as well as the fields to display,
+and the fields on which to filter. The display fields and the filter fields could
+occur in related documents, and were not required occur in the retrieved
+document type. The code dynamically generated the SQL query necessary to
+retrieve the requested data.
+Transaga Software, Inc.
+Co-founder & System Architect
+1998 - 2000 (2 years)
+Beaverton, OR
+Co-architected and implemented a subsystem critical to the operations of the
+second largest food distributor in Canada (Sobeys), with 11 billion dollars in
+annual sales.  The software transferred relational data and files between a
+legacy system at corporate headquarters and roughly 300 grocery stores. In
+addition, the system provided automated software update.
+Tactica Corporation
+Senior Member Of Technical Staff
+1996 - 1998 (2 years)
+Portland, Oregon
+Contributed to the development of a process-centric middleware framework
+that facilitated the rapid development of systems where support for extended
+or complex ("Off-line") transactions is required. Responsible for formalizing
+the syntax and semantics of CapreraScript, a Java-like scripting language for
+specifying business rules. Developed the compiler, interpreter, debugger, and
+documentation for CapreraScript.
+Reusable Solutions, Inc.
+Member Of Technical Staff
+1992 - 1996 (4 years)
+Portland, Oregon
+Consultant. Projects involved object modeling, rapid prototyping, developing
+application user interfaces, mathematical modeling, and optimization. Co-
+  Page 2 of 4
+   
+designed and implemented an application to calculate optimal staffing
+levels for USAir airport personnel. Generated bid sheets for ticket counter
+and gate personnel, and aircraft cleaning crews, while meeting contractual
+requirements. This involved applied queuing theory, and linear programming.
+Also, implemented part of the user interface for a seat allocation system for
+USAir. Also, implemented the data entry and analysis portions of a system to
+audit contributions to a pension trust fund.
+University of Southern California
+Graduate Research And Teaching Assistant
+1984 - 1991 (7 years)
+Los Angeles, CA
+Computer Composition International
+Senior Programmer
+1983 - 1984 (1 year)
+Chatsworth, CA
+Participated in the design of the user interface for a WYSIWYG graphics
+display terminal. Defined a language to describe scalable fonts, and wrote the
+associated translator and interpreter.  Wrote the device driver for the display
+terminal.
+Mattel Electronics
+Member Of Technical Staff
+1982 - 1983 (1 year)
+Hawthorne, CA
+Participated in the design and development of a video game system and the
+associated custom graphic chip. Suggested graphics hardware changes to
+improve system performance.  Analyzed time, space, and signal-to-noise
+tradeoffs for various sound and music synthesis algorithms running on a TMS
+320. Performed a feasibility study of an auto-stereoscopic 3-D image display
+technology.  Helped define hardware/software requirements for the associated
+test bed.  Developed a mathematical model of the system under study, and
+determined optimal parameters.  Devised novel graphics algorithms in C for
+the generation of auto-stereoscopic 3-D images.
+Transaction Technology, Inc.
+Member Of Technical Staff
+1979 - 1982 (3 years)
+Santa Monica, California, United States
+  Page 3 of 4
+   
+Evaluated vendor programming language and programming environment
+support. Specified, designed, coded, tested, and documented software
+development tools such as a dump generator/formatter package, batch
+spooler, file comparison utility, and ANSI-standard tape labeling. Implemented
+a multi-link communications protocol in TAL on a TANDEM computer.
+Caltech Seismological Laboratory
+Senior Research Assistant
+1976 - 1979 (3 years)
+Pasadena, California, United States
+Developed FORTRAN data analysis programs.  Collected gravity data in the
+field. This was a full time position, but with a gap of about a year while getting
+my M.S. at USC.
+University of Southern California
+Research And Teaching Assistant
+1977 - 1978 (1 year)
+Los Angeles, California, United States
+Worked with Per Brinch-Hansen, and investigated extending the
+SOLO operating system to a multi-user operating system. Was also an
+undergraduate teaching assistant.
+Caltech
+Research Assistant
+1975 - 1975 (less than a year)
+Pasadena, California, United States
+Developed utilities written in Sequential Pascal to run under the SOLO
+operating system.
+Education
+University of Southern California
+Ph.D., Computer Vision · (1991)
+Caltech
+B.S., Mathematics · (1976)
+  Page 4 of 4

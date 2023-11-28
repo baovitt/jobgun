@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobgun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body>
+    <div class="w-full mx-auto bg-white border-b 2xl:max-w-7xl">
+      <div x-data="{ open: false }"
+          class="relative flex flex-col w-full p-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="flex flex-row items-center justify-between lg:justify-start">
+              <a class="text-lg tracking-tight text-black uppercase focus:outline-none focus:ring lg:text-2xl"
+                  href="/">
+                  <span class="lg:text-lg uppecase focus:ring-0"> Jobgun </span>
+              </a>
+              <button @click="open = !open"
+                  class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden">
+                  <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                      </path>
+                      <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+              </button>
+          </div>
+          <nav :class="{'flex': open, 'hidden': !open}"
+              class="flex-col flex-grow hidden py-10 md:flex lg:py-0 md:justify-end md:flex-row">
+              <ul class="space-y-2 list-none md:space-y-0 md:items-center md:inline-flex">
+                  <li>
+                      <a href="/"
+                          class="px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600">
+                          HOME
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/get-started/"
+                          class="px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600">
+                          GET STARTED
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/about"
+                          class="px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600">
+                          ABOUT
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/newsletter/"
+                          class="px-2 py-8 text-sm text-gray-500 border-b-2 border-transparent lg:px-6 md:px-3 hover:text-blue-600">
+                          NEWSLETTER
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+    <div
+      id="get-started-section"
+      class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl"
+    >
+      <div class="grid items-start grid-cols-1 md:grid-cols-2">
+        <div>
+          <h2 class="mt-6 text-3xl font-medium text-black select-none">
+            Let's Find Your Next Opportunity
+          </h2>
+          <!-- ResumeForm(hitNext) is not valid HTML, it seems to be a placeholder for a form component. -->
+          <!-- Replace with a generic form or specific form elements as needed. -->
+          <form id="resumeForm">
+            <p class="mt-5 text-base text-gray-500 pr-5">
+              Upload your resume and we'll extract the information we need, or select one of 4 demo resumes below.
+            </p>
+            <br />
+
+            <div class="flex items-center justify-center w-full pr-5">
+              <label
+                for="dropzone-file"
+                class="flex flex-col items-center justify-center w-full h-48 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+              >
+                <div id="file-uploader">
+                  <div
+                    class="flex flex-col items-center justify-center pt-5 pb-6"
+                  >
+                    <svg
+                      class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 16"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                      />
+                    </svg>
+                    <p
+                      class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold"
+                    >
+                      Click to upload
+                    </p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">
+                      WORD, PDF (Max 25 MB)
+                    </p>
+                  </div>
+                </div>
+                <input
+                  id="dropzone-file"
+                  type="file"
+                  class="hidden"
+                  accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf"
+                />
+              </label>
+            </div>
+            <div class="flex pr-5">
+              <div class="p-3 mr-2 mt-4 mb-2 bg-gray-50 hover:bg-gray-100 border-2 border-gray-300 rounded-lg text-center border-dashed text-gray-500" id="demo-resume-network-engineer">Network Engineer</div>
+              <div class="p-3 m-2 mt-4 bg-gray-50 hover:bg-gray-100 border-2 border-gray-300 rounded-lg text-center border-dashed text-gray-500" id="demo-resume-construction-manager">Construction Manager</div>
+              <div class="p-3 m-2 mt-4 bg-gray-50 hover:bg-gray-100 border-2 border-gray-300 rounded-lg text-center border-dashed text-gray-500" id="demo-resume-react-developer">React JS Developer</div>
+              <div class="p-3 ml-2 mt-4 mb-2 bg-gray-50 hover:bg-gray-100 border-2 border-gray-300 rounded-lg text-center border-dashed text-gray-500" id="demo-resume-devops-engineer">Devops Engineer</div>
+            </div>
+            <div>View demo resumes <a href="/assets/test_resumes/" class="text-blue-600">here</a>.</div>
+            <br>
+            <button
+              id="submit-button"
+              class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black hidden"
+            >
+              Next
+            </button>
+            <div role="status" id="loading" class="hidden">
+              <svg
+                aria-hidden="true"
+                class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-black"
+                viewBox="0 0 100 101"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentFill"
+                />
+              </svg>
+              <span class="sr-only">Loading...</span>
+            </div>
+            <div id="submit-error" class="text-red-500 hidden">
+              There was an error. Please try again or report the error <a href="https://forms.gle/Ytgb8YobStXR7P2j9" class="underline" target="_blank">here</a>.
+            </div>
+          </form>
+        </div>
+        <div
+          class="h-full mt-12 lg:mt-0 border-mercury-400 lg:pl-24 md:border-l md:pl-12"
+        >
+          <div class="flex flex-col justify-center m-auto">
+            <div
+              class="flex flex-col justify-center text-center md:flex-row md:text-left"
+            >
+              <div
+                class="flex flex-col justify-center max-w-2xl p-10 space-y-12"
+              >
+                <article>
+                  <span class="inline-flex items-center text-black rounded-xl">
+                    <span class="font-mono text-sm">01</span>
+                  </span>
+                  <div class="mt-3 text-3xl tracking-tighter text-black">
+                    Basic Information
+                  </div>
+                  <div class="mt-4 text-gray-500">Name, biography, etc.</div>
+                </article>
+                <article>
+                  <span class="inline-flex items-center text-black rounded-xl">
+                    <span class="font-mono text-sm">02</span>
+                  </span>
+                  <div class="mt-3 text-3xl tracking-tighter text-black">
+                    Experience & Education
+                  </div>
+                  <div class="mt-4 text-gray-500">
+                    Work history, education, and certifications.
+                  </div>
+                </article>
+                <article>
+                  <span class="inline-flex items-center text-black rounded-xl">
+                    <span class="font-mono text-sm">03</span>
+                  </span>
+                  <div class="mt-3 text-3xl tracking-tighter text-black">
+                    Other Information
+                  </div>
+                  <div class="mt-4 text-gray-500">
+                    Skills, interests, and other information.
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="jobs-section"
+      class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl hidden"
+    >
+      <div x-data="{ jobTypesOpen: false, sourceOpen: false }" class="flex">
+        <!-- Job Type Button and Dropdown -->
+        <div class="flex-none">
+          <button
+            @click="jobTypesOpen = !jobTypesOpen"
+            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+          >
+            <!-- classes omitted for brevity -->
+            Job type
+            <svg
+              class="w-2.5 h-2.5 ml-2.5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path stroke="currentColor" d="m1 1 4 4 4-4"></path>
+            </svg>
+          </button>
+          <div
+            x-show="jobTypesOpen"
+            class="absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+          >
+            <ul
+              class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            >
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="full-time-checkbox"
+                    defaultValue=""
+                    class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    checked
+                  />
+                  <label
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Full Time</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="part-time-checkbox"
+                    defaultValue=""
+                    class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    checked
+                  />
+                  <label
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Part Time</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="contract-checkbox"
+                    defaultValue=""
+                    class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    checked
+                  />
+                  <label
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Contract</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="internship-checkbox"
+                    defaultValue=""
+                    class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    checked
+                  />
+                  <label
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Internship</label
+                  >
+                </div>
+              </li>
+              <li
+                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600"
+              >
+                <div class="flex items-center pl-3">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="other-checkbox"
+                    defaultValue=""
+                    class="w-4 h-4 text-black bg-gray-100 border-gray-300 rounded focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                    checked
+                  />
+                  <label
+                    class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Other</label
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative w-full">
+          <input
+            type="search"
+            id="title-input"
+            placeholder="Preferred Job Title"
+            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border border-gray-300 focus:ring-black focus:border-black dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-black"
+          />
+          <button
+            class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-black rounded-r-lg border border-black"
+            name="search-submit"
+          >
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+      <div id="jobs"></div>
+      <div role="status" id="search-loading" class="hidden">
+        <svg
+          aria-hidden="true"
+          class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+          viewBox="0 0 100 101"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+            fill="currentColor"
+          />
+          <path
+            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+            fill="currentFill"
+          />
+        </svg>
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div id="search-result-error" class="hidden text-red-500">Error retrieving search results. If the issue persists further, check your internet connection.</div>
+      <div class="items-center px-8 mx-auto max-w-7xl lg:px-16 md:px-12">
+        <div class="justify-center w-full lg:p-10 max-auto">
+            <div class="flex items-center justify-center px-4 py-3 bg-white sm:px-6">
+                <div class="flex justify-center flex-1 gap-3">
+                    <a href="#" id="first-nav" class="inline-flex items-center justify-center p-3 text-sm text-gray-700 rounded-xl group ring-1 focus:outline-none ring-gray-200 hover:text-black hover:ring-blue-300 active:bg-gray-50 focus-visible:outline-gray-600 focus-visible:ring-gray-300">First</a>
+                    <a href="#" id="last-nav" class="hidden inline-flex items-center justify-center p-3 text-sm text-gray-700 rounded-xl group ring-1 focus:outline-none ring-gray-200 hover:text-black hover:ring-blue-300 active:bg-gray-50 focus-visible:outline-gray-600 focus-visible:ring-gray-300">Last</a>
+                    <a href="#" id="next-nav" class="inline-flex items-center justify-center p-3 text-sm text-gray-700 rounded-xl group ring-1 focus:outline-none ring-gray-200 hover:text-black hover:ring-blue-300 active:bg-gray-50 focus-visible:outline-gray-600 focus-visible:ring-gray-300">Next</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var file = null;
+      var embedding = null;
+      var listings = null;
+      var pageNum = 0;
+      var preset = null
+
+      $("#dropzone-file").on("change", function (event) {
+        if (event.target instanceof HTMLInputElement) {
+          const fileInputElement = event.target;
+          if (fileInputElement.files.length === 0) {
+            // No files selected, do nothing
+          } else {
+            file = fileInputElement.files.item(0);
+            justifyMessage(file);
+          }
+        } else {
+          console.log(`Unexpected event target: ${event.target}`);
+        }
+      });
+
+      $("#submit-button").click(function (e) {
+        e.preventDefault();
+        console.log("submitting");
+        $("#submit-button").hide();
+        $("#loading").show();
+        if (preset) {
+          defaultResumeRequest();
+        } else {
+          uploadResume();
+        }
+      });
+
+      function setActiveDemo(name) {
+        if (preset == name) {
+          preset = null;
+          $("#submit-button").hide();
+          $("#file-uploader").html(justifyMessage(file));
+          $(`#demo-resume-${name}`).addClass("hover:bg-gray-100");
+          $(`#demo-resume-${name}`).removeClass("bg-gray-200");
+          $("#submit-error").hide();
+        } else {
+          preset = name;
+          $("#submit-button").show();
+          $("#file-uploader").html(selectedPresetMessage());
+          $("#demo-resume-network-engineer").removeClass("bg-gray-200");
+          $("#demo-resume-construction-manager").removeClass("bg-gray-200");
+          $("#demo-resume-react-developer").removeClass("bg-gray-200");
+          $("#demo-resume-devops-engineer").removeClass("bg-gray-200");
+          $(`#demo-resume-${name}`).removeClass("hover:bg-gray-100");
+          $(`#demo-resume-${name}`).addClass("bg-gray-200");
+        }
+
+      } 
+
+      $("#demo-resume-network-engineer").click(function (e) {
+        e.preventDefault();
+        setActiveDemo("network-engineer");
+      });
+
+      $("#demo-resume-construction-manager").click(function (e) {
+        e.preventDefault();
+        setActiveDemo("construction-manager");
+      });
+
+      $("#demo-resume-react-developer").click(function (e) {
+        e.preventDefault();
+        setActiveDemo("react-developer");
+      });
+
+      $("#demo-resume-devops-engineer").click(function (e) {
+        e.preventDefault();
+        setActiveDemo("devops-engineer");
+      });
+
+
+      function defaultResumeRequest() {
+        $.ajax({
+          url: "/api/v1/jobs/default", // Adjust the URL based on your actual endpoint
+          type: "POST",
+          data: JSON.stringify({
+            "default": preset
+          }),
+          contentType: false,
+          processData: false,
+          success: function (response) {
+            console.log("Success:", response);
+            embedding = response.embedding;
+            listings = response.listings;
+            $("#get-started-section").hide();
+            $("#loading").hide();
+
+            // Display job listings
+            $("#jobs-section").show();
+            $("#jobs").html(
+                listings.map((listing) => {
+                    return jobListingTemplate(
+                        listing.title,
+                        listing.company_name,
+                        listing.description,
+                        listing.location,
+                        listing.employment_type,
+                        listing.url,
+                        listing._additional.distance,
+                        listing.highlights
+                    );
+                })
+            );
+          },
+          error: function (xhr, status, error) {
+            console.error("Error:", error);
+            $("#loading").hide();
+            $("#submit-button").show();
+            $("#submit-error").show();
+          },
+        });
+      };
+
+      function uploadResume() {
+        var formData = new FormData();
+        var fileInput = $("#dropzone-file")[0];
+
+        if (fileInput.files.length > 0) {
+          formData.append("file", fileInput.files[0]);
+        }
+
+        $.ajax({
+          url: "/api/v1/jobs/resume", // Adjust the URL based on your actual endpoint
+          type: "POST",
+          data: formData,
+          contentType: false,
+          processData: false,
+          success: function (response) {
+            console.log("Success:", response);
+            embedding = response.embedding;
+            listings = response.listings;
+            $("#get-started-section").hide();
+            $("#loading").hide();
+
+            // Display job listings
+            $("#jobs-section").show();
+            $("#jobs").html(
+                listings.map((listing) => {
+                    return jobListingTemplate(
+                        listing.title,
+                        listing.company_name,
+                        listing.description,
+                        listing.location,
+                        listing.employment_type,
+                        listing.url,
+                        listing._additional.distance,
+                        listing.highlights
+                    );
+                })
+            );
+          },
+          error: function (xhr, status, error) {
+            console.error("Error:", error);
+            $("#loading").hide();
+            $("#submit-button").show();
+            $("#submit-error").show();
+          },
+        });
+      }
+
+      $("#first-nav").click(function (e) {
+        e.preventDefault();
+        $("#last-nav").hide();
+        pageNum = 0;
+        runEmbeddingRequest();
+      });
+
+      $("#next-nav").click(function (e) {
+        e.preventDefault();
+        $("#last-nav").show();
+        pageNum += 1;
+        runEmbeddingRequest();
+      });
+
+      $("#last-nav").click(function (e) {
+        e.preventDefault();
+        if (pageNum == 1) {
+          $("#last-nav").hide();
+        }
+        pageNum -= 1;
+        runEmbeddingRequest();
+      });
+
+      function runEmbeddingRequest() {
+        $.ajax({
+          url: "/api/v1/jobs/embedding", // Adjust the URL based on your actual endpoint
+          type: "POST",
+          data: JSON.stringify({
+            "page": pageNum,
+            "embedding": embedding,
+            "filters": {
+                "jobType": {
+                    "fullTime": $('#full-time-checkbox').is(":checked"),
+                    "partTime": $('#part-time-checkbox').is(":checked"),
+                    "contract": $('#contract-checkbox').is(":checked"),
+                    "internship": $('#internship-checkbox').is(":checked"),
+                    "other": $('#other-checkbox').is(":checked")
+                },
+                "preferredTitle": $('#title-input').val()
+            }
+          }),
+          contentType: "application/json",
+          success: function (response) {
+            console.log("Success:", response);
+            listings = response.listings;
+            $('#search-loading').hide();
+            $('#search-result-error').hide();
+            $("#jobs").html(
+                listings.map((listing) => {
+                    return jobListingTemplate(
+                        listing.title,
+                        listing.company_name,
+                        listing.description,
+                        listing.location,
+                        listing.employment_type,
+                        listing.url,
+                        listing._additional.distance,
+                        listing.highlights
+                    );
+                })
+            );
+          },
+          error: function (xhr, status, error) {
+            $('#search-loading').hide();
+            $('#search-result-error').show();
+            console.error("Error:", error);
+          },
+        });
+      }
+
+      $('input[name="checkbox"]').on("change", function () {
+        $('#jobs').html('');
+        $('#search-loading').show();
+        runEmbeddingRequest();
+      });
+
+      $('button[name="search-submit"]').on("click", function () {
+        $('#jobs').html('');
+        $('#search-loading').show();
+        runEmbeddingRequest();
+      });
+      
+
+      function justifyMessage(file) {
+        if (preset != null) {
+          $("#file-uploader").html(selectedPresetMessage());
+          $("#submit-button").show();
+        } else if (file == null) {
+          $("#file-uploader").html(noFileMessage());
+          $("#submit-button").hide();
+        } else if (file.size >= 25 * 1024 * 1024) {
+          $("#file-uploader").html(fileSizeTooBigMessage());
+          $("#submit-button").hide();
+        } else if (
+          file.type == "application/pdf" ||
+          file.type == "application/msword" ||
+          file.type ==
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+          file.type == "text/plain"
+        ) {
+          $("#file-uploader").html(fileUploadedMessage());
+          $("#submit-button").show();
+        } else {
+          $("#file-uploader").html(wrongFileTypeMessage());
+          $("#submit-button").hide();
+        }
+      }
+
+      function fileUploadedMessage() {
+        return `<div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <svg class="w-10 h-10 mb-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <p class="mb-2 text-sm text-green-500 dark:text-green-400">
+                <span class="font-semibold">File uploaded</span>
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 text-center">
+                Click again to reupload.
+            </p>
+            </div>
+            `;
+      }
+
+      function fileSizeTooBigMessage() {
+        console.log("run template");
+        return `<div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <svg class="w-10 h-10 mb-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2L2 7v10a2 2 0 002 2h16a2 2 0 002-2V7l-10-5zm0 0v10m0 0l-2-2m2 2l2-2"></path>
+            </svg>
+            <p class="mb-2 text-sm text-red-500 dark:text-red-400">
+                <span class="font-semibold">File size too big</span>
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">
+                Please upload a file smaller than 25 MB
+            </p>
+            </div>
+            `;
+      }
+
+      function wrongFileTypeMessage() {
+        return `<div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <svg class="w-10 h-10 mb-3 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            <p class="mb-2 text-sm text-red-500 dark:text-red-400">
+                <span class="font-semibold">Wrong file type</span> (only .pdf, .docx)
+            </p>
+            <p class="text-xs text-gray-500 dark:text-gray-400">
+                Please upload a valid file or fill manually
+            </p>
+            </div>
+            `;
+      }
+
+      function selectedPresetMessage() {
+        return `<div class="flex flex-col items-center justify-center pt-5 pb-6">
+            <p class="mb-2 text-sm text-gray-500">
+                You've selected a demo resume
+            </p>
+            </div>
+          `;
+      }
+
+      function noFileMessage() {
+        return `<div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                </svg>
+                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold">Click to upload</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">WORD, PDF (Max 25 MB)</p>
+            </div>`;
+      }
+
+      function replaceSubstringsWithBold(mainString, substrings) {
+          try {
+              substrings.forEach(substring => {
+                  // Escape special characters in the substring to be used in a regular expression
+                  const escapedSubstring = substring.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                  const regex = new RegExp(escapedSubstring, 'g');
+
+                  mainString = mainString.replace(regex, `<b>${substring}</b>`);
+              });
+              return mainString;
+          } catch (error) {
+              console.error("An error occurred:", error);
+              // Return the original string in case of an error
+              return mainString;
+          }
+      }
+
+      function jobListingTemplate(title, company, description, location, employmentType, url, distance, highlights) {
+        // Function to calculate job match color
+        const jobMatchColor = (p) => {
+            return `rgb(${Math.round((1.0 - p) * 220)}, ${Math.round(p * 220)}, 0)`;
+        };
+
+        const normalizedDistance = (distance * 2) ** 0.75
+
+        // HTML template
+        return `
+            <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12" x-data="{ expanded: false }">
+                <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-3 md:mb-0">
+                    <span class="text-base" style="color: ${jobMatchColor(1.0 - normalizedDistance)}">${(1.0 - normalizedDistance).toFixed(2)}%</span>
+                    <span class="text-lg font-medium leading-6 text-black">${title}</span>
+                    <span class="text-base text-gray-500">${company}</span>
+                    <br>
+                    <span class="text-base text-gray-500">Location:</span>
+                    <span class="text-base text-gray-500 font-bold">${location}</span>
+                    <br>
+                    <span class="text-base text-gray-500">Employment Type:</span>
+                    <span class="text-base text-gray-500 font-bold">${employmentType}</span>
+                    <br>
+                    <a href="${url}" target="_blank" class="items-center justify-center py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">Apply on Linkedin</a>
+                </div>
+                <div class="lg:col-span-2">
+                    <div :class="{ 'h-64 overflow-hidden': !expanded }">
+                        <p class="text-base text-gray-500">${/* replaceSubstringsWithBold(description, JSON.parse(highlights))*/ description.replaceAll("\n", "<br>")}</p>
+                    </div>
+                    <br>
+                    <div class="underline" @click="expanded = !expanded" x-text="expanded ? 'See less' : 'See more'"></div>
+                </div>
+            </div>
+        `;
+      }
+
+    </script>
+    
+  </body>
+</html>

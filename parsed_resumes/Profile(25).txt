@@ -1,0 +1,60 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+hellicksons (LinkedIn)
+Top Skills
+SQL
+JavaScript
+C#
+Wolfgang HellicksonSabelhaus
+Software Engineer @ Ironclad
+Mather, California, United States
+Summary
+Extremely passionate and curious programmer with a shiny new
+degree to prove it. I am immensely intrigued by the advances in AI,
+graphics engines and low level optimizations of computers. I have
+years of experience in developing and deploying web and desktop
+applications that utilize custom machine learning models, real-time
+communications and graphical simulations. 
+I am most passionate when I'm working on the breaking edge of
+computing and I try to stay up to date with what's happening in this
+fast moving industry as much as I can. I am currently looking for full-
+time work, so if I seem like a great fit for your team please feel free to
+message me.
+Experience
+Ironclad
+Software Engineer
+June 2022 - Present (1 year 6 months)
+California State University, Long Beach
+Shark Lab Student Developer
+September 2019 - December 2020 (1 year 4 months)
+Long Beach, California, United States
+Used React and Electron to create a web based desktop app for data entry,
+Windows Forms for easy to use data retrieval software that also taught the
+researchers of the Shark Lab about SQL and the database we created for
+them, and also helped researchers create complex queries and visualizations
+for their research.
+Vaco
+Google Student Innovator
+February 2019 - May 2019 (4 months)
+Long Beach, California, United States
+  Page 1 of 2
+   
+Worked to educate about and promote the use of Google Cloud Products on
+campus through student and faculty outreach. Was able to create and attend
+multiple events including speaking at classes and tabling with Google Cloud
+employees at hackathons to help participants with trouble using Google Cloud.
+Intel Corporation
+Web Development Intern
+May 2018 - August 2018 (4 months)
+Folsom, California
+Developed an internal tool that would help in the requesting, scheduling, and
+returning of tests using AngularJS, SQL, and PHP. Created modular forms and
+an easy way to add new tests by routing through a single config file. Enhanced
+scheduling capabilities with visualized scheduling blocks. Created multiple
+cross referenceable charts that would track number of requests, completions,
+reasons for failure and more with customizable from/to dates. 
+Education
+California State University-Long Beach
+Bachelor of Science - BS, Computer Science · (2017 - 2021)
+  Page 2 of 2

@@ -19,7 +19,7 @@ trait Application:
     yield Server
       .builder()
       .http(8080)
-      .services(jobController.services)
+      .services(jobController.services*)
       .service(OpenApiDocsController.docService)
       .requestTimeout(Duration.ofSeconds(30))
       .build()

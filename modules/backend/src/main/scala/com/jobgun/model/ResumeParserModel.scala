@@ -19,7 +19,11 @@ object ResumeParserModel:
 
   def parsePDF(resume: TapirFile): IO[Throwable, String] = ZIO.attempt {
     val parser = new PreflightParser(resume)
-    PDFTextStripper().getText(parser.parse)
+    val text = PDFTextStripper().getText(parser.parse)
+    // val fileWriter = new FileWriter(new File("parsed.txt"))
+    // fileWriter.write(text)
+    // fileWriter.close()
+    text
   }
 
   def parseWord(resume: TapirFile): IO[Throwable, String] = ZIO.attempt {

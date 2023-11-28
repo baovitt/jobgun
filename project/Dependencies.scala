@@ -20,7 +20,7 @@ object Dependencies {
     )
 
     lazy val weaviateDeps = Seq(
-      "io.weaviate" % "client" % "4.2.1",
+      "io.weaviate" % "client" % "4.3.0",
       "com.google.guava" % "guava" % "32.1.2-jre"
     )
   }

@@ -1,0 +1,192 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+lochner-b803a5 (LinkedIn)
+Top Skills
+Requirements Analysis
+Software Product Management
+Product Strategy
+Languages
+English (Professional Working)
+German (Native or Bilingual)
+Patents
+Network location service
+SELF-CONFIGURING NETWORK
+Wolfgang Lochner
+Director, Product Management / Principal Product Manager
+San Francisco Bay Area
+Summary
+20+ years product line management in the security / networking
+infrastructure, software and cloud industries with extensive
+international experience. Background in Product Marketing, Sales
+Engineering, Software development.
+Switching, Firewalls, VPN, WAN connectivity and WAN acceleration,
+Single Sign-On and Identitity and Access Management (IAM),
+Network Services (DNS / DHCP), Analytics and Reporting,
+Centralized Management, Embedded Systems / IoT.
+Specialties: networking protocols and security, operating systems,
+network management software, reporting and analytics, physical and
+virtual appliances, Cloud, product lifecycle policies and processes.
+Experience
+Inseego Corp
+Director of Product Management, Enterprise Solutions
+July 2021 - October 2022 (1 year 4 months)
+United States
+• Product Management Lead for Inseego’s new Enterprise 5G SD EDGE
+Solution. Brought the solution from a technology concept to product. This
+product line consists of 5G Modems and Routers on-premises, a cloud-based
+router as well as a ZTNA security gateway  and centralized management for
+zero touch provisioning and monitoring of the infrastructure, running in private
+or public cloud, integrating with other solutions with northbound interfaces.
+• Product Management for Inseego’s flagship 5G cellular network router, used
+for secure site to site use cases
+Pulse Secure
+Sr. Director Product Management / Distinguished Product Manager,
+Secure Access Solutions
+June 2019 - September 2020 (1 year 4 months)
+San Jose, California
+  Page 1 of 5
+   
+• Product Management Lead for PCS (VPN, VDI Gateway and Single
+Sign On / IAM), PPS (Network Access Control, device profiling RADIUS
+Server), vADC Application Delivery Controller and Pulse One (Centralized
+Management and Analytics SaaS product). 
+• Manager of four Product Managers. Hired one additional Product Manager,
+mentor for Interns. 
+• Individual contributor for vADC (Local and Global Traffic Management / Load
+Balancing, Web Application Firewall (WAF)
+• Individual contributor for appliances hardware, platform software and
+certifications (FIPS, Common Criteria, JTIC, SOC 2)
+• Owner of Product Management processes and policies. Developed and
+introduced a new software release and support policy to offer Long Term
+Support releases in a way that did not require additional resources
+• Advisor to new Analytics SaaS offering for SSL VPN and Zero Trust Network
+Access
+Riverbed Technology
+Director, Product Management, WAN Optimization
+January 2018 - February 2019 (1 year 2 months)
+Sunnyvale, CA
+• Introduced WAN-OPT centralized management and analytics into the cloud,
+starting with Azure and AWS
+• Created a strategy to unify WAN-OPT and SD-WAN centralized management
+and analytics platforms for increased user experience
+• Introduced new pricing and licensing strategy with software focus, offering
+perpetual and subscription pricing, consistent between cloud, virtual and a
+physical new generation of WAN Optimization appliances
+• Defined requirements for WAN-OPT networking and security features (QoS,
+path selection, SAML for management, …)
+F5 Networks
+Sr. Product Manager, Application Delivery Controller - Access Security
+May 2015 - September 2017 (2 years 5 months)
+San Jose, California, United States
+• Product Manager for F5’s ADC Access Policy Manager (APM), managing
+Identity and Access Management (IAM) features including OAuth, SAML and
+integrations with IAM vendors (Okta, Ping Identity, VMware, Microsoft,…)
+• Defined features using an Agile methodology, working closely with 30+
+customers to analyze use cases to prioritize Agile sprint content. GTM
+planning and material creation, internal, external and with the partners.
+  Page 2 of 5
+   
+• Product Manager for F5’s VDI proxy integrations with Citrix, Microsoft and
+VMware. Defined and synced roadmap.
+• Product Manager for F5’s centralized management and analytics solution for
+all of the Access Security functionality. 
+• Defined pricing for new generation as well as new higher scaling models of
+physical and virtual APM appliances.
+Infoblox
+Sr. Product Manager, Appliance Platforms and Reporting
+June 2010 - April 2015 (4 years 11 months)
+Santa Clara, CA
+•• Product Manager for Infoblox’ physical and virtual appliances for Network
+Services (DNS, DHCP, IP Address Management), Network Automation, DDoS,
+and Reporting / Analytics, reporting to VP of Product Management. 
+• Defined reports and analytics / threat prevention requirements for DNS and
+DHCP anomalies and attacks. Defined APIs using REST and data export
+capabilities for integration with partner solutions
+• Proposed to the Executive Team a next generation of appliances for all
+product lines during IPO of Infoblox. 
+• Introduced the products with significant additional hardware and software
+features, enabling entering the Service Provider / Carrier market, leading to
+incremental multi-million $ per quarter revenue, and increasing competitive
+advantages for the Enterprise market. 
+• Introduced a new small appliance and virtual appliances for local survivability
+for branch offices such as Retail, Hospital and Government deployments.
+Product introduction closed a $2+M opportunity.
+• Established and ran a core team to monitor adoption and quality of the new
+hardware generation
+• Partnership Management: Worked closely with Splunk used in the Infoblox
+Analytics product, and for virtual appliances with Cisco, Riverbed, VMware to
+identify new capabilities and align roadmaps.
+Check Point Software Technologies
+Product Manager, Security Gateway Software Infrastructure and
+Virtualization
+September 2008 - May 2010 (1 year 9 months)
+Redwood City, CA
+• Product Management for Check Point’s operating systems for the Security
+Gateway / NG Firewall appliances (Check Point SPLAT, Nokia IPSO –
+acquired by Check Point): Developed a proposal to unify the two operating
+  Page 3 of 5
+   
+systems in a phased approach. Collected customer, channel partner and field
+feedback. Developed GTM plan and material.
+• Product Management for Check Point’s virtualized security appliances for
+managed service providers (VSX software and VSX-1 appliances), as well as
+virtual machine / cloud based appliances (VE). Led VMware integration.
+• Product Manager for FIPS and EAL-4+ Common Criteria certifications
+Extreme Networks
+Sr. Product Manager, Operating System + Network Management
+August 2001 - August 2008 (7 years 1 month)
+Santa Clara, CA
+• Product Management and Product Marketing for Extreme Networks’ L2 / L3
+Ethernet switch OS and Network Management / Analytics products, reporting
+to the Sr. VP Product Management
+• Introduced a next generation operating system (SOAP APIs, scriptable
+CLI, automatic port configuration, modern web management, IPv6,...),
+“ExtremeXOS”. Managed transition, working closely with key Enterprise and
+Service Provider customers to prioritize feature sets. Introduced now patented
+features for analytics and provisioning.
+• Hired and managed two Product Managers. Retained individual contributor
+responsibility for ExtremeXOS
+• Responsible for all external and internal collateral for the OS and
+management software. Evangelist at industry events such as IPv6 Summit and
+trade shows. Presenter at regular channel and customer events.
+• Established a formal software release policy and process. Certified internal
+auditor for ISO 9001 and TL 9000.
+• Partnership Management: Worked closely with partners (Avaya for VoIP,
+Juniper for RADIUS, NetScout for RMON, InMon for sFlow, …) on feature
+integration and compatibility testing
+Wind River Systems, Inc
+Product Manager, Sales Engineer, Development Manager
+February 1991 - July 2001 (10 years 6 months)
+Sunnyvale, CA
+• Marketing Manager, Automotive / Telematics, Sunnyvale, CA, USA2/2000 –
+7/2001
+o SDK market strategy and product definition (OS / OSEK, communication
+protocols (CAN, J1850, MOST, Bluetooth, …), User Interface graphics and
+device drivers. Drove a third-party program / ecosystem to build a vertical
+market solution
+  Page 4 of 5
+   
+• Product Marketing Manager, Networking, Sunnyvale, CA, USA3/1998 –
+2/2000
+o Product Management and Product Marketing for embedded portable IPv4/
+IPv6 TCP/IP stacks, SNMP stack, RMON stack, RIP/OSPF/BGP/DVMRP/PIM
+routing stacks, HTTP stack. Products could be ported to any OS.
+• Sr. Field Application Engineer, Asia/Pacific (Japan/Korea/Taiwan/China),
+Sunnyvale, CA, USA3/1997 – 3/1998
+• Field Application Engineer, US Western Region, Sunnyvale, CA, USA 3/1996
+– 3/1997
+• Manager of Development and Pre-/Post-Sales Support, 10 person startup in
+Munich Germany – acquired 1996 2/1991 – 3/1996
+o Manager of 3 engineers and individual contributor
+o Development of bring-up code and device drivers for the embedded
+operating system
+o Sales Systems Engineering and Technical Marketing. Articles for magazines,
+presentations at public technology events and customer visits, product demos.
+o Technical Support for development tools, embedded OS / SDK and custom
+developed software
+Education
+Technical University of Munich
+Master of Science (Dipl. Ing, Univ), Electrical Engineering and Information
+Technology · (1984 - 1990)
+  Page 5 of 5

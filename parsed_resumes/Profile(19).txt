@@ -1,0 +1,143 @@
+   
+Contact
+www.linkedin.com/in/
+twolfgangschuster (LinkedIn)
+wolfgangschuster.wordpress.com/
+(Personal)
+Top Skills
+Programming
+C++
+Team Leadership
+Languages
+ASL (Limited Working)
+English (Native or Bilingual)
+Certifications
+Certificate of Completion: Python
+Course
+Wolfgang Schuster
+Senior Software Engineer at Vendr
+Chicago, Illinois, United States
+Summary
+I make my own games (art, programming, and some sound). I also
+love to cook and travel with my wife.
+Experience
+Vendr
+Senior Software Engineer
+July 2022 - Present (1 year 5 months)
+Chicago, Illinois, United States
+Elm Weekly
+Author & Curator
+November 2021 - Present (2 years 1 month)
+In Nov 2021 the Elm Weekly newsletter was handed over to me. Since then I
+am the sole writer and curator of the content in the newsletter.
+Trilogy Education
+Substitute Teacher
+April 2021 - Present (2 years 8 months)
+Remote
+I part-time substitute teach for the Full Stack web development course where
+students learn about everything from vanilla web, React based apps, SQL,
+NoSQL, REST, GraphQL, and more.
+Square
+Senior Software Engineer
+February 2020 - July 2022 (2 years 6 months)
+Chicago, Illinois, United States
+I'm currently a part of the Developers Experience (DEX) team. As part of DEX
+I've assisted with the building of Square's Web Payment SDK site as well as
+managing, generating, and publishing Square's server side SDKs, and various
+other documentation and SDK related products and features.
+Four Winds Interactive
+  Page 1 of 4
+   
+1 year 8 months
+Senior Software Engineer
+August 2019 - February 2020 (7 months)
+Leading a team that builds web apps for TVs and other hardware. Using Elm,
+TypeScript, Docker, Webpack, and more.
+Software Engineer II
+July 2018 - August 2019 (1 year 2 months)
+Denver, Colorado
+Javascript development on TVs and other hardware. Using React, Docker,
+Webpack, and more.
+Northwestern Mutual
+Senior Javascript Engineer
+July 2017 - June 2018 (1 year)
+Greater Milwaukee Area
+Worked as part of a team to re-write a large internal app in React.
+Helped to guide junior devs into becoming better devs.
+ShoreTel
+Senior Software Engineer
+January 2016 - July 2017 (1 year 7 months)
+Milwaukee, Wisconsin
+Software engineer for ShoreTel's Summit platform
+(platform.corvisacloud.com), telecommunications management tool.
+Lead frontend developer on team.
+Technical environment: Javascript (React,ExtJS, jQuery), Perl, Postgres, git.
+Design and implementation of UI/UX, analytics, and frontend testing.
+Corvisa, a ShoreTel company
+Software Engineer
+June 2014 - January 2016 (1 year 8 months)
+Milwaukee, Wisconsin
+Software engineer for Corvisa's Summit platform (platform.corvisacloud.com),
+telecommunications management tool.
+Lead front end developer on 4 person team.
+Technical environment: Javascript (ExtJS, jQuery), Perl, PostgreSQL, REST,
+git, codeceptjs.
+  Page 2 of 4
+   
+Design and implementation of UI/UX, analytics, and front end testing.
+Digital Iris LLC
+Software Engineer
+June 2013 - September 2014 (1 year 4 months)
+Milwaukee
+AI and tool programming
+Augmented reality and virtual reality applications for META AR glasses and
+Oculus Rift VR.
+Developed 1 of the prototype Gear VR home screen environments.
+Technical environment: C#, git.
+JDA Software
+Software Engineer
+March 2012 - April 2014 (2 years 2 months)
+Waukesha, Wisconsin
+Implement GUI/UI for JDA’s warehouse management client.
+Implemented back end logic for the warehouse management web client.
+QA testing of newly implemented features..
+Technical environment: Javascript (ExtJS), Java, SQL, CSS, C, C#, REST,
+svn.
+Toppers Pizza Inc.
+Delivery Driver
+June 2011 - March 2012 (10 months)
+Fox Point, WI
+Deliver pizza, prepare and cook food.
+CAPTEL
+Captioning Assistant
+March 2010 - April 2011 (1 year 2 months)
+I caption phone calls for the hearing impaired.
+University of Wisconsin Milwaukee
+Computer Science Tutor
+September 2010 - December 2010 (4 months)
+I tutored students one-on-one or in small groups.
+Classes tutored: Computer Science 150, 201 and 251.
+EMTEQ
+Harness Assembler
+  Page 3 of 4
+   
+June 2010 - August 2010 (3 months)
+Contract aircraft harness builder.
+Any other tasks requested of me.
+EMTEQ
+Team Lead/Harness Assembler
+July 2006 - January 2010 (3 years 7 months)
+Led a team of harness builders.
+Assemble aircraft electrical parts such as harnesses, circuit boards, etc.
+Any other tasks requested of me.
+Elm Grove Inn
+Prep-Cook/Server Assistant
+March 2003 - January 2007 (3 years 11 months)
+Prepare food for the day or cook to order.
+Wait on tables or assist server in doing so.
+Education
+University of Wisconsin-Milwaukee
+Computer Science, Computer Software · (2008 - 2015)
+Waukesha County Technical College
+Web Design, IT · (2006 - 2007)
+  Page 4 of 4

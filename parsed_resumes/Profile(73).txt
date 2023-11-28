@@ -1,0 +1,81 @@
+   
+Contact
+www.linkedin.com/in/lindsey-
+reynolds-1b9819b2 (LinkedIn)
+Top Skills
+Distributed Systems
+Scala
+Functional Programming
+Certifications
+Data Structures and Performance
+Advanced Data Structures in Java
+Lindsey Reynolds
+Software Engineer at Netflix
+San Diego, California, United States
+Summary
+I am a passionate problem solver, computer programmer, leader and
+mother of two.
+Experience
+Netflix
+Software Engineer
+January 2023 - Present (11 months)
+California
+Software Engineer on Netflix's Cloud Gateway team.
+Twitter
+1 year 4 months
+Software Engineer II
+September 2022 - November 2022 (3 months)
+Worked as a member of the Traffic Team, which is responsible for TLS
+termination, routing all traffic to and from Twitter’s backend services, as well as
+rate limiting, cookie compliance and more at a scale of millions of RPS. 
+Worked on the development of a new lighter weight reverse proxy that would
+have allowed for more intelligent routing at the network edge. 
+Developed a route CLI tool that allows teams to perform bulk operations and
+rollbacks on their routes.
+Was a member of the regular on call rotation for several mission critical
+services at Twitter.
+Participated in and lead technical interviews for prospective employees.
+Software Engineer
+August 2021 - September 2022 (1 year 2 months)
+Added version control to Twitter’s routing system, giving teams the ability to
+rollback to old versions of their routes and view previous routes.
+  Page 1 of 3
+   
+Created extensive on call and new hire documentation that had a significant
+impact on onboarding new team members as well as improving on call
+efficiency.
+BCAUSEICAN INC
+Volunteer CS Curriculum Writer
+August 2020 - December 2020 (5 months)
+Worked with another volunteer to build a 16 week Scratch curriculum that
+introduces K-6th grade students in underserved communities to computer
+programming. 
+The curriculum includes interactive projects, homework assignments and age
+appropriate lectures.
+ViaSat Inc.
+Software Engineer Intern
+June 2015 - September 2015 (4 months)
+Carlsbad, California
+Created a light-weight, local application that streamlined the simple
+functionality of the Agile Product Lifecycle Management Program. 
+The program was geared towards the common engineer, manager, or casual
+user. It allowed them to create, edit and manage requests, parts, and other
+relevant Agile objects in half the number of steps required previously.
+Institute of Electrical and Electronics Engineering (IEEE)
+Micromouse Project Team Lead
+October 2014 - May 2015 (8 months)
+University of California, San Diego
+Lead a team to construct and program a robotic, autonomous, maze-searching
+mouse capable of competing in the annual IEEE Micromouse Tournament. 
+I was responsible for organized meetings, coordinating deadlines and
+delegating work to a team of 6 students.
+Education
+California State University, Monterey Bay
+Bachelor's degree, Computer Science · (2019 - 2021)
+  Page 2 of 3
+   
+University of California, San Diego
+Bachelor's Degree, Computer Science · (2014 - 2016)
+Biola University
+Bachelor of Arts - BA, Studio Art · (2010 - 2012)
+  Page 3 of 3

@@ -1,0 +1,47 @@
+   
+Contact
+www.linkedin.com/in/wolfgang-
+hoschek-77a6211 (LinkedIn)
+github.com/whoschek (Other)
+Top Skills
+Petabyte Scale Analytic Processing
+MPP Query Engines
+Big Data Management
+Wolfgang Hoschek
+Senior Software Engineer at Cloudera
+San Francisco, California, United States
+Experience
+Cloudera
+Senior Software Engineer
+July 2012 - Present (11 years 5 months)
+San Francisco
+Hadoop Platform, Cloudera Search, Morphlines, Realtime Big Data Analytics
+Apache Lucene/Solr and Flume at The Apache Software Foundation
+Committer
+July 2005 - Present (18 years 5 months)
+Skytide
+Senior Software Engineer
+March 2005 - July 2012 (7 years 5 months)
+Oakland, CA
+Real Time Column Store Analytics, CDN Video Analytics, Cloud Computing
+Lawrence Berkeley National Laboratory
+Computer Scientist
+February 2003 - March 2005 (2 years 2 months)
+Berkeley, CA
+Distributed Systems Department, Data Intensive Computing Group, Grid
+Computing
+CERN (European Organization for Particle Physics Research)
+CERN Fellow, Computer Scientist
+1998 - 2003 (5 years)
+Geneva, Switzerland
+Grid Computing, Very Large Scale Data Analytics
+Education
+Technical University Vienna
+PhD, Computer Science · (2003)
+  Page 1 of 2
+   
+University of Aarhus, Denmark
+Computer Science · (1996 - 1997)
+University Linz, Austria
+M.S., Computer Science · (1997)
+  Page 2 of 2
