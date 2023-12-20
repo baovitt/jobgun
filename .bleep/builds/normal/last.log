@@ -1,0 +1,8 @@
+[debug] 2023-12-20T21:39:36.155823Z GenBloopFiles.scala:124 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop up to date 
+[info ] 2023-12-20T21:39:36.163492Z bootstrap.scala:81 bootstrapped in 12 ms 
+[info ] 2023-12-20T21:39:36.189907Z BleepCacheLogger.scala:14 downloading [value => https://github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
+[info ] 2023-12-20T21:40:56.996499Z BleepCacheLogger.scala:17 downloaded [value => https://github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
+[debug] 2023-12-20T21:40:56.997935Z Scalafmt.scala:41 Using scalafmt [value => /home/brad/.cache/coursier/v1/https/github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
+[info ] 2023-12-20T21:40:57.012647Z Scalafmt.scala:62 [subprocess: scalafmt]: Reformatting... 
+[info ] 2023-12-20T21:40:57.103038Z Scalafmt.scala:62 [subprocess: scalafmt]: Reformatting... 
+[debug] 2023-12-20T21:40:59.021414Z cli.scala:112 Command ran successfully [value => 0]

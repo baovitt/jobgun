@@ -6,21 +6,21 @@ import zio.json.*
 
 // Jobgun Imports:
 
-import com.jobgun.domain.ParsedJobDescription
-import com.jobgun.domain.requests.*
-import com.jobgun.domain.responses.*
-import com.jobgun.shared.utils.LRUCache
-import com.jobgun.domain.JobRoutes.{
+import com.jobgun.shared.backend.domain.ParsedJobDescription
+import com.jobgun.shared.backend.domain.requests.*
+import com.jobgun.shared.backend.domain.responses.*
+import com.jobgun.shared.backend.utils.LRUCache
+import com.jobgun.shared.backend.domain.JobRoutes.{
   jobSearchWithEmbeddingRoute,
   jobSearchWithResumeRoute,
   jobSearchWithDefaultRoute
 }
-import com.jobgun.model.{
-  WeaviateSearchModel,
+import com.jobgun.shared.backend.model.{
+  WeaviateModel,
   ResumeParserModel,
   CompletionModel
 }
-import com.jobgun.shared.model.EmbeddingModel
+import com.jobgun.shared.backend.model.EmbeddingModel
 
 // STTP Imports:
 
@@ -30,7 +30,7 @@ import sttp.tapir.ztapir.RichZEndpoint
 import sttp.tapir.server.armeria.zio.ArmeriaZioServerInterpreter
 
 final class JobController(
-    weaviateSearchModel: WeaviateSearchModel,
+    WeaviateModel: WeaviateModel,
     embeddingModel: EmbeddingModel,
     completionModel: CompletionModel,
     embeddingRequestCache: LRUCache[
@@ -56,10 +56,10 @@ final class JobController(
                   request.filters.preferredTitle
                 )
                 .map(Some(_))
-          jobs <- weaviateSearchModel
+          jobs <- WeaviateModel
             .searchJobs(
               request.page,
-              25,
+              10,
               embeddedTitle match
                 case Some(embeddedTitle) =>
                   request.embedding
@@ -70,7 +70,7 @@ final class JobController(
               ,
               Some(request.filters)
             )
-          response = JobSearchFromEmbeddingResponse(jobs)
+          response = JobSearchFromEmbeddingResponse(jobs.toList)
           _ <- embeddingRequestCache.put(request, response)
         yield response
       )
@@ -91,8 +91,8 @@ final class JobController(
           ZIO.succeed(ParsedJobDescription.defaultDevops)
         case _ => ZIO.fail(StatusCode.InternalServerError)
       embeddedUser <- embeddingModel.embedText(parsedUser.toJson)
-      jobs <- weaviateSearchModel.searchJobs(0, 25, embeddedUser)
-      response = JobSearchFromResumeResponse(jobs, embeddedUser)
+      jobs <- WeaviateModel.searchJobs(0, 25, embeddedUser)
+      response = JobSearchFromResumeResponse(jobs.toList, embeddedUser.toList)
     yield response
   }.mapError(_ => StatusCode.InternalServerError)
 
@@ -117,12 +117,9 @@ final class JobController(
       _ <- zio.Console.printLine("parsedUser")
       embeddedUser <- embeddingModel.embedText(parsedUser.toJson)
       _ <- zio.Console.printLine("embeddedUser")
-      jobs <- weaviateSearchModel.searchJobs(0, 25, embeddedUser).mapError {
-        e =>
-          println(e); e
-      }
+      jobs <- WeaviateModel.searchJobs(0, 10, embeddedUser)
       _ <- zio.Console.printLine("jobs")
-      response = JobSearchFromResumeResponse(jobs, embeddedUser)
+      response = JobSearchFromResumeResponse(jobs.toList, embeddedUser.toList)
     yield response
   }.mapError(_ => StatusCode.InternalServerError)
 
@@ -147,7 +144,7 @@ end JobController
 
 object JobController:
   val default = (
-    WeaviateSearchModel.default ++
+    WeaviateModel.default ++
       EmbeddingModel.default ++
       CompletionModel.default ++
       LRUCache.layer[
@@ -156,7 +153,7 @@ object JobController:
       ](1000)
   ) >>> ZLayer {
     for
-      searchModel <- ZIO.service[WeaviateSearchModel]
+      searchModel <- ZIO.service[WeaviateModel]
       embeddingModel <- ZIO.service[EmbeddingModel]
       completionModel <- ZIO.service[CompletionModel]
       embeddingRequestCache <- ZIO.service[LRUCache[

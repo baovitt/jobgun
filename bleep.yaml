@@ -1,0 +1,71 @@
+$schema: https://raw.githubusercontent.com/oyvindberg/bleep/master/schema.json
+$version: 0.0.2
+projects:
+  jobgun:
+    folder: ./modules/backend
+    dependsOn: 
+    - shared
+    extends: common
+    sbt-scope: main
+    platform:
+      mainClass: com.jobgun.Main
+  jobgun-test:
+    cross:
+      jvm3: {}
+    dependsOn: 
+    - jobgun
+    - shared
+    extends: common
+    isTestProject: true
+    sbt-scope: test
+    testFrameworks:
+    - hedgehog.sbt.Framework
+    - weaver.framework.CatsEffect
+    - zio.test.sbt.ZTestFramework
+  shared:
+    folder: ./modules/shared
+    extends: common
+  shared-test:
+    cross:
+      jvm3: {}
+    dependsOn: 
+    - shared
+    extends: common
+    isTestProject: true
+    sbt-scope: test
+    testFrameworks:
+    - hedgehog.sbt.Framework
+    - weaver.framework.CatsEffect
+    - zio.test.sbt.ZTestFramework
+  scripts:
+    dependencies: build.bleep::bleep-core:${BLEEP_VERSION}
+    platform:
+      name: jvm
+    scala:
+      version: 3.3.0
+templates:
+  common:
+    platform:
+      jvmOptions: -Duser.dir=${PROJECT_DIR}
+      name: jvm
+    scala:
+      options: -Xmax-inlines 64
+      version: 3.3.0
+    dependencies:
+    - com.github.jwt-scala::jwt-zio-json:9.4.0
+    - com.google.guava:guava:32.1.2-jre
+    - com.softwaremill.sttp.client3::circe:3.9.1
+    - com.softwaremill.sttp.client3::zio:3.9.1
+    - com.softwaremill.sttp.tapir::tapir-armeria-server-zio:1.7.2
+    - com.softwaremill.sttp.tapir::tapir-json-zio:1.7.2
+    - com.softwaremill.sttp.tapir::tapir-swagger-ui-bundle:1.7.2
+    - dev.zio::zio-config-magnolia:3.0.1
+    - dev.zio::zio-config-typesafe:3.0.1
+    - dev.zio::zio-openai:0.2.1
+    - dev.zio::zio:2.0.15
+    - io.circe::circe-generic:0.14.6
+    - io.getquill::quill-jdbc-zio:4.8.0
+    - io.weaviate:client:4.3.0
+    - org.apache.pdfbox:preflight:3.0.0
+    - org.apache.poi:poi-ooxml:5.2.3
+    - org.postgresql:postgresql:42.3.1

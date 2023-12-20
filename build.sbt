@@ -11,8 +11,21 @@ val commonSttpZioVersion = "3.9.0"
 lazy val shared = (project in file("modules/shared"))
   .settings(
     name := "jobgun",
-    libraryDependencies ++= 
-      "com.softwaremill.sttp.tapir" %% "tapir-json-zio" % tapirVersion % Provided +: Dependencies.backend.zioDeps
+    libraryDependencies ++= (
+      Dependencies.backend.zioDeps ++
+      Dependencies.backend.tapirDeps ++ 
+      Dependencies.backend.weaviateDeps ++
+      List(
+        "org.apache.pdfbox" % "preflight" % "3.0.0",
+        "org.apache.poi" % "poi-ooxml" % "5.2.3",
+        "com.softwaremill.sttp.client3" %% "zio" % "3.9.1",
+        "com.softwaremill.sttp.client3" %% "circe" % "3.9.1",
+        "io.circe" %% "circe-generic" % "0.14.6",
+        "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
+        "org.postgresql"       %  "postgresql"     % "42.3.1",
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
+      )
+    )
   )
 
 lazy val backend = (project in file("modules/backend"))
@@ -27,7 +40,10 @@ lazy val backend = (project in file("modules/backend"))
         "org.apache.poi" % "poi-ooxml" % "5.2.3",
         "com.softwaremill.sttp.client3" %% "zio" % "3.9.1",
         "com.softwaremill.sttp.client3" %% "circe" % "3.9.1",
-        "io.circe" %% "circe-generic" % "0.14.6"
+        "io.circe" %% "circe-generic" % "0.14.6",
+        "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
+        "org.postgresql"       %  "postgresql"     % "42.3.1",
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
       )
     ),
     fork := true,
@@ -63,7 +79,10 @@ lazy val pipeline = (project in file("modules/pipeline"))
         "org.apache.poi" % "poi-ooxml" % "5.2.3",
         "com.softwaremill.sttp.client3" %% "zio" % "3.9.1",
         "com.softwaremill.sttp.client3" %% "circe" % "3.9.1",
-        "io.circe" %% "circe-generic" % "0.14.6"
+        "io.circe" %% "circe-generic" % "0.14.6",
+        "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
+        "org.postgresql"       %  "postgresql"     % "42.3.1",
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
       )
     ),
     fork := true,

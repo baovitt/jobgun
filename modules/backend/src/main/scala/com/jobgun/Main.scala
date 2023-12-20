@@ -8,13 +8,16 @@ import zio.openai.{Embeddings, Completions}
 import com.linecorp.armeria.server.Server
 
 // Jobgun Imports:
-import com.jobgun.config.HttpConfig
-import com.jobgun.controller.{JobController}
+import com.jobgun.shared.backend.config.{ResendConfig, PostgresConfig}
+import com.jobgun.controller.{JobController, AuthController}
 
 object Main extends ZIOAppDefault with Application:
 
   def run = logic.provide(
     JobController.default,
+    AuthController.live,
+    PostgresConfig.live,
+    ResendConfig.live,
     Embeddings.default,
     Completions.default,
     ZLayer.Debug.tree
