@@ -1,8 +1,151 @@
-[debug] 2023-12-20T21:39:36.155823Z GenBloopFiles.scala:124 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop up to date 
-[info ] 2023-12-20T21:39:36.163492Z bootstrap.scala:81 bootstrapped in 12 ms 
-[info ] 2023-12-20T21:39:36.189907Z BleepCacheLogger.scala:14 downloading [value => https://github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
-[info ] 2023-12-20T21:40:56.996499Z BleepCacheLogger.scala:17 downloaded [value => https://github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
-[debug] 2023-12-20T21:40:56.997935Z Scalafmt.scala:41 Using scalafmt [value => /home/brad/.cache/coursier/v1/https/github.com/scalameta/scalafmt/releases/download/v3.7.11/scalafmt-linux-musl]
-[info ] 2023-12-20T21:40:57.012647Z Scalafmt.scala:62 [subprocess: scalafmt]: Reformatting... 
-[info ] 2023-12-20T21:40:57.103038Z Scalafmt.scala:62 [subprocess: scalafmt]: Reformatting... 
-[debug] 2023-12-20T21:40:59.021414Z cli.scala:112 Command ran successfully [value => 0]
+[warn ] 2023-12-21T03:23:17.793468Z GenBloopFiles.scala:127 Refreshing /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop... 
+[debug] 2023-12-21T03:23:18.038575Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/scripts.json [value => Unchanged]
+[debug] 2023-12-21T03:23:18.038684Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/jobgun-test@jvm3.json [value => Unchanged]
+[debug] 2023-12-21T03:23:18.038776Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/shared.json [value => Unchanged]
+[debug] 2023-12-21T03:23:18.038836Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/jobgun.json [value => Unchanged]
+[debug] 2023-12-21T03:23:18.038890Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/bloop-digest [value => Changed]
+[debug] 2023-12-21T03:23:18.038953Z GenBloopFiles.scala:140 /home/brad/Documents/jobgun/.bleep/builds/normal/.bloop/shared-test@jvm3.json [value => Unchanged]
+[info ] 2023-12-21T03:23:18.039022Z GenBloopFiles.scala:140 wrote bloop files [value => Changed: 1, Unchanged: 5]
+[info ] 2023-12-21T03:23:18.039120Z bootstrap.scala:81 bootstrapped in 250 ms 
+[warn ] 2023-12-21T03:23:18.040807Z Prebootstrapped.scala:28 Your build uses the default system JVM, which can change outside the build. For stable builds over time, let bleep manage your chosen JVM by adding it to bleep.yaml 
+[debug] 2023-12-21T03:23:18.118349Z BleepRifleLogger.scala:19 bloop-rifle: Checking for a running Bloop server at /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.118541Z BleepRifleLogger.scala:19 bloop-rifle: Attempting to connect to Bloop server /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.119170Z BleepRifleLogger.scala:19 bloop-rifle: Connection attempt result: Some(Right(java.nio.channels.SocketChannel[connected local= remote=/home/brad/.cache/bleep/socket/system/socket])) 
+[debug] 2023-12-21T03:23:18.119999Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending arguments '' to Nailgun server 
+[debug] 2023-12-21T03:23:18.120100Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending environment variables to Nailgun server 
+[debug] 2023-12-21T03:23:18.122061Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending working directory /home/brad/Documents/jobgun to Nailgun server 
+[debug] 2023-12-21T03:23:18.122171Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending command to about Nailgun server 
+[debug] 2023-12-21T03:23:18.122220Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Finished sending command information to Nailgun server 
+[debug] 2023-12-21T03:23:18.122268Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Starting thread to read stdin... 
+[debug] 2023-12-21T03:23:18.128459Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@7febeb3c) from Nailgun server 
+[debug] 2023-12-21T03:23:18.128693Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@1f23dfbc) from Nailgun server 
+[debug] 2023-12-21T03:23:18.128814Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@1cf80267) from Nailgun server 
+[debug] 2023-12-21T03:23:18.128922Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@529afc13) from Nailgun server 
+[debug] 2023-12-21T03:23:18.129032Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@26adc807) from Nailgun server 
+[debug] 2023-12-21T03:23:18.129141Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@6bcb7031) from Nailgun server 
+[debug] 2023-12-21T03:23:18.129256Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Exit(0) from Nailgun server 
+[debug] 2023-12-21T03:23:18.129338Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Waiting for stdin thread to finish... 
+[debug] 2023-12-21T03:23:18.129440Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Waiting for heartbeat thread to finish... 
+[debug] 2023-12-21T03:23:18.129532Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Returning exit code... 
+[debug] 2023-12-21T03:23:18.130106Z BleepRifleLogger.scala:19 bloop-rifle: Checking for a running Bloop server at /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.130247Z BleepRifleLogger.scala:19 bloop-rifle: Attempting to connect to Bloop server /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.130413Z BleepRifleLogger.scala:19 bloop-rifle: Connection attempt result: Some(Right(java.nio.channels.SocketChannel[connected local= remote=/home/brad/.cache/bleep/socket/system/socket])) 
+[debug] 2023-12-21T03:23:18.130569Z BleepRifleLogger.scala:19 bloop-rifle: Checking for a running Bloop server at /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.130654Z BleepRifleLogger.scala:19 bloop-rifle: Attempting to connect to Bloop server /home/brad/.cache/bleep/socket/system ... 
+[debug] 2023-12-21T03:23:18.130894Z BleepRifleLogger.scala:19 bloop-rifle: Connection attempt result: Some(Right(java.nio.channels.SocketChannel[connected local= remote=/home/brad/.cache/bleep/socket/system/socket])) 
+[debug] 2023-12-21T03:23:18.131632Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending arguments '' to Nailgun server 
+[debug] 2023-12-21T03:23:18.131808Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending environment variables to Nailgun server 
+[debug] 2023-12-21T03:23:18.134128Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending working directory /home/brad/Documents/jobgun to Nailgun server 
+[debug] 2023-12-21T03:23:18.134269Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending command to about Nailgun server 
+[debug] 2023-12-21T03:23:18.134346Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Finished sending command information to Nailgun server 
+[debug] 2023-12-21T03:23:18.134402Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Starting thread to read stdin... 
+[debug] 2023-12-21T03:23:18.138287Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@2bbe28e9) from Nailgun server 
+[debug] 2023-12-21T03:23:18.138473Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@4c78e9a1) from Nailgun server 
+[debug] 2023-12-21T03:23:18.138596Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@4cbea984) from Nailgun server 
+[debug] 2023-12-21T03:23:18.138703Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@29d0e9da) from Nailgun server 
+[debug] 2023-12-21T03:23:18.138806Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@33d79d7a) from Nailgun server 
+[debug] 2023-12-21T03:23:18.138895Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@c4bd769) from Nailgun server 
+[debug] 2023-12-21T03:23:18.139012Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Exit(0) from Nailgun server 
+[debug] 2023-12-21T03:23:18.139064Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Waiting for stdin thread to finish... 
+[debug] 2023-12-21T03:23:18.139123Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Waiting for heartbeat thread to finish... 
+[debug] 2023-12-21T03:23:18.139187Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Returning exit code... 
+[debug] 2023-12-21T03:23:18.139380Z BleepRifleLogger.scala:19 bloop-rifle: Opening BSP connection with bloop 
+[debug] 2023-12-21T03:23:18.139812Z BleepRifleLogger.scala:19 bloop-rifle: Bloop BSP connection waiting at 127.0.0.1:32851 
+[debug] 2023-12-21T03:23:18.140345Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending arguments '--protocol tcp --host 127.0.0.1 --port 32851' to Nailgun server 
+[debug] 2023-12-21T03:23:18.140618Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending environment variables to Nailgun server 
+[debug] 2023-12-21T03:23:18.142753Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending working directory /home/brad/Documents/jobgun/.bleep/builds/normal to Nailgun server 
+[debug] 2023-12-21T03:23:18.142951Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Sending command to bsp Nailgun server 
+[debug] 2023-12-21T03:23:18.143043Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Finished sending command information to Nailgun server 
+[debug] 2023-12-21T03:23:18.143139Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Starting thread to read stdin... 
+[debug] 2023-12-21T03:23:18.150501Z BleepRifleLogger.scala:19 bloop-rifle: Connected to Bloop via BSP at 127.0.0.1:32851 
+[debug] 2023-12-21T03:23:18.150654Z BleepRifleLogger.scala:19 bloop-rifle: Connected to Bloop via BSP at 127.0.0.1:32851 
+[debug] 2023-12-21T03:23:18.151078Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@46445e07) from Nailgun server 
+[debug] 2023-12-21T03:23:18.151223Z BleepRifleLogger.scala:44 bloop: The server is listening for incoming connections at tcp://127.0.0.1:32851... 
+[debug] 2023-12-21T03:23:18.151341Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@3092b31e) from Nailgun server 
+[debug] 2023-12-21T03:23:18.151421Z BleepRifleLogger.scala:44 bloop: Accepted incoming BSP client connection at tcp://127.0.0.1:32851 
+[debug] 2023-12-21T03:23:18.153904Z BleepRifleLogger.scala:19 bloop-rifle: Sending buildInitialize BSP command to Bloop 
+[debug] 2023-12-21T03:23:18.159437Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@3543a0a9) from Nailgun server 
+[debug] 2023-12-21T03:23:18.159606Z BleepRifleLogger.scala:44 bloop: request received: build/initialize 
+[debug] 2023-12-21T03:23:18.203988Z BleepRifleLogger.scala:19 bloop-rifle: nailgun debug: Received action Print([B@18a9a49) from Nailgun server 
+[debug] 2023-12-21T03:23:18.204171Z BleepRifleLogger.scala:44 bloop: BSP initialization handshake complete. 
+[error] 2023-12-21T03:23:18.841182Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type WeaviateModel [value => 6]
+[error] 2023-12-21T03:23:18.842445Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type EmbeddingModel [value => 6]
+[error] 2023-12-21T03:23:18.844369Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type CompletionModel [value => 6]
+[error] 2023-12-21T03:23:18.848346Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type LRUCache [value => 6]
+[error] 2023-12-21T03:23:18.850534Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchWithEmbeddingRequest [value => 6]
+[error] 2023-12-21T03:23:18.852673Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchFromEmbeddingResponse [value => 6]
+[error] 2023-12-21T03:23:20.084767Z BspClientDisplayProgress.scala:131 BSP: jobgun value AuthRoutes is not a member of com.jobgun.shared.backend.auth.domain [value => 8]
+[error] 2023-12-21T03:23:21.574676Z BspClientDisplayProgress.scala:131 BSP: jobgun value JobRoutes is not a member of com.jobgun.shared.backend.domain, but could be made available as an extension method.
+
+The following import might make progress towards fixing the problem:
+
+  import izumi.reflect.dottyreflection.ReflectionUtil.
+  reflectiveUncheckedNonOverloadedSelectable
+
+ [value => 8]
+[error] 2023-12-21T03:23:21.576514Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchWithEmbeddingRequest [value => 6]
+[error] 2023-12-21T03:23:21.578482Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchFromEmbeddingResponse [value => 6]
+[error] 2023-12-21T03:23:21.583910Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchWithResumeRequest [value => 6]
+[error] 2023-12-21T03:23:21.585797Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchFromResumeResponse [value => 6]
+[error] 2023-12-21T03:23:21.589054Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchWithDefaultRequest [value => 6]
+[error] 2023-12-21T03:23:21.590807Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: type JobSearchFromResumeResponse [value => 6]
+[error] 2023-12-21T03:23:21.622746Z BspClientDisplayProgress.scala:131 BSP: jobgun Ambiguous overload. The overloaded alternatives of method toService in trait ArmeriaZioServerInterpreter with types
+ (serverEndpoints:
+  List[sttp.tapir.ztapir.ZServerEndpoint[R, sttp.capabilities.zio.ZioStreams]])
+  (implicit runtime: zio.Runtime[R]):
+    sttp.tapir.server.armeria.TapirService[sttp.capabilities.zio.ZioStreams,
+      [_] =>> zio.RIO[R, _]]
+ (serverEndpoints:
+  sttp.tapir.ztapir.ZServerEndpoint[R, sttp.capabilities.zio.ZioStreams])
+  (implicit runtime: zio.Runtime[R]):
+    sttp.tapir.server.armeria.TapirService[sttp.capabilities.zio.ZioStreams,
+      [_] =>> zio.RIO[R, _]]
+both match expected type Nothing => B [value => 51]
+[error] 2023-12-21T03:23:21.656007Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: JobRoutes [value => 6]
+[error] 2023-12-21T03:23:21.678939Z BspClientDisplayProgress.scala:131 BSP: jobgun value ResendConfig is not a member of com.jobgun.shared.backend.config [value => 8]
+[error] 2023-12-21T03:23:21.681947Z BspClientDisplayProgress.scala:131 BSP: jobgun value PostgresConfig is not a member of com.jobgun.shared.backend.config [value => 8]
+[error] 2023-12-21T03:23:21.751034Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: WeaviateModel [value => 6]
+[error] 2023-12-21T03:23:21.758569Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: PostgresConfig [value => 6]
+[error] 2023-12-21T03:23:21.760458Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ResendConfig [value => 6]
+[error] 2023-12-21T03:23:21.786920Z BspClientDisplayProgress.scala:131 BSP: jobgun value ParsedJobDescription is not a member of com.jobgun.shared.backend.domain [value => 8]
+[error] 2023-12-21T03:23:21.789490Z BspClientDisplayProgress.scala:131 BSP: jobgun value LRUCache is not a member of com.jobgun.shared.backend.utils [value => 8]
+[error] 2023-12-21T03:23:21.792231Z BspClientDisplayProgress.scala:131 BSP: jobgun value WeaviateModel is not a member of com.jobgun.shared.backend.model [value => 8]
+[error] 2023-12-21T03:23:21.794705Z BspClientDisplayProgress.scala:131 BSP: jobgun value ResumeParserModel is not a member of com.jobgun.shared.backend.model [value => 8]
+[error] 2023-12-21T03:23:21.796812Z BspClientDisplayProgress.scala:131 BSP: jobgun value CompletionModel is not a member of com.jobgun.shared.backend.model [value => 8]
+[error] 2023-12-21T03:23:21.799305Z BspClientDisplayProgress.scala:131 BSP: jobgun value EmbeddingModel is not a member of com.jobgun.shared.backend.model [value => 8]
+[error] 2023-12-21T03:23:21.843329Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ParsedJobDescription [value => 6]
+[error] 2023-12-21T03:23:21.843777Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ParsedJobDescription [value => 6]
+[error] 2023-12-21T03:23:21.844212Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ParsedJobDescription [value => 6]
+[error] 2023-12-21T03:23:21.844601Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ParsedJobDescription [value => 6]
+[error] 2023-12-21T03:23:21.844964Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ResumeParserModel [value => 6]
+[error] 2023-12-21T03:23:21.845354Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: ResumeParserModel [value => 6]
+[error] 2023-12-21T03:23:21.887269Z BspClientDisplayProgress.scala:131 BSP: jobgun value JobRoutes is not a member of com.jobgun.shared.backend.domain [value => 8]
+[error] 2023-12-21T03:23:21.887731Z BspClientDisplayProgress.scala:131 BSP: jobgun value AuthRoutes is not a member of com.jobgun.shared.backend.auth.domain [value => 8]
+[error] 2023-12-21T03:23:21.888164Z BspClientDisplayProgress.scala:131 BSP: jobgun Not found: AuthRoutes [value => 6]
+[debug] 2023-12-21T03:23:21.897092Z fatal.scala:8 command failed bleep.bsp.BspCommandFailed: compile jobgun failed status code ERROR
+	at bleep.commands.Compile.runWithServer$$anonfun$1(Compile.scala:26)
+	at scala.util.Either.flatMap(Either.scala:352)
+	at bleep.commands.Compile.runWithServer(Compile.scala:27)
+	at bleep.BleepCommandRemote.run(BleepCommandRemote.scala:101)
+	at bleep.Main$.$anonfun$41$$anonfun$1$$anonfun$2(Main.scala:482)
+	at bleep.Main$.run$$anonfun$1(Main.scala:546)
+	at scala.util.Try$.apply(Try.scala:210)
+	at bleep.Main$.run(Main.scala:546)
+	at bleep.Main$.$anonfun$41$$anonfun$1(Main.scala:482)
+	at bleep.logging.TypedLoggerResource$.bleep$logging$TypedLoggerResource$Ops$$anon$4$$_$use$$anonfun$4(TypedLoggerResource.scala:41)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$1.use$$anonfun$1(TypedLoggerResource.scala:20)
+	at bleep.logging.TypedLoggerResource$.bleep$logging$TypedLoggerResource$Ops$$anon$3$$_$use$$anonfun$3$$anonfun$1(TypedLoggerResource.scala:34)
+	at bleep.logging.TypedLoggerResource$$anon$6.use(TypedLoggerResource.scala:56)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$3.use$$anonfun$3(TypedLoggerResource.scala:34)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$1.use$$anonfun$1(TypedLoggerResource.scala:20)
+	at bleep.logging.TypedLoggerResource$$anon$7.use(TypedLoggerResource.scala:67)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$1.use(TypedLoggerResource.scala:20)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$3.use(TypedLoggerResource.scala:36)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$1.use(TypedLoggerResource.scala:20)
+	at bleep.logging.TypedLoggerResource$Ops$$anon$4.use(TypedLoggerResource.scala:41)
+	at bleep.Main$.$anonfun$41(Main.scala:484)
+	at bleep.ExitCode.andThen(ExitCode.scala:6)
+	at bleep.Main$.main(Main.scala:486)
+	at bleep.Main.main(Main.scala)
+
+[error] 2023-12-21T03:23:21.897559Z fatal.scala:8 command failed: compile jobgun failed status code ERROR 

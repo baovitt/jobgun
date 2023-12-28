@@ -23,7 +23,8 @@ lazy val shared = (project in file("modules/shared"))
         "io.circe" %% "circe-generic" % "0.14.6",
         "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
         "org.postgresql"       %  "postgresql"     % "42.3.1",
-        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0",
+        "dev.zio" %% "zio-connect-s3" % "0.4.4"
       )
     )
   )
@@ -43,7 +44,9 @@ lazy val backend = (project in file("modules/backend"))
         "io.circe" %% "circe-generic" % "0.14.6",
         "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
         "org.postgresql"       %  "postgresql"     % "42.3.1",
-        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0",
+        "dev.zio" %% "zio-connect-s3" % "0.4.4",
+        "dev.zio" %% "zio-connect-file" % "0.4.4"
       )
     ),
     fork := true,
@@ -82,7 +85,8 @@ lazy val pipeline = (project in file("modules/pipeline"))
         "io.circe" %% "circe-generic" % "0.14.6",
         "io.getquill"          %% "quill-jdbc-zio" % "4.8.0",
         "org.postgresql"       %  "postgresql"     % "42.3.1",
-        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0"
+        "com.github.jwt-scala" %% "jwt-zio-json" % "9.4.0",
+        "dev.zio" %% "zio-connect-s3" % "0.4.4"
       )
     ),
     fork := true,

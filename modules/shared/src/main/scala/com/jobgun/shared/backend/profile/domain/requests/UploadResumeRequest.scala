@@ -1,11 +1,10 @@
-package com.jobgun.shared.backend.profile
-package domain.requests
+package com.jobgun.shared.backend
+package profile.domain.requests
 
-import sttp.tapir.Schema
+// STTP Imports:
+import sttp.tapir.{Schema, TapirFile}
 import sttp.model.Part
-import java.io.File
 
 final case class UploadResumeRequest(
-    jwt: String,
-    file: Part[File]
+    file: Part[TapirFile]
 ) derives Schema

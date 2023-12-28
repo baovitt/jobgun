@@ -4,6 +4,7 @@ package com.jobgun
 import com.jobgun.controller.{
   JobController,
   AuthController,
+  RecruitController,
   OpenApiDocsController
 }
 import com.jobgun.utils.extensions.ArmeriaServerExtensions.services
@@ -22,11 +23,13 @@ trait Application:
     for
       jobController <- ZIO.service[JobController]
       authController <- ZIO.service[AuthController]
+      recruitController <- ZIO.service[RecruitController]
     yield Server
       .builder()
       .http(8080)
       .services(jobController.services*)
       .services(authController.services*)
+      .services(recruitController.services*)
       .service(OpenApiDocsController.docService)
       .requestTimeout(Duration.ofSeconds(30))
       .build()

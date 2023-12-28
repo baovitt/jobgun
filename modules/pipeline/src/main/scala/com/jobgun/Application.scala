@@ -11,6 +11,6 @@ trait Application:
     .map(_.fromJson[Chunk[ATSJobListing]])
     .absolve
 
-  def writeListings(listings: Chunk[QueryableListing]) = 
+  def writeListings(listings: Chunk[QueryableListing]) =
     ZIO.writeFile("output.json", listings.toJson)
 end Application

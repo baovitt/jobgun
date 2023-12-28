@@ -63,12 +63,10 @@ object ListingParserModel:
         temperature = temperature,
         maxTokens = MaxTokens(2500)
       )
-      output = result.choices
-        .map { completion =>
-          println((completion.text getOrElse "").fromJson[JobDescription])
-          (completion.text getOrElse "").fromJson[JobDescription]
-        }
-        .headOption
+      output = result.choices.map { completion =>
+        println((completion.text getOrElse "").fromJson[JobDescription])
+        (completion.text getOrElse "").fromJson[JobDescription]
+      }.headOption
       parsedDescription <- output match
         case Some(Right(parsed)) => ZIO.succeed(Some(parsed))
         case _ if attempts < 3 =>
@@ -79,7 +77,6 @@ object ListingParserModel:
             attempts + 1
           )
         case _ => ZIO.succeed(None)
-
     yield parsedDescription
 
   lazy val default = ZLayer {

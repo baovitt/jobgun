@@ -1,10 +1,14 @@
-package com.jobgun.shared.backend.profile
-package domain
+package com.jobgun.shared.backend
+package profile.domain
 
-import zio.json.JsonCodec
+// STTP Imports:
 import sttp.tapir.Schema
+
+// ZIO Imports:
+import zio.json.JsonCodec
 
 final case class Profile(
     firstName: String,
-    lastName: String,
-) derives Schema, JsonCodec
+    lastName: String
+) derives Schema,
+      JsonCodec

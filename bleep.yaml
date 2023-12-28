@@ -3,8 +3,7 @@ $version: 0.0.2
 projects:
   jobgun:
     folder: ./modules/backend
-    dependsOn: 
-    - shared
+    dependsOn: shared
     extends: common
     sbt-scope: main
     platform:
@@ -12,9 +11,7 @@ projects:
   jobgun-test:
     cross:
       jvm3: {}
-    dependsOn: 
-    - jobgun
-    - shared
+    dependsOn: jobgun
     extends: common
     isTestProject: true
     sbt-scope: test
@@ -28,8 +25,7 @@ projects:
   shared-test:
     cross:
       jvm3: {}
-    dependsOn: 
-    - shared
+    dependsOn: shared
     extends: common
     isTestProject: true
     sbt-scope: test
